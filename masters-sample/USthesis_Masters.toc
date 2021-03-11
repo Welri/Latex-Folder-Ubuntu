@@ -1,0 +1,39 @@
+\babel@toc {english}{}
+\contentsline {chapter}{Declaration}{i}%
+\contentsline {chapter}{Abstract}{ii}%
+\babel@toc {afrikaans}{}
+\contentsline {chapter}{Uittreksel}{iii}%
+\babel@toc {english}{}
+\contentsline {chapter}{Acknowledgements}{iv}%
+\contentsline {chapter}{Dedications}{v}%
+\babel@toc {afrikaans}{}
+\babel@toc {english}{}
+\contentsline {chapter}{Contents}{vi}%
+\contentsline {chapter}{List of Figures}{viii}%
+\contentsline {chapter}{List of Tables}{ix}%
+\contentsline {chapter}{Nomenclature}{x}%
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}%
+\contentsline {section}{\numberline {1.1}Background}{1}%
+\contentsline {section}{\numberline {1.2}Objectives}{1}%
+\contentsline {section}{\numberline {1.3}Methodology}{1}%
+\contentsline {section}{\numberline {1.4}Scope of the Research}{1}%
+\contentsline {section}{\numberline {1.5}Thesis Structure}{1}%
+\contentsline {chapter}{\chapternumberline {2}Background}{2}%
+\contentsline {section}{\numberline {2.1}SatSim}{2}%
+\contentsline {chapter}{\chapternumberline {3}SatSim}{3}%
+\contentsline {section}{\numberline {3.1}Terrestrial}{3}%
+\contentsline {chapter}{\chapternumberline {4}Verifying SatSim Results}{4}%
+\contentsline {section}{\numberline {4.1}Scope}{4}%
+\contentsline {chapter}{\chapternumberline {5}Hardware Selection}{5}%
+\contentsline {section}{\numberline {5.1}Scope}{5}%
+\contentsline {chapter}{\chapternumberline {6}Hardware Design with Software Implementation}{6}%
+\contentsline {section}{\numberline {6.1}Scope}{6}%
+\contentsline {chapter}{\chapternumberline {7}Hardware Verification and Comparison to SatSim}{7}%
+\contentsline {section}{\numberline {7.1}Scope}{7}%
+\contentsline {chapter}{\chapternumberline {8}Conclusions}{8}%
+\contentsline {section}{\numberline {8.1}Scope}{8}%
+\contentsline {chapter}{Appendices}{9}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{10}%
+\contentsline {section}{\numberline {A.1}Ball elements}{10}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{10}%
+\contentsline {chapter}{List of References}{11}%
