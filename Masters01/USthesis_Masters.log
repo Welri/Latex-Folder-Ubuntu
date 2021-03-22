@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.10)  12 MAR 2021 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.10)  18 MAR 2021 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,18 +669,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 ]
 \openout2 = `contents/Chap-1.aux'.
 
- (./contents/Chap-1.tex
-Underfull \hbox (badness 1881) in paragraph at lines 26--28
+ (./contents/Chap-1.tex [1
+
+
+
+
+]
+Underfull \hbox (badness 1881) in paragraph at lines 36--38
 \T1/cmr/m/n/12 search is in-tended to be ap-pli-ca-ble to search and res-cue op
 -er-a-tions.
  []
 
-) [1
-
-
-
-
-] [2]
+) [2]
 \openout2 = `contents/Chap-2.aux'.
 
  (./contents/Chap-2.tex) [3
@@ -767,13 +767,13 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (./contents/Chap-6.aux) (./contents/Chap-7.aux) (./contents/Chap-8.aux)
 (./contents/App-1.aux)) ) 
 Here is how much of TeX's memory you used:
- 7492 strings out of 481239
- 102640 string characters out of 5920377
- 395663 words of memory out of 5000000
- 22554 multiletter control sequences out of 15000+600000
+ 7507 strings out of 481239
+ 102892 string characters out of 5920377
+ 396026 words of memory out of 5000000
+ 22569 multiletter control sequences out of 15000+600000
  557829 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,47p,613b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,16n,47p,640b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1
 .enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/
@@ -799,7 +799,7 @@ uper/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1095.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfsl1440.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (23 pages, 432868 bytes).
+Output written on USthesis_Masters.pdf (23 pages, 437719 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams
