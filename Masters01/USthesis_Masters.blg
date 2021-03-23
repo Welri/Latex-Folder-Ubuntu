@@ -28,44 +28,44 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 
 Done.
-You've used 9 entries,
+You've used 14 entries,
             4855 wiz_defined-function locations,
-            1006 strings with 10157 characters,
-and the built_in function-call counts, 5512 in all, are:
-= -- 464
-> -- 226
-< -- 4
-+ -- 99
-- -- 60
-* -- 340
-:= -- 938
-add.period$ -- 18
-call.type$ -- 9
-change.case$ -- 17
-chr.to.int$ -- 9
-cite$ -- 9
-duplicate$ -- 395
-empty$ -- 414
-format.name$ -- 83
-if$ -- 1172
+            1037 strings with 11164 characters,
+and the built_in function-call counts, 8767 in all, are:
+= -- 762
+> -- 338
+< -- 13
++ -- 150
+- -- 88
+* -- 527
+:= -- 1484
+add.period$ -- 28
+call.type$ -- 14
+change.case$ -- 27
+chr.to.int$ -- 32
+cite$ -- 14
+duplicate$ -- 628
+empty$ -- 650
+format.name$ -- 122
+if$ -- 1882
 int.to.chr$ -- 1
-int.to.str$ -- 10
-missing$ -- 66
-newline$ -- 51
-num.names$ -- 27
-pop$ -- 209
+int.to.str$ -- 15
+missing$ -- 101
+newline$ -- 68
+num.names$ -- 42
+pop$ -- 314
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 14
 quote$ -- 2
-skip$ -- 381
+skip$ -- 615
 stack$ -- 0
-substring$ -- 26
-swap$ -- 200
-text.length$ -- 0
+substring$ -- 83
+swap$ -- 331
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 136
+type$ -- 216
 warning$ -- 0
-while$ -- 18
+while$ -- 32
 width$ -- 0
-write$ -- 112
+write$ -- 166
