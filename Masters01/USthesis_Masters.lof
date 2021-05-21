@@ -7,7 +7,7 @@
 \babel@toc {english}{}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces DroneSAR Mobile Application Showing Coverage Plan\cite {DroneSAR01}}}{2}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces DroneSAR Mobile Application Showing Coverage Plan\cite {DroneSAR01}}}{2}{}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -16,4 +16,4 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters}}{13}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters}}{13}{}%
