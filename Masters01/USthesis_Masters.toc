@@ -20,26 +20,32 @@
 \contentsline {section}{\numberline {1.5}Methodology}{4}{}%
 \contentsline {section}{\numberline {1.6}Thesis Structure}{4}{}%
 \contentsline {chapter}{\chapternumberline {2}Literature Review}{5}{}%
-\contentsline {section}{\numberline {2.1}Single Robot Coverage Path Planning}{5}{}%
-\contentsline {subsection}{\numberline {2.1.1}A-Star}{5}{}%
-\contentsline {subsection}{\numberline {2.1.2}STC}{5}{}%
-\contentsline {section}{\numberline {2.2}Multi-Robot Coverage Path Planning}{5}{}%
-\contentsline {subsection}{\numberline {2.2.1}Divide Areas Algorithm}{5}{}%
-\contentsline {subsection}{\numberline {2.2.2}MSTC/MFC}{5}{}%
-\contentsline {chapter}{\chapternumberline {3}Divide Areas Algorithm}{6}{}%
-\contentsline {section}{\numberline {3.1}Background}{6}{}%
-\contentsline {chapter}{\chapternumberline {4}Verifying SatSim Results}{7}{}%
-\contentsline {section}{\numberline {4.1}Scope}{7}{}%
-\contentsline {chapter}{\chapternumberline {5}Hardware Selection}{8}{}%
-\contentsline {section}{\numberline {5.1}Scope}{8}{}%
-\contentsline {chapter}{\chapternumberline {6}Hardware Design with Software Implementation}{9}{}%
-\contentsline {section}{\numberline {6.1}Scope}{9}{}%
-\contentsline {chapter}{\chapternumberline {7}Hardware Verification and Comparison to SatSim}{10}{}%
-\contentsline {section}{\numberline {7.1}Scope}{10}{}%
-\contentsline {chapter}{\chapternumberline {8}Conclusions}{11}{}%
-\contentsline {section}{\numberline {8.1}Scope}{11}{}%
-\contentsline {chapter}{Appendices}{12}{}%
-\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{13}{}%
-\contentsline {section}{\numberline {A.1}Ball elements}{13}{}%
-\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{13}{}%
-\contentsline {chapter}{List of References}{14}{}%
+\contentsline {section}{\numberline {2.1}Motion Planning}{5}{}%
+\contentsline {section}{\numberline {2.2}Coverage Path Planning}{6}{}%
+\contentsline {section}{\numberline {2.3}Single Robot Coverage Path Planning}{6}{}%
+\contentsline {subsection}{\numberline {2.3.1}A-Star}{6}{}%
+\contentsline {subsection}{\numberline {2.3.2}STC}{6}{}%
+\contentsline {section}{\numberline {2.4}Multi-Robot Coverage Path Planning}{6}{}%
+\contentsline {subsection}{\numberline {2.4.1}Divide Areas Algorithm}{6}{}%
+\contentsline {subsection}{\numberline {2.4.2}MSTC/MFC}{6}{}%
+\contentsline {section}{\numberline {2.5}UAVs and Search and Rescue}{6}{}%
+\contentsline {subsection}{\numberline {2.5.1}Rotary-Wing UAVs}{6}{}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}DroneSAR}{6}{}%
+\contentsline {subsection}{\numberline {2.5.2}Fixed-Wing UAVs}{6}{}%
+\contentsline {chapter}{\chapternumberline {3}Divide Areas Algorithm}{7}{}%
+\contentsline {section}{\numberline {3.1}Background}{7}{}%
+\contentsline {chapter}{\chapternumberline {4}Verifying SatSim Results}{8}{}%
+\contentsline {section}{\numberline {4.1}Scope}{8}{}%
+\contentsline {chapter}{\chapternumberline {5}Hardware Selection}{9}{}%
+\contentsline {section}{\numberline {5.1}Scope}{9}{}%
+\contentsline {chapter}{\chapternumberline {6}Hardware Design with Software Implementation}{10}{}%
+\contentsline {section}{\numberline {6.1}Scope}{10}{}%
+\contentsline {chapter}{\chapternumberline {7}Hardware Verification and Comparison to SatSim}{11}{}%
+\contentsline {section}{\numberline {7.1}Scope}{11}{}%
+\contentsline {chapter}{\chapternumberline {8}Conclusions}{12}{}%
+\contentsline {section}{\numberline {8.1}Scope}{12}{}%
+\contentsline {chapter}{Appendices}{13}{}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{14}{}%
+\contentsline {section}{\numberline {A.1}Ball elements}{14}{}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{14}{}%
+\contentsline {chapter}{List of References}{15}{}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  21 MAY 2021 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  21 MAY 2021 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,13 +656,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 ]
 \openout2 = `contents/Chap-1.aux'.
 
- (./contents/Chap-1.tex
-Overfull \hbox (12.75812pt too wide) in paragraph at lines 18--19
-\T1/cmr/m/n/12 tries to de-ter-mine a path for an agent to pass over all points
- in an environment[[]].
- []
-
-[1
+ (./contents/Chap-1.tex [1
 
 
 
@@ -673,21 +667,20 @@ Overfull \hbox (12.75812pt too wide) in paragraph at lines 18--19
 File: figs/content_DroneSAR_screenshot_3.png Graphic file (type png)
 <use figs/content_DroneSAR_screenshot_3.png>
 Package pdftex.def Info: figs/content_DroneSAR_screenshot_3.png  used on input 
-line 28.
+line 26.
 (pdftex.def)             Requested size: 240.90186pt x 180.67639pt.
  [2 <./figs/content_DroneSAR_screenshot_3.png>]) [3] [4]
 \openout2 = `contents/Chap-2.aux'.
 
-
-(./contents/Chap-2.tex) [5
-
+ (./contents/Chap-2.tex) [5
 
 
 
-]
+
+] [6]
 \openout2 = `contents/Chap-3.aux'.
 
- (./contents/Chap-3.tex) [6
+ (./contents/Chap-3.tex) [7
 
 
 
@@ -695,7 +688,8 @@ line 28.
 ]
 \openout2 = `contents/Chap-4.aux'.
 
- (./contents/Chap-4.tex) [7
+
+(./contents/Chap-4.tex) [8
 
 
 
@@ -703,7 +697,7 @@ line 28.
 ]
 \openout2 = `contents/Chap-5.aux'.
 
- (./contents/Chap-5.tex) [8
+ (./contents/Chap-5.tex) [9
 
 
 
@@ -711,7 +705,7 @@ line 28.
 ]
 \openout2 = `contents/Chap-6.aux'.
 
- (./contents/Chap-6.tex) [9
+ (./contents/Chap-6.tex) [10
 
 
 
@@ -719,8 +713,7 @@ line 28.
 ]
 \openout2 = `contents/Chap-7.aux'.
 
-
-(./contents/Chap-7.tex) [10
+ (./contents/Chap-7.tex) [11
 
 
 
@@ -728,12 +721,12 @@ line 28.
 ]
 \openout2 = `contents/Chap-8.aux'.
 
- (./contents/Chap-8.tex) [11
+ (./contents/Chap-8.tex) [12
 
 
 
 
-] [12
+] [13
 
 
 
@@ -742,21 +735,21 @@ line 28.
 
 
 (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=100, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=103, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (pdftex.def)             Requested size: 237.88815pt x 172.64456pt.
-) [13
+) [14
 
 
  <./figs/DEM-Def-Ball.pdf>] (./USthesis_Masters.bbl
-[14
+[15
 
 
 
 
-]) [15]
+]) [16]
 \tf@toc=\write4
 \openout4 = `USthesis_Masters.toc'.
 
@@ -772,13 +765,13 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (./contents/Chap-6.aux) (./contents/Chap-7.aux) (./contents/Chap-8.aux)
 (./contents/App-1.aux)) ) 
 Here is how much of TeX's memory you used:
- 7481 strings out of 479303
- 102882 string characters out of 5871220
- 454450 words of memory out of 5000000
- 24478 multiletter control sequences out of 15000+600000
+ 7484 strings out of 479303
+ 102964 string characters out of 5871220
+ 454517 words of memory out of 5000000
+ 24481 multiletter control sequences out of 15000+600000
  428921 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,15n,91p,667b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,15n,91p,992b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/c
 m-super-t1.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts
 1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:
@@ -806,10 +799,10 @@ lic/cm-super/sfrm1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-sup
 er/sfsl1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl144
 0.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/
 texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (26 pages, 700266 bytes).
+Output written on USthesis_Masters.pdf (27 pages, 704983 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
+ 224 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
