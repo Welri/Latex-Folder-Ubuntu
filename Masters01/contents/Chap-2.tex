@@ -1,30 +1,37 @@
 \chapter{Literature Review}
 \label{chp:back}
-
+% Why use CPP for the SAR problem
 % Give some kind of intro to CPP and the different approaches - Surveys
 % zhang paper
 % What is motion planning - Lavalle
+% online vs offline etc.
 As mentioned in section \ref{sec:intro_bg}, coverage path planning is a subset of the general motion planning problem. Therefore, to understand CPP one must first understand motion planning. This chapter will therefore begin with a brief overview of motion planning before moving on to a more detailed review of CPP literature. Beyond that, it presents an overview of literature regarding UAVs and their applications in Search and Rescue.
+
 \section{Motion Planning}
 Perhaps one of the most notable items of literature presented on motion planning is \cite{Lavalle2006}. This book refers to planning algorithms as a strategy that is used by one or more decision makers to move from some starting state to some goal state. They often refer to the user of  the algorithm as a \emph{decision maker}. Another popular term, which is taken from the field of artificial intelligence is the term \emph{agent}, which will be the  term used throughout this text.
+
 \section{Coverage Path Planning}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mention which ones are grid-based etc. etc.
+
 \section{Single Robot Coverage Path Planning}
 \subsection{A-Star}
 \subsection{STC}
+
 \section{Multi-Robot Coverage Path Planning}
+In multi-robot scenarios, the most notable challenge that comes into play is collision avoidance. Robots need to cooperate for area coverage without colliding with each other and any obstacles in the environment.
 
-\subsection{Divide Areas Algorithm}
-% Describe wwhat DARP is
-% Explain why divide areas was used and specifically why DARP was chosen.
-% Make reference to single-robot CPP for individual area searching
-% Mention other forms of divide area algorithms?
-% Discuss the shortcomings of the DARP algorithm and how some people have addressed them. That one paper used a method where they exchange cells
-\subsection{MSTC/MFC}
-% MSTC and MFC
+Online planning has the advantage of detecting when collisions would happen in real time and then planning to avoid them. However, when using an offline approach, one must predict collisions pre-emptively. If there is then a prediction error, the result could be unfavourable. Therefore, an alternative, more optimum solution is suggested for offline problems. This is the divide areas approach, where an area gets divided between robots so that their paths would never cross.
+\subsection{Online Planning}
 
+\subsection{Offline Planning}
+% Are there other approaches? - that paper with the risk matrix?
+A well established offline coverage path planning approach involves the divide areas technique. This partitions an area in to regions for individual robots to cover. Each robot should then be able to cover it's area using one of the individual area coverage techiniques. This removes the need for collision avoidance, seen as the robot paths should never overlap. It is important in this kind of application that an individual robot starts its search path within the area that is allocated to it.
+% Optimum CPP according to DARP maybe 
+% Voronoi
+One solution using this approach makes use of the Voronoi partition.
+% MSTC - MFC - DARP 
 \section{UAVs and Search and Rescue}
 \subsection{Rotary-Wing UAVs}
 \subsubsection{DroneSAR}
