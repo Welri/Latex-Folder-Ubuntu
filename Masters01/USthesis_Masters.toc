@@ -19,12 +19,13 @@
 \contentsline {chapter}{\chapternumberline {2}Literature Review}{5}{}%
 \contentsline {section}{\numberline {2.1}Motion Planning}{5}{}%
 \contentsline {section}{\numberline {2.2}Coverage Path Planning}{5}{}%
-\contentsline {section}{\numberline {2.3}Single Robot Coverage Path Planning}{5}{}%
-\contentsline {subsection}{\numberline {2.3.1}A-Star}{5}{}%
-\contentsline {subsection}{\numberline {2.3.2}STC}{5}{}%
-\contentsline {section}{\numberline {2.4}Multi-Robot Coverage Path Planning}{5}{}%
-\contentsline {subsection}{\numberline {2.4.1}Online Planning}{6}{}%
-\contentsline {subsection}{\numberline {2.4.2}Offline Planning}{6}{}%
+\contentsline {section}{\numberline {2.3}Multi-Robot Coverage Path Planning}{6}{}%
+\contentsline {subsection}{\numberline {2.3.1}Online Planning}{6}{}%
+\contentsline {subsection}{\numberline {2.3.2}Distributed Offline Planning}{6}{}%
+\contentsline {subsection}{\numberline {2.3.3}Free Offline Planning}{6}{}%
+\contentsline {section}{\numberline {2.4}Single Robot Coverage Path Planning}{6}{}%
+\contentsline {subsection}{\numberline {2.4.1}A-Star}{6}{}%
+\contentsline {subsection}{\numberline {2.4.2}STC}{6}{}%
 \contentsline {section}{\numberline {2.5}UAVs and Search and Rescue}{6}{}%
 \contentsline {subsection}{\numberline {2.5.1}Rotary-Wing UAVs}{6}{}%
 \contentsline {subsubsection}{\numberline {2.5.1.1}DroneSAR}{6}{}%

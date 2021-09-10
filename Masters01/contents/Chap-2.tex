@@ -1,3 +1,4 @@
+% !TeX spellcheck = en_US
 \chapter{Literature Review}
 \label{chp:back}
 % Why use CPP for the SAR problem
@@ -10,28 +11,34 @@ As mentioned in section \ref{sec:intro_bg}, coverage path planning is a subset o
 \section{Motion Planning}
 Perhaps one of the most notable items of literature presented on motion planning is \cite{Lavalle2006}. This book refers to planning algorithms as a strategy that is used by one or more decision makers to move from some starting state to some goal state. They often refer to the user of  the algorithm as a \emph{decision maker}. Another popular term, which is taken from the field of artificial intelligence is the term \emph{agent}, which will be the  term used throughout this text.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Coverage Path Planning}
+Coverage path planning algorithms can usually be classified into online or offline. These classifications refer to the amount of information available about the environment that needs to be covered \cite{CPP-Survey-2019}. Online planning is a dynamic approach wherein information about the environment is gathered during deployment and is not known a priori. Online planning generally means that the environment is mapped out in full a priori. Robot trajectories for area coverage are planned prior to execution. Hybrid applications exist, wherein some information is known beforehand, but changes in the environment, for example moving obstacles or targets, can be collected and accounted for dynamically during execution \cite{Kamrani2014}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Mention which ones are grid-based etc. etc.
-
-\section{Single Robot Coverage Path Planning}
-\subsection{A-Star}
-\subsection{STC}
-
 \section{Multi-Robot Coverage Path Planning}
-In multi-robot scenarios, the most notable challenge that comes into play is collision avoidance. Robots need to cooperate for area coverage without colliding with each other and any obstacles in the environment.
-
-Online planning has the advantage of detecting when collisions would happen in real time and then planning to avoid them. However, when using an offline approach, one must predict collisions pre-emptively. If there is then a prediction error, the result could be unfavourable. Therefore, an alternative, more optimum solution is suggested for offline problems. This is the divide areas approach, where an area gets divided between robots so that their paths would never cross.
+%In multi-robot scenarios, the most notable challenge that comes into play is collision avoidance. Robots need to cooperate for area coverage without colliding with each other and any obstacles in the environment.
+%Online planning has the advantage of detecting when collisions would happen in real time and then planning to avoid them. However, when using an offline approach, one must predict collisions pre-emptively. If there is then a prediction error, the result could be unfavourable. Therefore, an alternative, more optimum solution is suggested for offline problems. This is the divide areas approach, where an area gets divided between robots so that their paths would never cross.
 \subsection{Online Planning}
 
-\subsection{Offline Planning}
+\subsection{Distributed Offline Planning}
 % Are there other approaches? - that paper with the risk matrix?
-A well established offline coverage path planning approach involves the divide areas technique. This partitions an area in to regions for individual robots to cover. Each robot should then be able to cover it's area using one of the individual area coverage techiniques. This removes the need for collision avoidance, seen as the robot paths should never overlap. It is important in this kind of application that an individual robot starts its search path within the area that is allocated to it.
-% Optimum CPP according to DARP maybe 
+A well established offline coverage path planning approach involves the divide areas technique. This partitions an area in to regions for individual robots to cover. Each robot should then be able to cover it's area using one of the individual area coverage techniques. This removes the need for collision avoidance, seen as the robot paths should never overlap. It is important in this kind of application that an individual robot starts its search path within the area that is allocated to it. \\
+
+% Hexagons
+% Polygons
 % Voronoi
 One solution using this approach makes use of the Voronoi partition.
 % MSTC - MFC - DARP 
+\subsection{Free Offline Planning}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Single Robot Coverage Path Planning}
+An early form of coverage path planning can be found in \cite{Choset2001}. This is known as exact cellular decomposition. This was originally used for single robot applications where an area is divided into polygons, called cells, which are then searched sequentially by a single robot using simple back and forth motions. This is known as an exact solution because the area is still treated as continuous space and is not discretised as with approximate methods. Therefore, it is possible to get complete coverage of an area. The boustrophedon and trapezoidal decompositions are well known exact cellular decomposition techniques.\\
+\subsection{A-Star}
+\subsection{STC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{UAVs and Search and Rescue}
 \subsection{Rotary-Wing UAVs}
 \subsubsection{DroneSAR}
