@@ -1,10 +1,16 @@
+\acswitchoff 
 \babel@toc {english}{}\relax 
 \babel@toc {afrikaans}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces DroneSAR Mobile Application Showing Coverage Plan\cite {DroneSAR01}}}{2}{}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces DroneSAR Mobile Application Showing Coverage Plan\cite {DroneSAR01}\relax }}{2}{}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Simulation showing coverage of hexagonal partitions with back and forth motions with three robots. \cite {Azpurua2018}\relax }}{8}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \relax }}{10}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces MSTC algorithm showing the paths for three robots on an environment grid. \cite {Hazon2005}\relax }}{12}{}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -12,5 +18,4 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters}}{15}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{21}{}%

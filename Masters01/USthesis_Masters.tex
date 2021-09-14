@@ -11,6 +11,11 @@
 % and how to set line and paragraph spacing
 %
 
+%==== MY PACKAGES ====================================================
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[upgrade=true]{acro}
+
 %==== Language setup ================================================
  \usepackage[latin1]{inputenc}%................... Recognizes ê, ë, etc
  \usepackage{babel}%.............................. Language setup
@@ -46,6 +51,8 @@
         \AddToShipoutPicture*{\AtTextCenter{%
                 \parbox[c]{0pt}{\makebox[0pt][c]{%
                     \includegraphics[width=#1]{#2}}}}}}
+
+
 
 %==== Local Defs ====================================================
 \makeatletter
@@ -127,9 +134,12 @@
  \clearpage
 
  \include{frontmatter/Nomencl}
-
+ 
+ \include{frontmatter/Acronyms}
+ 
 %==== Main document =================================================
 \mainmatter
+
    \setsecnumdepth{subsubsection}
 %   \numberwithin{equation}{section}
 %   \numberwithin{figure}{chapter}

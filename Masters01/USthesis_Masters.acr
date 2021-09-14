@@ -1,0 +1,4 @@
+\ACRO{total-barriers}{1}
+\ACRO{usage}{UAV=={6}||UGV=={1}||CPP=={5}||MCPP=={3}||SAR=={1}}
+\ACRO{pages}{UGV=={11@1@1}||SAR=={11@1@1}||CPP=={11@1@1|15@1@5}||MCPP=={15@1@5}||UAV=={11@1@1|16@1@6}}
+\ACRO{barriers}{}
