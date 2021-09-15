@@ -1,26 +1,28 @@
-\chapter{Verifying SatSim Results}
-\label{chp:verifySS}
-
+\chapter{Divide Areas Algorithm}
+\label{chp:DARP}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Scope}
+\section{Background}
+The research aim in section \ref{sec:intro_researchAim} refers to the development of a coverage path planning algorithm using multiple UAVs. Coverage path planning is often linked to applications such as surveying, mapping and searching, because it involves planning a UAVs path so as to cover all points in an environment. The idea is then that one could speed up the time taken to cover the environment mentioned by using several UAVs searching in tandem.
 
-In granular or particle flow simulations with Discrete Element Method (DEM),
-the mechanical behavior of a system of particles are simulated. The basic
-building blocks of DEM are finite sized particles and walls. It is generally
-classified into two basically different approaches.
+Before one can begin covering an area, the points within this area that must be searched require identifying. With coverage path planning, grid-based methods are quite popular because they make it easy to divide an area into searchable cells.
+% TODO: Include more justification on grid based
+Grid-based coverage path planning can be implemented using a number of different methods. 
 
-The first is the ``hard sphere'', event-driven method
-, where particles are assumed to be
-perfectly rigid and they follow an undisturbed motion until a collision
-occurs. Due to the rigidity of the interaction, the collisions occur
-instantaneously with accompanying momentum transfer. It is mainly used for
-collisional, dissipative granular gases.
+Naturally, achieving the most optimal solution possible would be most desireable. The authors of \cite{DARP2017} propose a set of requirements for optimal coverage path planning using a grid-based approach. These fundamental conditions, as they call them, are listed below.
 
-The second is the so-called ``soft particle'' molecular dynamics pioneered by
-%\citet{Cundall-1979}, where the particles are allowed to overlap or penetrate
-each other. Constrains on the physical space that a particle can occupy at a
-specific time is included with contact or penalty forces related to the
-amount of overlap and contact velocity between particles or between particles
-and walls. The motion of the system is modelled by the integration of
-Newton-Euler equations for motion of every individual particle.
+\begin{enumerate}
+	\item Every cell in the environment, that is not classified as an object, must be covered. This is known as complete coverage.
+	\item Each cell in the environment must only be searched once, and only by one of the robots. This is known as the non-backtracking requirement.
+	\item Each robot should have as close to an equal amount of cells as possible assigned to it for searching. Their sets of cells should be of roughly the same size.
+	\item The sets of cells assigned to each robot should be a connected sub-region. This means that when generating a path to search the cells within its set, a robot would not need to traverse that of another to search it's own sub-region.
+	\item The initial position of each robot should be contained within the set of cells assigned to it. This means that a robot would not need to travel to reach its sub-region for searching.
+\end{enumerate}
+% TODO: Maybe mention something about the EXISTENCE of solutions
+% Coverage
+% Grid Based
+% Optimize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Implementation}
+\subsection{Comparison of Distance Measures}
