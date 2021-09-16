@@ -13,6 +13,7 @@ A level-1 auxiliary file: contents/Chap-5.aux
 A level-1 auxiliary file: contents/Chap-6.aux
 A level-1 auxiliary file: contents/Chap-7.aux
 A level-1 auxiliary file: contents/Chap-8.aux
+A level-1 auxiliary file: contents/Chap-9.aux
 A level-1 auxiliary file: contents/App-1.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,6 +21,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: backmatter/USbib-sample.bib
+I was expecting a `,' or a `}'---line 773 of file backmatter/USbib-sample.bib
+ :  
+ :  author = {{Propeller Aero}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -27,46 +33,48 @@ Database file #1: backmatter/USbib-sample.bib
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--all relevant fields are empty in PropellerAero2021
 
 Done.
-You've used 27 entries,
+You've used 28 entries,
             4855 wiz_defined-function locations,
-            1124 strings with 13627 characters,
-and the built_in function-call counts, 20403 in all, are:
-= -- 1832
+            1127 strings with 13680 characters,
+and the built_in function-call counts, 20701 in all, are:
+= -- 1853
 > -- 664
 < -- 111
-+ -- 318
++ -- 320
 - -- 156
-* -- 1183
-:= -- 3262
+* -- 1193
+:= -- 3292
 add.period$ -- 54
-call.type$ -- 27
-change.case$ -- 52
-chr.to.int$ -- 249
-cite$ -- 28
-duplicate$ -- 1392
-empty$ -- 1437
+call.type$ -- 28
+change.case$ -- 53
+chr.to.int$ -- 250
+cite$ -- 31
+duplicate$ -- 1421
+empty$ -- 1474
 format.name$ -- 222
-if$ -- 4507
+if$ -- 4576
 int.to.chr$ -- 1
-int.to.str$ -- 28
-missing$ -- 212
-newline$ -- 113
+int.to.str$ -- 29
+missing$ -- 218
+newline$ -- 116
 num.names$ -- 78
-pop$ -- 579
+pop$ -- 604
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 28
 quote$ -- 2
-skip$ -- 1485
+skip$ -- 1510
 stack$ -- 0
-substring$ -- 598
-swap$ -- 927
+substring$ -- 601
+swap$ -- 935
 text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 415
-warning$ -- 0
+type$ -- 430
+warning$ -- 1
 while$ -- 88
 width$ -- 0
-write$ -- 325
+write$ -- 331
+(There was 1 error message)

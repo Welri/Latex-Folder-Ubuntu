@@ -12,6 +12,7 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces \relax }}{10}{}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces MSTC algorithm showing the paths for three robots on an environment grid. \cite {Hazon2005}\relax }}{12}{}%
 \addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram showing relevant variables concerned with calculating the Field of View for a camera.\relax }}{15}{}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -19,4 +20,4 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{22}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{24}{}%
