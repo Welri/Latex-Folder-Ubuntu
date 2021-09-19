@@ -21,11 +21,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: backmatter/USbib-sample.bib
-I was expecting a `,' or a `}'---line 773 of file backmatter/USbib-sample.bib
- :  
- :  author = {{Propeller Aero}},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 -- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -33,48 +28,48 @@ I'm skipping whatever remains of this entry
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--all relevant fields are empty in PropellerAero2021
+Warning--empty journal in Jurgens1998
 
 Done.
-You've used 28 entries,
+You've used 30 entries,
             4855 wiz_defined-function locations,
-            1127 strings with 13680 characters,
-and the built_in function-call counts, 20701 in all, are:
-= -- 1853
-> -- 664
-< -- 111
-+ -- 320
-- -- 156
-* -- 1193
-:= -- 3292
-add.period$ -- 54
-call.type$ -- 28
-change.case$ -- 53
-chr.to.int$ -- 250
-cite$ -- 31
-duplicate$ -- 1421
-empty$ -- 1474
-format.name$ -- 222
-if$ -- 4576
+            1146 strings with 14237 characters,
+and the built_in function-call counts, 22525 in all, are:
+= -- 2031
+> -- 718
+< -- 124
++ -- 343
+- -- 168
+* -- 1296
+:= -- 3607
+add.period$ -- 60
+call.type$ -- 30
+change.case$ -- 58
+chr.to.int$ -- 276
+cite$ -- 32
+duplicate$ -- 1538
+empty$ -- 1587
+format.name$ -- 241
+if$ -- 4975
 int.to.chr$ -- 1
-int.to.str$ -- 29
-missing$ -- 218
-newline$ -- 116
-num.names$ -- 78
-pop$ -- 604
+int.to.str$ -- 31
+missing$ -- 235
+newline$ -- 124
+num.names$ -- 87
+pop$ -- 647
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 30
 quote$ -- 2
-skip$ -- 1510
+skip$ -- 1641
 stack$ -- 0
-substring$ -- 601
-swap$ -- 935
-text.length$ -- 24
+substring$ -- 663
+swap$ -- 1022
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 430
+type$ -- 462
 warning$ -- 1
-while$ -- 88
+while$ -- 102
 width$ -- 0
-write$ -- 331
-(There was 1 error message)
+write$ -- 359
+(There was 1 warning)
