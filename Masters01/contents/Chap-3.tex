@@ -14,8 +14,8 @@ In the context of \acs{sar}, complete coverage is very important. It will ensure
 % TODO: Mention reasons for choosing discrete - wavefront planner paper pg 674 "An exact cell decomposition is ineffiecient because we are interested in acquiring an equally sized set of images"
 Discretising the environment can be done in a few different ways. Assuming a generic \acs{uav} with some thermal or visual camera on-board, one has a few options. One can discretise the area based on the \acs{uav} size, but a more common practice is to base it off the tool size. In this case, that would be the \acf{fov} of the on-board camera. This also makes the process of complete coverage easier, because if the camera is guaranteed to see the entirety of each discrete cell, it is a complete algorithm so long as each cell is visited.\\
 Therefore, to discretise the environment, the \acl{fov} needs to be calculated. The camera specifications and \acs{uav} altitude will be the determining factors to calculate the \acs{fov}. The type of camera and the flight altitude are design decisions and will depend on the \acs{gsd} necessary to realistically be able to locate the target in a \acl{sar} operation.\\
-The diagram in figure \ref{fig:FOV} shows all the relevant variables needed to calculate the \acl{fov} along one dimension ($FOV_x$). A similar diagram can be used to calculate the \acl{fov} along the other dimension ($FOV_y$). The only difference would be the sensor size variable, which changes from the sensor width ($w_{len}$) to the sensor height ($h_{len}$). The other variables include the focal length of the camera ($f$), the height of the lens above ground ($H$) and the camera's angle of view ($AOV$). Lastly, there is the variable $\phi$ which is an angle created due to the sensor being slightly smaller than the diameter of the cone of light projected onto it.\\
-The resulting \acl{fov} will be a rectangle of the same aspect ratio of the camera sensor, provided the camera is pointing directly down and the ground is level. For this application, it is assumed the camera is always pointing downwards. This can be accomplished when the \acs{uav} banks by placing the camera on a gimble. The assumption that the ground is level is not entirely reasonable, for example, in a mountainous region. This can be addressed by adding overlap between images to add some redundant coverage, which will be added in section \ref{chp:refuelling}. Doing a topographical inspection is beyond the scope of this project and will not be addressed in more detail.\\
+The diagram in Figure \ref{fig:FOV} shows all the relevant variables needed to calculate the \acl{fov} along one dimension ($FOV_x$). A similar diagram can be used to calculate the \acl{fov} along the other dimension ($FOV_y$). The only difference would be the sensor size variable, which changes from the sensor width ($w_{len}$) to the sensor height ($h_{len}$). The other variables include the focal length of the camera ($f$), the height of the lens above ground ($H$) and the camera's angle of view ($AOV$). Lastly, there is the variable $\phi$ which is an angle created due to the sensor being slightly smaller than the diameter of the cone of light projected onto it.\\
+The resulting \acl{fov} will be a rectangle of the same aspect ratio of the camera sensor, provided the camera is pointing directly down and the ground is level. For this application, it is assumed the camera is always pointing downwards. This can be accomplished when the \acs{uav} banks by placing the camera on a gimble. The assumption that the ground is level is not entirely reasonable, for example, in a mountainous region. This can be addressed by adding overlap between images to add some redundant coverage, which will be added in Chapter \ref{chp:refuelling}. Doing a topographical inspection is beyond the scope of this project and will not be addressed in more detail.\\
 % TODO: Check this reference and decide whether to include last sentence
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt          
 \begin{figure}[h!]
@@ -165,7 +165,7 @@ Both $FOV_x$ and $FOV_y$ will have the same units as $H$, which is metres. The r
 
 \section{Environment Discretisation}
 If the size of the environment discretisation is set equal to the rectangular camera field of view, and the type of camera used is known, then a desired $GSD$ can be used to decide on an appropriate flying height. Choosing a $GSD$ would depend on the application, seen as it represents the level of detail that can potentially be detected in an image.\\
-Taking the conservative approach, the assumption is that one is looking for a human being standing upright, viewed from above. To get a good estimate of the space occupied by a human in this orientation, one needs anthropometric data. A survey was done in Europe for people between the ages of 18 and 60 \cite{Jurgens1998}. Among other measurements, they measured chest depth ($w$) and elbow-to-elbow length ($l$). These dimensions represent those of an upright human from above and can be seen in figure \ref{fig:GSD}.\\ 
+Taking the conservative approach, the assumption is that one is looking for a human being standing upright, viewed from above. To get a good estimate of the space occupied by a human in this orientation, one needs anthropometric data. A survey was done in Europe for people between the ages of 18 and 60 \cite{Jurgens1998}. Among other measurements, they measured chest depth ($w$) and elbow-to-elbow length ($l$). These dimensions represent those of an upright human from above and can be seen in Figure \ref{fig:GSD}.\\ 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 \begin{figure}
 	\centering
@@ -227,17 +227,26 @@ To show how the \acs{gsd} requirement can be used, a series of cameras are chose
 		H_{max} &= \frac{GSD_{max} \times f \times px_w}{100w_{len}}
 	\end{aligned}
 \end{equation}
-It is desirable to fly as high as possible, because this decreases the coverage time by increasing the camera \acl{fov}. Therefore, the assumption is that the height chosen would be the maximum, provided this is within the capabilities of the \acs{uav}. Using equations \ref{eqn:fov_x} and \ref{eqn:fov_y}, one can then calculate the camera \acs{fov} at the height chosen.\\
+It is desirable to fly as high as possible, because this decreases the coverage time by increasing the camera \acl{fov}. Therefore, the assumption is that the height chosen would be the maximum, provided this is within the capabilities of the \acs{uav}. Using Equations \ref{eqn:fov_x} and \ref{eqn:fov_y}, one can then calculate the camera \acs{fov} at the height chosen.\\
 % discretisation - square vs rectangular
-One can now discretise the environment based on this field of view. One option is to do a square discretisation. One would make the squares have sides equal to the smaller \acs{fov} dimension, which is $FOV_y$. An example of this discretisation can be seen in figure \ref{fig:Overlap-sqr}. This technique will always have cross-track overlap. This means that there will be a percentage of redundant coverage. If a camera has a square \acs{fov} then the overlap goes away, but this is uncommon. They tend to have a 4:3 or 3:2 aspect ratio.
-
-Figure \ref{fig:Overlap-rect} shows an alternative technique where the environment is divided into rectangles. With this there is no overlap when moving in the $y$ direction, but there is when moving in the $x$ direction. An environment would be covered faster with this version provided it favours the $y$ direction during flight, but no overlap in the $y$ direction is risky.
-% TODO: why would the rectangular be desireable
-% TODO: make equation for aspect ratio to simplify equations maybe
-% TODO: cross track overlap equation
-% TODO: Should references to Figure, Section, Table and Equation etc. be capitalised?
-
-\begin{figure}[h!]
+One can now discretise the environment based on this field of view. One option is to do a square discretisation. One would make the squares have sides equal to the smaller \acs{fov} dimension, which is $FOV_y$. An example of this discretisation can be seen in Figure \ref{fig:Overlap-sqr}. This technique will always have cross-track overlap. This means that there will be a percentage of redundant coverage. If a camera has a square \acs{fov} then the overlap goes away, but this is uncommon. They tend to have a 4:3 or 3:2 aspect ratio. There is the option of making the squares have side lengths equal to $FOV_x$, but then complete coverage would not be achievable by simply following the square centroids. This adds a layer of complexity unnecessarily. Setting the square side length equal to $l$, one can calculate the cross-track overlap using the following equation:
+\begin{equation}
+	\label{eqn:overlap_sqr}
+	\begin{aligned}
+		Provided&,& ~~l &\leq FOV_y& \\
+		Then&,& ~~\%Overlap &= \frac{l(FOV_x - l)}{l^2} \times 100&
+	\end{aligned}
+\end{equation}
+Figure \ref{fig:Overlap-rect} shows an alternative technique where the environment is divided into rectangles. With this there is no overlap when moving in the $y$ direction, but there is when moving in the $x$ direction. An environment would be covered faster with this technique provided the $y$ direction is favoured during flight, but no overlap in the $y$ direction is risky. In this scenario, the cross-track overlap over the span of one rectangle when moving in the $y$ direction is zero and for the $x$ direction it can be calculated as follows:
+\begin{equation}
+	\label{eqn:overlap_rect}
+	\begin{aligned}
+		\%Overlap &= \frac{FOV_x(FOV_x-FOV_y)}{FOV_x-FOV_y} \times 100&
+	\end{aligned}
+\end{equation}
+Both techniques assume sharp 90 degree turns are possible. Some \acsp{uav} can make sharp turns, such as multi-rotors, but this often requires deceleration to a hover, which significantly slows coverage time by lowering the average velocity during coverage. Chapter \ref{chp:Dynamic} covers a proposed solution for a constant speed scenario. This is considerably more favourable in a scenario where a fixed-wing \acs{uav} is used instead of a multi-rotor. Fixed-wing craft are desirable for \acs{sar} due to there high endurance. They can generally cover larger areas before needing to refuel.\\
+% TODO: check if you used chapter in all chapter references.
+\begin{figure}[]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\centering
@@ -461,6 +470,7 @@ Figure \ref{fig:Overlap-rect} shows an alternative technique where the environme
 	\caption{Diagrams showing cross track overlap for camera Field of View for different discretisation techniques.}
 \end{figure}
 
+% TODO: Section where it is applied to different camera scenarios
 
 % mention how dynamic constraints change everything - with this discretisation the asumption is that UAV can make 90 degree turns. This may be possible for some UAVs, but not while maintaining a constant velocity. Maintaining constant is more desireable because it consumes les energy.
 
