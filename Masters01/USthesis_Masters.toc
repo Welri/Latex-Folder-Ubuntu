@@ -32,30 +32,31 @@
 \contentsline {subsection}{\numberline {2.4.1}Hexagonal Segmentation}{8}{}%
 \contentsline {subsection}{\numberline {2.4.2}Voronoi Partitioning}{9}{}%
 \contentsline {subsection}{\numberline {2.4.3}Negotiation Protocol}{10}{}%
-\contentsline {subsection}{\numberline {2.4.4}MSTC and MFC}{11}{}%
+\contentsline {subsection}{\numberline {2.4.4}MSTC}{11}{}%
 \contentsline {subsection}{\numberline {2.4.5}DARP}{12}{}%
 \contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{12}{}%
-\contentsline {subsection}{\numberline {2.5.1}Sampling-Based}{12}{}%
-\contentsline {subsection}{\numberline {2.5.2}Artificial-Intelligence-Based}{12}{}%
-\contentsline {section}{\numberline {2.6}Online MCPP}{12}{}%
-\contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{12}{}%
-\contentsline {chapter}{\chapternumberline {3}Environment Representation}{13}{}%
-\contentsline {section}{\numberline {3.1}Background}{13}{}%
-\contentsline {section}{\numberline {3.2}Environment Discretisation}{15}{}%
-\contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{18}{}%
-\contentsline {section}{\numberline {4.1}Background}{18}{}%
-\contentsline {section}{\numberline {4.2}Implementation}{19}{}%
-\contentsline {subsection}{\numberline {4.2.1}Comparison of Distance Measures}{19}{}%
-\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{20}{}%
-\contentsline {section}{\numberline {5.1}Background}{20}{}%
-\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{21}{}%
-\contentsline {section}{\numberline {6.1}Background}{21}{}%
-\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{22}{}%
-\contentsline {section}{\numberline {7.1}Background}{22}{}%
-\contentsline {chapter}{\chapternumberline {8}Results}{23}{}%
-\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{24}{}%
-\contentsline {chapter}{Appendices}{25}{}%
-\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{26}{}%
-\contentsline {section}{\numberline {A.1}Ball elements}{26}{}%
-\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{26}{}%
-\contentsline {chapter}{List of References}{27}{}%
+\contentsline {subsection}{\numberline {2.5.1}MFC}{12}{}%
+\contentsline {subsection}{\numberline {2.5.2}Sampling-Based}{13}{}%
+\contentsline {subsection}{\numberline {2.5.3}Artificial-Intelligence-Based}{13}{}%
+\contentsline {section}{\numberline {2.6}Online MCPP}{13}{}%
+\contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{13}{}%
+\contentsline {chapter}{\chapternumberline {3}Environment Representation}{14}{}%
+\contentsline {section}{\numberline {3.1}Background}{14}{}%
+\contentsline {section}{\numberline {3.2}Environment Discretisation}{16}{}%
+\contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{19}{}%
+\contentsline {section}{\numberline {4.1}Background}{19}{}%
+\contentsline {section}{\numberline {4.2}Implementation}{20}{}%
+\contentsline {subsection}{\numberline {4.2.1}Comparison of Distance Measures}{20}{}%
+\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{22}{}%
+\contentsline {section}{\numberline {5.1}Background}{22}{}%
+\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{23}{}%
+\contentsline {section}{\numberline {6.1}Background}{23}{}%
+\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{24}{}%
+\contentsline {section}{\numberline {7.1}Background}{24}{}%
+\contentsline {chapter}{\chapternumberline {8}Results}{25}{}%
+\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{26}{}%
+\contentsline {chapter}{Appendices}{27}{}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{28}{}%
+\contentsline {section}{\numberline {A.1}Ball elements}{28}{}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{28}{}%
+\contentsline {chapter}{List of References}{29}{}%
