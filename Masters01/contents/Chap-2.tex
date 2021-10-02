@@ -86,6 +86,7 @@ An early form of coverage path planning can be found in \cite{Choset2001}. This 
 A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:lit SR CPP}.
 %TODO: Distributed vs Non-distributed - give the definition for the purpose of this paper
 \subsection{Hexagonal Segmentation}
+\label{subsec:Hex}
 A notable distributed approach uses regular hexagons to segment the area of interest \cite{Azpurua2018}. This implementation is reminiscent of the exact methods often used for single robot coverage path planning mentioned in Section \ref{sec:lit SR CPP - Exact}. Exact methods generally divide an area into arbitrarily sized polygons called cells. The robot moves between these cells and covers them using simple motions. In the multi-robot scenario, the area is still divided into cells, but they need to be distributed between the robots evenly for searching. The ideal situation is to assign equal sized areas to each robot so that their path lengths are similar and they can complete their paths at roughly the same time.\\
 Hexagonal cells make it easier to assign cells to robots, seen as they are all of the same size. Hexagons are clustered using the K-means algorithm to ensure a similar number of cells are assigned to each robot. The seeds are synonymous with the robots, therefore once the seed locations are finalized for even cell distribution, the robot initial positions are established. The robots cannot start from any random location, which can be undesirable. \\
 The hexagons that are assigned to a given robot are contiguous and form a sub-region that is then covered using simple manoeuvres. Back and forth motions are generally quite popular. Static obstacles are considered in this implementation, but the smallest obstacle resolution is the size of a hexagon which may not be very representative of the environment. Figure \ref{fig:Hex}, taken directly from their paper, illustrates the back and forth manoeuvres used to cover the hexagonal partitions. Black hexagons represent no-fly zones and/or static obstacles. The dark red, green and blue regions represent the sub-regions as they are assigned to the respective robots for coverage.\\
@@ -96,6 +97,7 @@ The hexagons that are assigned to a given robot are contiguous and form a sub-re
 	\label{fig:Hex}
 \end{figure}
 \subsection{Voronoi Partitioning}
+\label{subsec:Voronoi}
 % Polygons
 In the mathematics field, there are methods of area division to divide a polygon into a number of equal area polygons \cite{Nandakumar2012}. Another relevant method that also stems from the field of mathematics, is the Voronoi partition. This assigns regions within an area to seeds based on distance. The idea is that a region assigned to a seed represents all the points where the distance to that seed is shorter than to any other seed.\\
 % Voronoi
@@ -125,6 +127,7 @@ Figure \ref{fig:Voronoi - Euclid} shows the results using Euclidean distances. H
 \label{fig:Voronoi}
 \end{figure}
 \subsection{Negotiation Protocol}
+\label{subsec:Negotiation}
 A negotiation or bargaining protocol refers to a process involving task partitioning. In the context of area division for \acs{cpp}, the task represents the area to be divided \cite{Rossi2009}. The authors of \cite{Rossi2009} present a negotiation model based on Rubinstein's alternate-offers protocol, for the purpose of area division. The focus of their implementation was to develop a distributed algorithm capable of considering robot capabilities. This means that the robots wouldn't have to be homogeneous and can have different flight-time capabilities, manoeuvrability, on-board equipment and so forth \cite{Barrientos2011}.\\ 
 They implemented their algorithm and found that it can achieve near optimum results. It tries to maximise the size of each robot's subdivision of the area (based on its capabilities), while also minimising sub-area overlap. The algorithm also works to avoid static obstacles or no fly zones that are present in the area. Moreover, they proved that it could be applied in a situation where re-planning may be necessary.\\
 % Re-planning is necessary in a scenario when carrying out the plan changes the environment, thereby requireing replanning wiht the new environment scenario
@@ -152,6 +155,7 @@ The ideal situation is that all the robots have near equal path lengths, provide
 \end{figure}
 
 \subsection{DARP}
+\label{subsec:lit DARP}
 \section{Non-Distributed Offline MCPP}
 \label{sec:lit Non-Distributed MCPP}
 \subsection{MFC}

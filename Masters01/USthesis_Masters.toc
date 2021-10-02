@@ -1,10 +1,10 @@
 \acswitchoff 
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {chapter}{Declaration}{i}{}%
 \contentsline {chapter}{Abstract}{ii}{}%
-\babel@toc {afrikaans}{}\relax 
+\babel@toc {afrikaans}{}
 \contentsline {chapter}{Uittreksel}{iii}{}%
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {chapter}{Acknowledgements}{iv}{}%
 \contentsline {chapter}{Contents}{v}{}%
 \contentsline {chapter}{List of Figures}{vii}{}%
@@ -50,7 +50,7 @@
 \contentsline {section}{\numberline {4.1}Background Theory}{21}{}%
 \contentsline {subsection}{\numberline {4.1.1}Algorithm Description}{22}{}%
 \contentsline {section}{\numberline {4.2}Distance Measure Comparisons}{22}{}%
-\contentsline {section}{\numberline {4.3}Implementation with Different Environments}{22}{}%
+\contentsline {section}{\numberline {4.3}Implementation with Different Scenarios}{22}{}%
 \contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{24}{}%
 \contentsline {section}{\numberline {5.1}Background}{24}{}%
 \contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{25}{}%
