@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.11)  23 SEP 2021 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.11)  1 OCT 2021 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,20 +1025,20 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (./USthesis_Masters.acr))
 \openout1 = `USthesis_Masters.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \l__acro_aux_file_iow=\write5
@@ -1051,9 +1051,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 115.
+or `english'. on input line 116.
 Package translations Info: no dictionary file `translations-basic-dictionary-af
-rikaans.trsl' found. on input line 115.
+rikaans.trsl' found. on input line 116.
  (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count372
@@ -1097,12 +1097,12 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 115.
+ on input line 116.
 
 <UScrest-WM.jpg, id=4, 49.8663pt x 69.3792pt>
 File: UScrest-WM.jpg Graphic file (type jpg)
 <use UScrest-WM.jpg>
-Package pdftex.def Info: UScrest-WM.jpg  used on input line 120.
+Package pdftex.def Info: UScrest-WM.jpg  used on input line 121.
 (pdftex.def)             Requested size: 89.70789pt x 124.82738pt.
 [1
 
@@ -1160,13 +1160,14 @@ Overfull \hbox (0.16243pt too wide) detected at line 11
 \g__acro_mstc_int=\count388
 \g__acro_mfc_int=\count389
 \g__acro_darp_int=\count390
+\g__acro_slam_int=\count391
 
 
 Package acro Warning: The template `Acronyms' (template type `heading') on
-(acro)                line 17 does not seem to be defined.
+(acro)                line 33 does not seem to be defined.
 
 
-Overfull \hbox (2.71872pt too wide) in paragraph at lines 17--17
+Overfull \hbox (2.71872pt too wide) in paragraph at lines 33--33
 []\T1/cmr/m/n/12 Divide Ar-eas Al-go-rithm for Op-ti-mal Multi-Robot Cov-er-age
  Path Plan-
  []
@@ -1190,7 +1191,7 @@ Overfull \hbox (2.71872pt too wide) in paragraph at lines 17--17
 File: figs/content_DroneSAR_screenshot_3.png Graphic file (type png)
 <use figs/content_DroneSAR_screenshot_3.png>
 Package pdftex.def Info: figs/content_DroneSAR_screenshot_3.png  used on input 
-line 27.
+line 28.
 (pdftex.def)             Requested size: 240.90186pt x 180.67639pt.
  [2 <./figs/content_DroneSAR_screenshot_3.png>]) [3] [4]
 \openout2 = `contents/Chap-2.aux'.
@@ -1201,80 +1202,83 @@ line 27.
 
 
 ] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Overfull \hbox (5.38336pt too wide) in paragraph at lines 47--48
+\T1/cmr/m/n/12 at three type of cel-lu-lar de-com-po-si-tions, namely ap-prox-i
+-mate, semi-approximate
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<figs/Hexagonal_Partitioning_Graphic.png, id=82, 416.30531pt x 377.91188pt>
+[8]
+<figs/Hexagonal_Partitioning_Graphic.png, id=89, 416.30531pt x 377.91188pt>
 File: figs/Hexagonal_Partitioning_Graphic.png Graphic file (type png)
 <use figs/Hexagonal_Partitioning_Graphic.png>
 Package pdftex.def Info: figs/Hexagonal_Partitioning_Graphic.png  used on input
- line 65.
+ line 94.
 (pdftex.def)             Requested size: 166.51917pt x 151.16206pt.
-[7]
-<figs/GM_VPC_Euclid.png, id=87, 380.92313pt x 301.125pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/GM_VPC_Euclid.png, id=91, 380.92313pt x 301.125pt>
 File: figs/GM_VPC_Euclid.png Graphic file (type png)
 <use figs/GM_VPC_Euclid.png>
-Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 84.
+Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 113.
 (pdftex.def)             Requested size: 152.36655pt x 120.44786pt.
-<figs/GM_VPC.png, id=88, 377.15906pt x 301.125pt>
+<figs/GM_VPC.png, id=92, 377.15906pt x 301.125pt>
 File: figs/GM_VPC.png Graphic file (type png)
 <use figs/GM_VPC.png>
-Package pdftex.def Info: figs/GM_VPC.png  used on input line 91.
+Package pdftex.def Info: figs/GM_VPC.png  used on input line 120.
 (pdftex.def)             Requested size: 150.86095pt x 120.44786pt.
 
-Overfull \hbox (8.74237pt too wide) in paragraph at lines 71--98
+Overfull \hbox (8.74237pt too wide) in paragraph at lines 100--127
 \T1/cmr/m/n/12 The Euclidean-based tech-nique re-sults in what the au-thors ter
 m "non-contiguous
  []
 
-[8 <./figs/Hexagonal_Partitioning_Graphic.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/Negotiation_Protocol.png, id=94, 485.56406pt x 503.63156pt>
+[9] [10 <./figs/Hexagonal_Partitioning_Graphic.png>]
+<figs/Negotiation_Protocol.png, id=100, 485.56406pt x 503.63156pt>
 File: figs/Negotiation_Protocol.png Graphic file (type png)
 <use figs/Negotiation_Protocol.png>
-Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 108.
+Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 137.
 
 (pdftex.def)             Requested size: 169.94997pt x 176.27368pt.
-[9] [10 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
-<figs/MSTC-Graphic.png, id=103, 479.54156pt x 474.27188pt>
+ [11 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
+<figs/MSTC-Graphic.png, id=106, 479.54156pt x 474.27188pt>
 File: figs/MSTC-Graphic.png Graphic file (type png)
 <use figs/MSTC-Graphic.png>
-Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 120.
+Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 149.
 (pdftex.def)             Requested size: 191.81322pt x 189.70538pt.
- [11 <./figs/Negotiation_Protocol.png>] [12 <./figs/MSTC-Graphic.png>]) [13]
+ [12 <./figs/Negotiation_Protocol.png>] [13 <./figs/MSTC-Graphic.png>]) [14]
 \openout2 = `contents/Chap-3.aux'.
 
  (./contents/Chap-3.tex
-Overfull \hbox (17.85251pt too wide) in paragraph at lines 129--130
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
+
  []
 
-[14
+[15
 
 
 
 
 ]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15] [16] [17]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 247.
-
-
-Overfull \hbox (13.7187pt too wide) in paragraph at lines 464--465
+Overfull \hbox (17.85251pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
-) [18]
+[16] [17] [18]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 252.
+
+[19]) [20]
 \openout2 = `contents/Chap-4.aux'.
 
- (./contents/Chap-4.tex [19
+ (./contents/Chap-4.tex [21
 
 
 
@@ -1283,26 +1287,26 @@ Overfull \hbox (13.7187pt too wide) in paragraph at lines 464--465
 
 pdfTeX warning: pdflatex.exe (file ./figs/DARP_Diagram3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figs/DARP_Diagram3.pdf, id=137, 597.55246pt x 845.07724pt>
+<figs/DARP_Diagram3.pdf, id=144, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
-Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 28.
+Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 23.
 (pdftex.def)             Requested size: 409.75594pt x 676.06271pt.
 
-Overfull \hbox (11.75594pt too wide) in paragraph at lines 28--29
+Overfull \hbox (11.75594pt too wide) in paragraph at lines 23--24
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 61.4127pt on input line 31.
+LaTeX Warning: Float too large for page by 61.4127pt on input line 26.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [20] [21 <./figs/DARP_Diagram3.pdf>]
+) [22] [23 <./figs/DARP_Diagram3.pdf>]
 \openout2 = `contents/Chap-5.aux'.
 
- (./contents/Chap-5.tex) [22
+ (./contents/Chap-5.tex) [24
 
 
 
@@ -1311,7 +1315,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `contents/Chap-6.aux'.
 
 
-(./contents/Chap-6.tex) [23
+(./contents/Chap-6.tex) [25
 
 
 
@@ -1319,7 +1323,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `contents/Chap-7.aux'.
 
- (./contents/Chap-7.tex) [24
+ (./contents/Chap-7.tex) [26
 
 
 
@@ -1328,7 +1332,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `contents/Chap-8.aux'.
 
 
-(./contents/Chap-8.tex) [25
+(./contents/Chap-8.tex) [27
 
 
 
@@ -1336,12 +1340,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `contents/Chap-9.aux'.
 
- (./contents/Chap-9.tex) [26
+ (./contents/Chap-9.tex) [28
 
 
 
 
-] [27
+] [29
 
 
 
@@ -1350,21 +1354,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=175, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=181, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (pdftex.def)             Requested size: 237.88815pt x 172.64456pt.
-) [28
+) [30
 
 
  <./figs/DEM-Def-Ball.pdf>] (./USthesis_Masters.bbl
-[29
+[31
 
 
 
 
-] [30]) [31]
+] [32]) [33]
 \tf@toc=\write6
 \openout6 = `USthesis_Masters.toc'.
 
@@ -1381,13 +1385,13 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (./contents/Chap-8.aux) (./contents/Chap-9.aux) (./contents/App-1.aux)
 (./USthesis_Masters.acr)) ) 
 Here is how much of TeX's memory you used:
- 35261 strings out of 478542
- 865267 string characters out of 5854402
- 1263042 words of memory out of 5000000
- 52575 multiletter control sequences out of 15000+600000
- 429969 words of font info for 86 fonts, out of 8000000 for 9000
+ 35364 strings out of 478542
+ 869486 string characters out of 5854402
+ 1269454 words of memory out of 5000000
+ 52678 multiletter control sequences out of 15000+600000
+ 429971 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,15n,108p,1024b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,15n,108p,1024b,857s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super
 /cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
 ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1415,10 +1419,10 @@ lic/cm-super/sfrm1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
 er/sfsl1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsl144
 0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/
 texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (42 pages, 3070196 bytes).
+Output written on USthesis_Masters.pdf (44 pages, 3076271 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
+ 331 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  64 words of extra memory for PDF output out of 10000 (max. 10000000)
 

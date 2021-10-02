@@ -151,9 +151,13 @@ H.~Zhang, B.~Xin, L.~hua Dou, J.~Chen, and K.~Hirota, ``{A review of
   \emph{Frontiers of Information Technology and Electronic Engineering},
   vol.~21, no.~12, pp. 1671--1694, 2020.
 
-\bibitem[Kamrani and Ayani(2009)]{Kamrani2014}
-F.~Kamrani and R.~Ayani, ``{UAV Path Planning in Search Operations},''
-  \emph{Royal Institute of Technology (KTH) Sweden}, 2009.
+\bibitem[Juan et~al.(2018)Juan, Santos, and And{\'{u}}jar]{Juan2018}
+\BIBentryALTinterwordspacing
+V.~S. Juan, M.~Santos, and J.~M. And{\'{u}}jar, ``{Intelligent UAV Map
+  Generation and Discrete Path Planning for Search and Rescue Operations},''
+  \emph{Hindawi}, vol. 2018, 2018. [Online]. Available:
+  \url{https://www.hindawi.com/journals/complexity/2018/6879419/}
+\BIBentrySTDinterwordspacing
 
 \bibitem[Nandakumar and {Ramana Rao}(2012)]{Nandakumar2012}
 R.~Nandakumar and N.~{Ramana Rao}, ``{Fair partitions of polygons: An

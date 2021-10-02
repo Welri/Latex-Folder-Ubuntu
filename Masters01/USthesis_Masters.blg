@@ -33,43 +33,43 @@ Warning--empty journal in Jurgens1998
 Done.
 You've used 32 entries,
             4855 wiz_defined-function locations,
-            1157 strings with 14623 characters,
-and the built_in function-call counts, 23844 in all, are:
-= -- 2140
-> -- 785
+            1158 strings with 14737 characters,
+and the built_in function-call counts, 23969 in all, are:
+= -- 2152
+> -- 792
 < -- 124
-+ -- 372
-- -- 186
-* -- 1380
-:= -- 3825
++ -- 375
+- -- 188
+* -- 1394
+:= -- 3854
 add.period$ -- 64
 call.type$ -- 32
 change.case$ -- 62
 chr.to.int$ -- 278
 cite$ -- 34
-duplicate$ -- 1632
-empty$ -- 1681
+duplicate$ -- 1637
+empty$ -- 1684
 format.name$ -- 263
-if$ -- 5259
+if$ -- 5283
 int.to.chr$ -- 1
 int.to.str$ -- 33
-missing$ -- 252
-newline$ -- 130
+missing$ -- 254
+newline$ -- 132
 num.names$ -- 93
-pop$ -- 700
+pop$ -- 701
 preamble$ -- 1
 purify$ -- 32
 quote$ -- 2
-skip$ -- 1729
+skip$ -- 1737
 stack$ -- 0
 substring$ -- 669
-swap$ -- 1072
-text.length$ -- 27
+swap$ -- 1080
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 6
 type$ -- 494
 warning$ -- 1
 while$ -- 106
 width$ -- 0
-write$ -- 379
+write$ -- 383
 (There was 1 warning)

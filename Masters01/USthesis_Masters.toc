@@ -22,41 +22,45 @@
 \contentsline {chapter}{\chapternumberline {2}Literature Review}{5}{}%
 \contentsline {section}{\numberline {2.1}Motion Planning}{5}{}%
 \contentsline {section}{\numberline {2.2}Coverage Path Planning}{7}{}%
-\contentsline {section}{\numberline {2.3}Single Robot Coverage Path Planning}{7}{}%
-\contentsline {subsection}{\numberline {2.3.1}Exact Methods}{7}{}%
-\contentsline {subsection}{\numberline {2.3.2}A* Path Coverage Path Planning}{7}{}%
-\contentsline {subsection}{\numberline {2.3.3}Spanning Tree Coverage Path Planning}{7}{}%
-\contentsline {subsection}{\numberline {2.3.4}Wavefront Planning}{7}{}%
-\contentsline {subsection}{\numberline {2.3.5}Artificial Intelligence Based Planning}{7}{}%
-\contentsline {section}{\numberline {2.4}Distributed Offline MCPP}{7}{}%
-\contentsline {subsection}{\numberline {2.4.1}Hexagonal Segmentation}{8}{}%
-\contentsline {subsection}{\numberline {2.4.2}Voronoi Partitioning}{9}{}%
-\contentsline {subsection}{\numberline {2.4.3}Negotiation Protocol}{10}{}%
-\contentsline {subsection}{\numberline {2.4.4}MSTC}{11}{}%
-\contentsline {subsection}{\numberline {2.4.5}DARP}{12}{}%
-\contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{12}{}%
-\contentsline {subsection}{\numberline {2.5.1}MFC}{12}{}%
-\contentsline {subsection}{\numberline {2.5.2}Sampling-Based}{13}{}%
-\contentsline {subsection}{\numberline {2.5.3}Artificial-Intelligence-Based}{13}{}%
-\contentsline {section}{\numberline {2.6}Online MCPP}{13}{}%
-\contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{13}{}%
-\contentsline {chapter}{\chapternumberline {3}Environment Representation}{14}{}%
-\contentsline {section}{\numberline {3.1}Background}{14}{}%
-\contentsline {section}{\numberline {3.2}Environment Discretisation}{16}{}%
-\contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{19}{}%
-\contentsline {section}{\numberline {4.1}Background}{19}{}%
-\contentsline {section}{\numberline {4.2}Implementation}{20}{}%
-\contentsline {subsection}{\numberline {4.2.1}Comparison of Distance Measures}{20}{}%
-\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{22}{}%
-\contentsline {section}{\numberline {5.1}Background}{22}{}%
-\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{23}{}%
-\contentsline {section}{\numberline {6.1}Background}{23}{}%
-\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{24}{}%
-\contentsline {section}{\numberline {7.1}Background}{24}{}%
-\contentsline {chapter}{\chapternumberline {8}Results}{25}{}%
-\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{26}{}%
-\contentsline {chapter}{Appendices}{27}{}%
-\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{28}{}%
-\contentsline {section}{\numberline {A.1}Ball elements}{28}{}%
-\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{28}{}%
-\contentsline {chapter}{List of References}{29}{}%
+\contentsline {section}{\numberline {2.3}Single Robot Coverage Path Planning}{8}{}%
+\contentsline {subsection}{\numberline {2.3.1}Exact Methods}{8}{}%
+\contentsline {subsection}{\numberline {2.3.2}A* Path Coverage Path Planning}{9}{}%
+\contentsline {subsection}{\numberline {2.3.3}Spanning Tree Coverage Path Planning}{9}{}%
+\contentsline {subsection}{\numberline {2.3.4}Wavefront Planning}{9}{}%
+\contentsline {subsection}{\numberline {2.3.5}Artificial Intelligence Based Planning}{9}{}%
+\contentsline {section}{\numberline {2.4}Distributed Offline MCPP}{9}{}%
+\contentsline {subsection}{\numberline {2.4.1}Hexagonal Segmentation}{9}{}%
+\contentsline {subsection}{\numberline {2.4.2}Voronoi Partitioning}{10}{}%
+\contentsline {subsection}{\numberline {2.4.3}Negotiation Protocol}{11}{}%
+\contentsline {subsection}{\numberline {2.4.4}MSTC}{12}{}%
+\contentsline {subsection}{\numberline {2.4.5}DARP}{14}{}%
+\contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{14}{}%
+\contentsline {subsection}{\numberline {2.5.1}MFC}{14}{}%
+\contentsline {subsection}{\numberline {2.5.2}Sampling-Based}{14}{}%
+\contentsline {subsection}{\numberline {2.5.3}Artificial-Intelligence-Based}{14}{}%
+\contentsline {section}{\numberline {2.6}Online MCPP}{14}{}%
+\contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{14}{}%
+\contentsline {chapter}{\chapternumberline {3}Environment Representation}{15}{}%
+\contentsline {section}{\numberline {3.1}Background}{15}{}%
+\contentsline {subsection}{\numberline {3.1.1}Assumptions}{15}{}%
+\contentsline {subsection}{\numberline {3.1.2}Discretisation Using Cameras}{16}{}%
+\contentsline {section}{\numberline {3.2}Discretisation Methodology}{18}{}%
+\contentsline {section}{\numberline {3.3}Implementation with Different Cameras}{20}{}%
+\contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{21}{}%
+\contentsline {section}{\numberline {4.1}Background Theory}{21}{}%
+\contentsline {subsection}{\numberline {4.1.1}Algorithm Description}{22}{}%
+\contentsline {section}{\numberline {4.2}Distance Measure Comparisons}{22}{}%
+\contentsline {section}{\numberline {4.3}Implementation with Different Environments}{22}{}%
+\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{24}{}%
+\contentsline {section}{\numberline {5.1}Background}{24}{}%
+\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{25}{}%
+\contentsline {section}{\numberline {6.1}Background}{25}{}%
+\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{26}{}%
+\contentsline {section}{\numberline {7.1}Background}{26}{}%
+\contentsline {chapter}{\chapternumberline {8}Results}{27}{}%
+\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{28}{}%
+\contentsline {chapter}{Appendices}{29}{}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{30}{}%
+\contentsline {section}{\numberline {A.1}Ball elements}{30}{}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{30}{}%
+\contentsline {chapter}{List of References}{31}{}%

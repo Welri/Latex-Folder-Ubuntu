@@ -1,15 +1,19 @@
 \chapter{Environment Representation}
 \label{chp:ER}
-This section covers the environment representation. 
-% TODO: Finish the preamble
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This Chapter describes the thought process behind the environment representation. Section \ref{sec:ER-bg} gives relevant background information and context for the problem, and Section \ref{sec:ER-ED} describes how this information is used to formulate a discrete environment representation. Lastly, Section \ref{sec:ER-App} shows a few practical scenarios using this strategy with different on-board cameras. 
+
 \section{Background}
-% TODO: Maybe divide this section into Scenario Description and then Background.
+\label{sec:ER-bg}
+\subsection{Assumptions}
+The goal of this paper is to develop a coverage path planning algorithm \hbox{applicable} in a \acl{sar} situation, using \acsp{uav}. To achieve success in such an application, the first step would be to find a way to represent the environment. Essentially, the context in which the \acsp{uav} exist needs to be described in some way for them to navigate it successfully.\\ 
+The starting assumption is that an offline approach is sufficient. This implies that there is always enough information known about the environment to represent it fully prior to the execution of the path planning algorithm. At the altitude that a \acs{uav} flies, it is reasonable to assume that any obstructions, for example power lines or mountains, can be mapped out a priori. Moreover, \acs{sar} operations often have fixed geographical bounds in which to search. \\
+Furthermore, it is also assumed that there are no transients in the environment, such as a moving target or dynamic obstacles. Search and rescue operations will rarely have moving elements at the altitude of the \acsp{uav}. They are more likely to have fixed no fly zones and static obstacles.\\
+Because they are airborne vehicles,\acsp{uav} can execute three dimensional movements, which implies the necessity for a three dimensional representation of the environment. In this paper however, it is assumed that altitude changes are not necessary to search an area. Assuming that there is some form of camera on-board the \acs{uav}, a constant altitude will be an advantage. It means that the \acf{gsd} will remain roughly constant, which is a widely accepted measure of camera accuracy. Assuming a camera is on a \acs{uav} pointing down towards the ground, \acs{gsd} is the distance on the ground as represented by the width of one pixel in an image \cite{PropellerAero2021}.\\
+Without altitude changes, \acs{uav} motions can be represented in two-dimensional space, which greatly simplifies the problem. For offline coverage path planning, it is important to have some demarcated two-dimensional region that requires coverage. The identified region, or environment, can be represented in either a discrete or continuous manner. \\
+In the context of \acs{sar}, complete coverage is very important. It will ensure that every possible point in the environment map is covered. In this scenario, it implies that the camera will have viewed all points on the map. Achieving completeness is by no means trivial, but is more achievable in complex environments when using a discrete approach. \\
 % TODO: Justify why you chose offline
 % TODO: Justify why the target is not assumed to be in motion
-The goal of this paper is to develop a coverage path planning algorithm \hbox{applicable} in a \acl{sar} situation. It should be implementable using \acsp{uav}, which can execute three dimensional movements. In this paper however, it is assumed that altitude changes are not necessary to search an area. Assuming that there is some form of camera on-board the \acs{uav}, a constant altitude will be an advantage. It means that the \acf{gsd} will remain constant, which is a widely accepted measure of camera accuracy. Assuming a camera is on a \acs{uav} pointing down towards the ground, \acs{gsd} is the distance on the ground as represented by the width of one pixel \cite{PropellerAero2021}.\\
-Without altitude changes, \acs{uav} motions can be represented in two-dimensional space, which greatly simplifies the problem. For coverage path planning, it is important to have some demarcated two-dimensional region that requires coverage. The identified region, or environment, needs to be represented in either a discrete or continuous manner. \\
-In the context of \acs{sar}, complete coverage is very important. It will ensure that every possible point in the environment map is covered. In this scenario, it implies that the camera will have viewed all points on the map. Achieving completeness is by no means trivial, but is more achievable in complex environments when using a discrete approach. \\
+\subsection{Discretisation Using Cameras}
 % TODO: Mention drawbacks of continuous implementations
 % TODO: Mention reasons for choosing discrete - wavefront planner paper pg 674 "An exact cell decomposition is ineffiecient because we are interested in acquiring an equally sized set of images"
 Discretising the environment can be done in a few different ways. Assuming a generic \acs{uav} with some thermal or visual camera on-board, one has a few options. One can discretise the area based on the \acs{uav} size, but a more common practice is to base it off the tool size. In this case, that would be the \acf{fov} of the on-board camera. This also makes the process of complete coverage easier, because if the camera is guaranteed to see the entirety of each discrete cell, it is a complete algorithm so long as each cell is visited.\\
@@ -163,7 +167,8 @@ Both $FOV_x$ and $FOV_y$ will have the same units as $H$, which is metres. The r
 	\end{aligned}
 \end{equation}
 
-\section{Environment Discretisation}
+\section{Discretisation Methodology}
+\label{sec:ER-ED}
 If the size of the environment discretisation is set equal to the rectangular camera field of view, and the type of camera used is known, then a desired $GSD$ can be used to decide on an appropriate flying height. Choosing a $GSD$ would depend on the application, seen as it represents the level of detail that can potentially be detected in an image.\\
 Taking the conservative approach, the assumption is that one is looking for a human being standing upright, viewed from above. To get a good estimate of the space occupied by a human in this orientation, one needs anthropometric data. A survey was done in Europe for people between the ages of 18 and 60 \cite{Jurgens1998}. Among other measurements, they measured chest depth ($w$) and elbow-to-elbow length ($l$). These dimensions represent those of an upright human from above and can be seen in Figure \ref{fig:GSD}.\\ 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -246,7 +251,7 @@ Both techniques assume sharp 90 degree turns are possible. Some \acsp{uav} can m
 % TODO: check if you used chapter in all chapter references.
 \begin{figure}[]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.35\textwidth}
 		\centering
 			\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 			%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -354,7 +359,7 @@ Both techniques assume sharp 90 degree turns are possible. Some \acsp{uav} can m
 		\label{fig:Overlap-sqr}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.6\textwidth}
 		\centering
 		\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 			%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
@@ -469,7 +474,8 @@ Both techniques assume sharp 90 degree turns are possible. Some \acsp{uav} can m
 \end{figure}
 
 % TODO: Section where it is applied to different camera scenarios
-
-% mention how dynamic constraints change everything - with this discretisation the asumption is that UAV can make 90 degree turns. This may be possible for some UAVs, but not while maintaining a constant velocity. Maintaining constant is more desireable because it consumes les energy.
+\section{Implementation with Different Cameras}
+\label{sec:ER-App}
+% mention how dynamic constraints change everything - with this discretisation the asumption is that UAV can make 90 degree turns. This may be possible for some UAVs, but not while maintaining a constant velocity. Maintaining constant is more desireable because it consumes less energy. Mention how it is covered in a later section.
 
 
