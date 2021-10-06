@@ -31,45 +31,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--empty journal in Jurgens1998
 
 Done.
-You've used 32 entries,
+You've used 33 entries,
             4855 wiz_defined-function locations,
-            1158 strings with 14737 characters,
-and the built_in function-call counts, 23969 in all, are:
-= -- 2152
-> -- 792
-< -- 124
-+ -- 375
-- -- 188
-* -- 1394
-:= -- 3854
-add.period$ -- 64
-call.type$ -- 32
-change.case$ -- 62
-chr.to.int$ -- 278
-cite$ -- 34
-duplicate$ -- 1637
-empty$ -- 1684
-format.name$ -- 263
-if$ -- 5283
+            1166 strings with 14861 characters,
+and the built_in function-call counts, 24591 in all, are:
+= -- 2200
+> -- 810
+< -- 128
++ -- 382
+- -- 192
+* -- 1432
+:= -- 3950
+add.period$ -- 66
+call.type$ -- 33
+change.case$ -- 64
+chr.to.int$ -- 285
+cite$ -- 35
+duplicate$ -- 1686
+empty$ -- 1742
+format.name$ -- 271
+if$ -- 5424
 int.to.chr$ -- 1
-int.to.str$ -- 33
-missing$ -- 254
-newline$ -- 132
-num.names$ -- 93
-pop$ -- 701
+int.to.str$ -- 34
+missing$ -- 261
+newline$ -- 135
+num.names$ -- 96
+pop$ -- 723
 preamble$ -- 1
-purify$ -- 32
+purify$ -- 33
 quote$ -- 2
-skip$ -- 1737
+skip$ -- 1782
 stack$ -- 0
-substring$ -- 669
-swap$ -- 1080
-text.length$ -- 28
+substring$ -- 678
+swap$ -- 1105
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 494
+type$ -- 502
 warning$ -- 1
-while$ -- 106
+while$ -- 109
 width$ -- 0
-write$ -- 383
+write$ -- 393
 (There was 1 warning)

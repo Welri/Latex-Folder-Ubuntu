@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  2 OCT 2021 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  6 OCT 2021 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1432,7 +1432,122 @@ File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.
 tex
 File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-))) (c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+))) (c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen316
+\Hy@linkcounter=\count352
+\Hy@pagecounter=\count353
+
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count354
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count355
+
+(c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen317
+
+(c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count356
+\Field@Width=\dimen318
+\Fld@charsize=\dimen319
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(c:/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count357
+\c@Item=\count358
+\c@Hfootnote=\count359
+)
+(c:/texlive/2020/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2019/10/24 v1.18 nameref/hyperref package fixes for memoir cl
+ass
+\c@memhycontfloat=\count360
+\c@Hpagenote=\count361
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count362
+\c@bookmark@seq@number=\count363
+
+(c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip196
+)
+(c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks40
 \inpenc@posthook=\toks41
@@ -1445,14 +1560,14 @@ Package: babel 2021/01/26 3.53 The Babel package
 
 (c:/texlive/2020/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2021/01/26 3.53 Babel common definitions
-\babel@savecnt=\count352
-\U@D=\dimen316
+\babel@savecnt=\count364
+\U@D=\dimen320
 \l@babelnohyphens=\language86
 
 (c:/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
 )
-\bbl@dirlevel=\count353
+\bbl@dirlevel=\count365
 
 (c:/texlive/2020/texmf-dist/tex/generic/babel-dutch/afrikaans.ldf
 Language: dutch 2020/10/29 v3.8j Dutch support from the babel system
@@ -1469,7 +1584,7 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ))
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip196
+\@mathmargin=\skip197
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -1478,49 +1593,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks42
-\ex@=\dimen317
+\ex@=\dimen321
 ))
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen318
+\pmbraise@=\dimen322
 )
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count354
+\inf@bad=\count366
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count355
-\leftroot@=\count356
+\uproot@=\count367
+\leftroot@=\count368
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count357
-\DOTSCASE@=\count358
+\classnum@=\count369
+\DOTSCASE@=\count370
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box67
 \strutbox@=\box68
-\big@size=\dimen319
+\big@size=\dimen323
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count359
-\c@MaxMatrixCols=\count360
-\dotsspace@=\muskip16
-\c@parentequation=\count361
-\dspbrk@lvl=\count362
+\macc@depth=\count371
+\c@MaxMatrixCols=\count372
+\dotsspace@=\muskip17
+\c@parentequation=\count373
+\dspbrk@lvl=\count374
 \tag@help=\toks43
-\row@=\count363
-\column@=\count364
-\maxfields@=\count365
+\row@=\count375
+\column@=\count376
+\maxfields@=\count377
 \andhelp@=\toks44
-\eqnshift@=\dimen320
-\alignsep@=\dimen321
-\tagshift@=\dimen322
-\tagwidth@=\dimen323
-\totwidth@=\dimen324
-\lineht@=\dimen325
+\eqnshift@=\dimen324
+\alignsep@=\dimen325
+\tagshift@=\dimen326
+\tagwidth@=\dimen327
+\totwidth@=\dimen328
+\lineht@=\dimen329
 \@envbody=\toks45
-\multlinegap=\skip197
-\multlinetaggap=\skip198
+\multlinegap=\skip198
+\multlinetaggap=\skip199
 \mathdisplay@stack=\toks46
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -1541,25 +1656,25 @@ LaTeX Info: Redefining \bm on input line 209.
 )
 (c:/texlive/2020/texmf-dist/tex/latex/stellenbosch/usnomencl.sty
 Package: usnomencl 2008/05/30 v1.1 Stellenbosh Thesis Nomenclature (DNJ ELS)
-\USN@tdima=\skip199
-\USN@NomGrpSep=\skip256
-\NomGrpSep=\skip257
-\NomItmSep=\skip258
-\NomItmMrg=\skip259
-\NomLblSep=\skip260
-\UnitLabelWdth=\skip261
+\USN@tdima=\skip256
+\USN@NomGrpSep=\skip257
+\NomGrpSep=\skip258
+\NomItmSep=\skip259
+\NomItmMrg=\skip260
+\NomLblSep=\skip261
+\UnitLabelWdth=\skip262
 )
 (c:/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip262
-\bibsep=\skip263
+\bibhang=\skip263
+\bibsep=\skip264
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count366
+\c@NAT@ctr=\count378
 )
 (c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen326
-\ESO@tempdimb=\dimen327
+\ESO@tempdima=\dimen330
+\ESO@tempdimb=\dimen331
 )
 (./USthesis_Masters.aux (./frontmatter/Chap-Front.aux)
 (./frontmatter/Nomencl.aux) (./frontmatter/Acronyms.aux) (./contents/Chap-1.aux
@@ -1569,21 +1684,24 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (./USthesis_Masters.acr))
 \openout1 = `USthesis_Masters.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \l__acro_aux_file_iow=\write5
 \openout5 = `USthesis_Masters.acr'.
@@ -1595,37 +1713,28 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 116.
+or `english'. on input line 117.
 Package translations Info: no dictionary file `translations-basic-dictionary-af
-rikaans.trsl' found. on input line 116.
+rikaans.trsl' found. on input line 117.
  (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count367
-\scratchdimen=\dimen328
+\scratchcounter=\count379
+\scratchdimen=\dimen332
 \scratchbox=\box69
-\nofMPsegments=\count368
-\nofMParguments=\count369
+\nofMPsegments=\count380
+\nofMParguments=\count381
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count370
-\MPscratchDim=\dimen329
-\MPnumerator=\count371
-\makeMPintoPDFobject=\count372
+\MPscratchCnt=\count382
+\MPscratchDim=\dimen333
+\MPnumerator=\count383
+\makeMPintoPDFobject=\count384
 \everyMPtoPDFconversion=\toks48
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
 (c:/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-(c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 Package grfext Info: Graphics extension search list:
@@ -1641,25 +1750,53 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 116.
+ on input line 117.
 
-<UScrest-WM.jpg, id=4, 49.8663pt x 69.3792pt>
+Package hyperref Info: Link coloring OFF on input line 117.
+(c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count385
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 117.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
+(./USthesis_Masters.out) (./USthesis_Masters.out)
+\@outlinefile=\write6
+\openout6 = `USthesis_Masters.out'.
+
+<UScrest-WM.jpg, id=187, 49.8663pt x 69.3792pt>
 File: UScrest-WM.jpg Graphic file (type jpg)
 <use UScrest-WM.jpg>
-Package pdftex.def Info: UScrest-WM.jpg  used on input line 121.
+Package pdftex.def Info: UScrest-WM.jpg  used on input line 122.
 (pdftex.def)             Requested size: 89.70789pt x 124.82738pt.
-[1
+ [1
 
 
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <c:/texlive/2020
-/texmf-dist/tex/latex/stellenbosch/logos/UScrest-WM.jpg>] [1
+/texmf-dist/tex/latex/stellenbosch/logos/UScrest-WM.jpg>]pdfTeX warning (ext4):
+ destination with the same identifier (name{page.i}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.127  \include{frontmatter/Chap-Front}
+                                        [1
 
 ]
 \openout2 = `frontmatter/Chap-Front.aux'.
 
-
-(./frontmatter/Chap-Front.tex [2
+ (./frontmatter/Chap-Front.tex
+[2
 
 
 ] [3
@@ -1691,27 +1828,29 @@ Overfull \hbox (0.16243pt too wide) detected at line 11
 \openout2 = `frontmatter/Acronyms.aux'.
 
  (./frontmatter/Acronyms.tex
-\g__acro_uav_int=\count373
-\g__acro_ugv_int=\count374
-\g__acro_cpp_int=\count375
-\g__acro_mcpp_int=\count376
-\g__acro_sar_int=\count377
-\g__acro_aov_int=\count378
-\g__acro_fov_int=\count379
-\g__acro_gsd_int=\count380
-\g__acro_stc_int=\count381
-\g__acro_gm_int=\count382
-\g__acro_mstc_int=\count383
-\g__acro_mfc_int=\count384
-\g__acro_darp_int=\count385
-\g__acro_slam_int=\count386
+\g__acro_uav_int=\count386
+\g__acro_ugv_int=\count387
+\g__acro_cpp_int=\count388
+\g__acro_mcpp_int=\count389
+\g__acro_sar_int=\count390
+\g__acro_aov_int=\count391
+\g__acro_fov_int=\count392
+\g__acro_gsd_int=\count393
+\g__acro_stc_int=\count394
+\g__acro_gm_int=\count395
+\g__acro_mstc_int=\count396
+\g__acro_mfc_int=\count397
+\g__acro_darp_int=\count398
+\g__acro_slam_int=\count399
+\g__acro_rrt_int=\count400
+\g__acro_prm_int=\count401
 
 
 Package acro Warning: The template `Acronyms' (template type `heading') on
-(acro)                line 33 does not seem to be defined.
+(acro)                line 35 does not seem to be defined.
 
 
-Overfull \hbox (2.71872pt too wide) in paragraph at lines 33--33
+Overfull \hbox (2.71872pt too wide) in paragraph at lines 35--35
 []\T1/cmr/m/n/12 Divide Ar-eas Al-go-rithm for Op-ti-mal Multi-Robot Cov-er-age
  Path Plan-
  []
@@ -1731,11 +1870,11 @@ Overfull \hbox (2.71872pt too wide) in paragraph at lines 33--33
 
 
 ]
-<figs/content_DroneSAR_screenshot_3.png, id=61, 803.0pt x 602.25pt>
+<figs/content_DroneSAR_screenshot_3.png, id=374, 803.0pt x 602.25pt>
 File: figs/content_DroneSAR_screenshot_3.png Graphic file (type png)
 <use figs/content_DroneSAR_screenshot_3.png>
 Package pdftex.def Info: figs/content_DroneSAR_screenshot_3.png  used on input 
-line 29.
+line 30.
 (pdftex.def)             Requested size: 240.90186pt x 180.67639pt.
  [2 <./figs/content_DroneSAR_screenshot_3.png>]) [3] [4]
 \openout2 = `contents/Chap-2.aux'.
@@ -1746,57 +1885,64 @@ line 29.
 
 
 ] [6]
-Overfull \hbox (5.38336pt too wide) in paragraph at lines 47--48
+
+pdfTeX warning: pdflatex.exe (file ./figs/Motion.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
+<figs/Motion.pdf, id=432, 963.6pt x 542.025pt>
+File: figs/Motion.pdf Graphic file (type pdf)
+<use figs/Motion.pdf>
+Package pdftex.def Info: figs/Motion.pdf  used on input line 32.
+(pdftex.def)             Requested size: 398.0pt x 176.85619pt.
+
+Overfull \hbox (5.38336pt too wide) in paragraph at lines 45--46
 \T1/cmr/m/n/12 at three type of cel-lu-lar de-com-po-si-tions, namely ap-prox-i
 -mate, semi-approximate
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+[7 <./figs/Motion.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 [8]
-<figs/Hexagonal_Partitioning_Graphic.png, id=89, 416.30531pt x 377.91188pt>
+<figs/Hexagonal_Partitioning_Graphic.png, id=479, 416.30531pt x 377.91188pt>
 File: figs/Hexagonal_Partitioning_Graphic.png Graphic file (type png)
 <use figs/Hexagonal_Partitioning_Graphic.png>
 Package pdftex.def Info: figs/Hexagonal_Partitioning_Graphic.png  used on input
- line 95.
+ line 93.
 (pdftex.def)             Requested size: 166.51917pt x 151.16206pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/GM_VPC_Euclid.png, id=91, 380.92313pt x 301.125pt>
+ [9]
+<figs/GM_VPC_Euclid.png, id=497, 380.92313pt x 301.125pt>
 File: figs/GM_VPC_Euclid.png Graphic file (type png)
 <use figs/GM_VPC_Euclid.png>
-Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 115.
+Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 113.
 (pdftex.def)             Requested size: 152.36655pt x 120.44786pt.
-<figs/GM_VPC.png, id=92, 377.15906pt x 301.125pt>
+<figs/GM_VPC.png, id=498, 377.15906pt x 301.125pt>
 File: figs/GM_VPC.png Graphic file (type png)
 <use figs/GM_VPC.png>
-Package pdftex.def Info: figs/GM_VPC.png  used on input line 122.
+Package pdftex.def Info: figs/GM_VPC.png  used on input line 120.
 (pdftex.def)             Requested size: 150.86095pt x 120.44786pt.
 
-Overfull \hbox (8.74237pt too wide) in paragraph at lines 102--129
+Overfull \hbox (8.74237pt too wide) in paragraph at lines 100--127
 \T1/cmr/m/n/12 The Euclidean-based tech-nique re-sults in what the au-thors ter
 m "non-contiguous
  []
 
-[9] [10 <./figs/Hexagonal_Partitioning_Graphic.png>]
-<figs/Negotiation_Protocol.png, id=100, 485.56406pt x 503.63156pt>
+[10 <./figs/Hexagonal_Partitioning_Graphic.png>]
+<figs/Negotiation_Protocol.png, id=512, 485.56406pt x 503.63156pt>
 File: figs/Negotiation_Protocol.png Graphic file (type png)
 <use figs/Negotiation_Protocol.png>
-Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 140.
+Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 138.
 
 (pdftex.def)             Requested size: 169.94997pt x 176.27368pt.
- [11 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
-<figs/MSTC-Graphic.png, id=106, 479.54156pt x 474.27188pt>
+ [11 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>] [12 <./figs/Negotiation_Pr
+otocol.png>]
+<figs/MSTC-Graphic.png, id=531, 479.54156pt x 474.27188pt>
 File: figs/MSTC-Graphic.png Graphic file (type png)
 <use figs/MSTC-Graphic.png>
-Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 152.
+Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 150.
 (pdftex.def)             Requested size: 191.81322pt x 189.70538pt.
- [12 <./figs/Negotiation_Protocol.png>] [13 <./figs/MSTC-Graphic.png>]) [14]
+ [13 <./figs/MSTC-Graphic.png>]) [14]
 \openout2 = `contents/Chap-3.aux'.
 
  (./contents/Chap-3.tex [15
@@ -1832,7 +1978,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 pdfTeX warning: pdflatex.exe (file ./figs/DARP_Diagram3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figs/DARP_Diagram3.pdf, id=144, 597.55246pt x 845.07724pt>
+<figs/DARP_Diagram3.pdf, id=627, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
 Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 31.
@@ -1899,7 +2045,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=181, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=674, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
@@ -1914,60 +2060,63 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 
 
 ] [32]) [33]
-\tf@toc=\write6
-\openout6 = `USthesis_Masters.toc'.
+\tf@toc=\write7
+\openout7 = `USthesis_Masters.toc'.
 
-\tf@lof=\write7
-\openout7 = `USthesis_Masters.lof'.
+\tf@lof=\write8
+\openout8 = `USthesis_Masters.lof'.
 
-\tf@lot=\write8
-\openout8 = `USthesis_Masters.lot'.
+\tf@lot=\write9
+\openout9 = `USthesis_Masters.lot'.
 
  (./USthesis_Masters.aux (./frontmatter/Chap-Front.aux)
 (./frontmatter/Nomencl.aux) (./frontmatter/Acronyms.aux) (./contents/Chap-1.aux
 ) (./contents/Chap-2.aux) (./contents/Chap-3.aux) (./contents/Chap-4.aux)
 (./contents/Chap-5.aux) (./contents/Chap-6.aux) (./contents/Chap-7.aux)
 (./contents/Chap-8.aux) (./contents/Chap-9.aux) (./contents/App-1.aux)
-(./USthesis_Masters.acr)) ) 
+(./USthesis_Masters.acr))
+Package rerunfilecheck Info: File `USthesis_Masters.out' has not changed.
+(rerunfilecheck)             Checksum: C38590ECA8277735C376C68C9A07AFBC;2704.
+ ) 
 Here is how much of TeX's memory you used:
- 34934 strings out of 479303
- 856376 string characters out of 5871220
- 1267932 words of memory out of 5000000
- 51505 multiletter control sequences out of 15000+600000
+ 38699 strings out of 479303
+ 919801 string characters out of 5871220
+ 1357829 words of memory out of 5000000
+ 55021 multiletter control sequences out of 15000+600000
  429971 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,15n,116p,1024b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super
-/cm-super-t1.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texl
-ive/2020/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2020/texmf-dist
-/fonts/type1/public/lm/lmmib10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
-ic/lm/lmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/
-texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2020/texmf
--dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2020/texmf-dist/font
-s/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx20
-74.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:
-/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2
-020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2020/texmf-
-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts
-/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-sup
-er/sfsl1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl144
-0.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/
-texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (44 pages, 3055667 bytes).
+ 113i,15n,116p,1024b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/202
+0/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2020/texmf-dist/fonts
+/type1/public/lm/lmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lm
+mib10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texli
+ve/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2020/texmf-dist/f
+onts/type1/public/lm/lmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
+cm-super/sfbx1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/s
+fbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
+b><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texl
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2020/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2020/texmf-dist/
+fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2020/texmf-dist/fonts/type
+1/public/cm-super/sfrm1095.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/c
+m-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sf
+rm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
+><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texli
+ve/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1440.pfb><c:/texlive/2020/te
+xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2020/texmf-dist/f
+onts/type1/public/cm-super/sfti1200.pfb>
+Output written on USthesis_Masters.pdf (44 pages, 3083281 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 857 PDF objects out of 1000 (max. 8388607)
+ 747 compressed objects within 8 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 435 words of extra memory for PDF output out of 10000 (max. 10000000)
 

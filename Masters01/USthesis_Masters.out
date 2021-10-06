@@ -1,0 +1,45 @@
+\BOOKMARK [0][-]{section*.2}{Declaration}{}% 1
+\BOOKMARK [0][-]{section*.4}{Abstract}{}% 2
+\BOOKMARK [0][-]{section*.6}{Uittreksel}{}% 3
+\BOOKMARK [0][-]{chapter*.7}{Acknowledgements}{}% 4
+\BOOKMARK [0][-]{section*.8}{Contents}{}% 5
+\BOOKMARK [0][-]{section*.9}{List of Figures}{}% 6
+\BOOKMARK [0][-]{section*.10}{List of Tables}{}% 7
+\BOOKMARK [0][-]{chapter*.11}{Nomenclature}{}% 8
+\BOOKMARK [0][-]{chapter*.12}{Acronyms}{}% 9
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 10
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.2}{Research Aim}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.3}{Research Objectives}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.4}{Scope and Limitations}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.5}{System Overview}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.6}{Methodology}{chapter.1}% 16
+\BOOKMARK [1][-]{section.1.7}{Project Outline}{chapter.1}% 17
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 18
+\BOOKMARK [1][-]{section.2.1}{Motion Planning}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{Coverage Path Planning}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Single Robot Coverage Path Planning}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.4}{Distributed Offline MCPP}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.5}{Non-Distributed Offline MCPP}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.6}{Online MCPP}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.7}{UAVs and Search and Rescue}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{Environment Representation}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Background}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Discretisation Methodology}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.3}{Implementation with Different Cameras}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Divide Areas Algorithm}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Background Theory}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{Distance Measure Comparisons}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.3}{Implementation with Different Scenarios}{chapter.4}% 33
+\BOOKMARK [0][-]{chapter.5}{Subregion Coverage Technique}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{Dynamic Constraints of a UAV}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Background}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{Refuelling Protocol}{}% 38
+\BOOKMARK [1][-]{section.7.1}{Background}{chapter.7}% 39
+\BOOKMARK [0][-]{chapter.8}{Results}{}% 40
+\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 41
+\BOOKMARK [0][-]{section*.23}{Appendices}{}% 42
+\BOOKMARK [0][-]{appendix.A}{Discrete Element Method Theory}{}% 43
+\BOOKMARK [1][-]{section.A.1}{Ball elements}{appendix.A}% 44
+\BOOKMARK [0][-]{appendix*.25}{List of References}{}% 45
