@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  6 OCT 2021 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  7 OCT 2021 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1884,68 +1884,73 @@ line 30.
 
 
 
-] [6]
+]
 
 pdfTeX warning: pdflatex.exe (file ./figs/Motion.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<figs/Motion.pdf, id=432, 963.6pt x 542.025pt>
+<figs/Motion.pdf, id=427, 963.6pt x 542.025pt>
 File: figs/Motion.pdf Graphic file (type pdf)
 <use figs/Motion.pdf>
-Package pdftex.def Info: figs/Motion.pdf  used on input line 32.
+Package pdftex.def Info: figs/Motion.pdf  used on input line 31.
 (pdftex.def)             Requested size: 398.0pt x 176.85619pt.
-
-Overfull \hbox (5.38336pt too wide) in paragraph at lines 45--46
+[6]
+Overfull \hbox (5.38336pt too wide) in paragraph at lines 43--44
 \T1/cmr/m/n/12 at three type of cel-lu-lar de-com-po-si-tions, namely ap-prox-i
 -mate, semi-approximate
  []
 
-[7 <./figs/Motion.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-[8]
-<figs/Hexagonal_Partitioning_Graphic.png, id=479, 416.30531pt x 377.91188pt>
+[7 <./figs/Motion.pdf>] [8]
+<figs/Hexagonal_Partitioning_Graphic.png, id=485, 416.30531pt x 377.91188pt>
 File: figs/Hexagonal_Partitioning_Graphic.png Graphic file (type png)
 <use figs/Hexagonal_Partitioning_Graphic.png>
 Package pdftex.def Info: figs/Hexagonal_Partitioning_Graphic.png  used on input
- line 93.
+ line 98.
 (pdftex.def)             Requested size: 166.51917pt x 151.16206pt.
  [9]
-<figs/GM_VPC_Euclid.png, id=497, 380.92313pt x 301.125pt>
+<figs/GM_VPC_Euclid.png, id=505, 380.92313pt x 301.125pt>
 File: figs/GM_VPC_Euclid.png Graphic file (type png)
 <use figs/GM_VPC_Euclid.png>
-Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 113.
+Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 118.
 (pdftex.def)             Requested size: 152.36655pt x 120.44786pt.
-<figs/GM_VPC.png, id=498, 377.15906pt x 301.125pt>
+<figs/GM_VPC.png, id=506, 377.15906pt x 301.125pt>
 File: figs/GM_VPC.png Graphic file (type png)
 <use figs/GM_VPC.png>
-Package pdftex.def Info: figs/GM_VPC.png  used on input line 120.
+Package pdftex.def Info: figs/GM_VPC.png  used on input line 125.
 (pdftex.def)             Requested size: 150.86095pt x 120.44786pt.
 
-Overfull \hbox (8.74237pt too wide) in paragraph at lines 100--127
+Overfull \hbox (8.74237pt too wide) in paragraph at lines 105--132
 \T1/cmr/m/n/12 The Euclidean-based tech-nique re-sults in what the au-thors ter
 m "non-contiguous
  []
 
 [10 <./figs/Hexagonal_Partitioning_Graphic.png>]
-<figs/Negotiation_Protocol.png, id=512, 485.56406pt x 503.63156pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/Negotiation_Protocol.png, id=520, 485.56406pt x 503.63156pt>
 File: figs/Negotiation_Protocol.png Graphic file (type png)
 <use figs/Negotiation_Protocol.png>
-Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 138.
+Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 143.
 
 (pdftex.def)             Requested size: 169.94997pt x 176.27368pt.
- [11 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>] [12 <./figs/Negotiation_Pr
-otocol.png>]
+[11]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <figs/MSTC-Graphic.png, id=531, 479.54156pt x 474.27188pt>
 File: figs/MSTC-Graphic.png Graphic file (type png)
 <use figs/MSTC-Graphic.png>
-Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 150.
+Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 155.
 (pdftex.def)             Requested size: 191.81322pt x 189.70538pt.
- [13 <./figs/MSTC-Graphic.png>]) [14]
+[12 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./figs/Negotiation_Protocol.png>]) [14 <./figs/MSTC-Graphic.png>] [15]
 \openout2 = `contents/Chap-3.aux'.
 
- (./contents/Chap-3.tex [15
+
+(./contents/Chap-3.tex [16
 
 
 
@@ -1961,15 +1966,15 @@ Overfull \hbox (17.85251pt too wide) in paragraph at lines 145--146
  [][] 
  []
 
-[16] [17] [18]
+[17] [18] [19]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 264.
 
-[19]) [20]
+[20]) [21]
 \openout2 = `contents/Chap-4.aux'.
 
- (./contents/Chap-4.tex [21
+ (./contents/Chap-4.tex [22
 
 
 
@@ -1978,7 +1983,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 pdfTeX warning: pdflatex.exe (file ./figs/DARP_Diagram3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figs/DARP_Diagram3.pdf, id=627, 597.55246pt x 845.07724pt>
+<figs/DARP_Diagram3.pdf, id=639, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
 Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 31.
@@ -1994,10 +1999,10 @@ LaTeX Warning: Float too large for page by 64.1627pt on input line 34.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [22] [23 <./figs/DARP_Diagram3.pdf>]
+) [23] [24 <./figs/DARP_Diagram3.pdf>]
 \openout2 = `contents/Chap-5.aux'.
 
- (./contents/Chap-5.tex) [24
+ (./contents/Chap-5.tex) [25
 
 
 
@@ -2006,7 +2011,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `contents/Chap-6.aux'.
 
 
-(./contents/Chap-6.tex) [25
+(./contents/Chap-6.tex) [26
 
 
 
@@ -2014,7 +2019,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `contents/Chap-7.aux'.
 
- (./contents/Chap-7.tex) [26
+ (./contents/Chap-7.tex) [27
 
 
 
@@ -2023,7 +2028,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `contents/Chap-8.aux'.
 
 
-(./contents/Chap-8.tex) [27
+(./contents/Chap-8.tex) [28
 
 
 
@@ -2031,12 +2036,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `contents/Chap-9.aux'.
 
- (./contents/Chap-9.tex) [28
+ (./contents/Chap-9.tex) [29
 
 
 
 
-] [29
+] [30
 
 
 
@@ -2045,21 +2050,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=674, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=686, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (pdftex.def)             Requested size: 237.88815pt x 172.64456pt.
-) [30
+) [31
 
 
  <./figs/DEM-Def-Ball.pdf>] (./USthesis_Masters.bbl
-[31
+[32
 
 
 
 
-] [32]) [33]
+] [33]) [34]
 \tf@toc=\write7
 \openout7 = `USthesis_Masters.toc'.
 
@@ -2079,11 +2084,11 @@ Package rerunfilecheck Info: File `USthesis_Masters.out' has not changed.
 (rerunfilecheck)             Checksum: C38590ECA8277735C376C68C9A07AFBC;2704.
  ) 
 Here is how much of TeX's memory you used:
- 38699 strings out of 479303
- 919801 string characters out of 5871220
- 1357829 words of memory out of 5000000
- 55021 multiletter control sequences out of 15000+600000
- 429971 words of font info for 86 fonts, out of 8000000 for 9000
+ 38708 strings out of 479303
+ 919998 string characters out of 5871220
+ 1358194 words of memory out of 5000000
+ 55027 multiletter control sequences out of 15000+600000
+ 429972 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,15n,116p,1024b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
@@ -2113,10 +2118,10 @@ rm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 ve/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1440.pfb><c:/texlive/2020/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (44 pages, 3083281 bytes).
+Output written on USthesis_Masters.pdf (45 pages, 3084288 bytes).
 PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
- 747 compressed objects within 8 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 869 PDF objects out of 1000 (max. 8388607)
+ 758 compressed objects within 8 object streams
+ 174 named destinations out of 1000 (max. 500000)
  435 words of extra memory for PDF output out of 10000 (max. 10000000)
 
