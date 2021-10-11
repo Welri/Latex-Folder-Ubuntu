@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces DroneSAR Mobile Application Showing Coverage Plan\cite {DroneSAR01}\relax }}{2}{figure.caption.13}%
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Flow diagram showing a breakdown of the different kinds of path planning as part of motion planning.\relax }}{7}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Simulation showing coverage of hexagonal partitions with back and forth motions with three robots. \cite {Azpurua2018}\relax }}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Simulation showing coverage of hexagonal partitions with back and forth motions with three robots. \cite {Azpurua2018}\relax }}{11}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Figures showing results for the Voronoi partitioning scheme for two different distance measures. \cite {Nair2020}\relax }}{12}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Figure showing the resulting area partition using the negotiation protocol. This example is for two robots and includes a no fly zone. \cite {Rossi2009}\relax }}{13}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces MSTC algorithm showing the paths for three robots on an environment grid. \cite {Hazon2005}\relax }}{14}{figure.caption.18}%

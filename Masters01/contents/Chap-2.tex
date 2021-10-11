@@ -25,7 +25,7 @@ Whenever developing a plan, the task could be to move from one point to another,
 
 In a point-to-point problem, if the goal location is the same for all \acsp{uav}, it is referred to as a rendezvous task. If they all have different goal locations, it is an allocation task. And lastly, if the goal is not to move from a starting position to a goal, but instead to cover every point in an environment, it is called a coverage task. This classification is highlighted in Figure \ref{fig:MotionPlanning}.
 
-One final concept to grasp for motion planning, is the difference between online and offline planners. Offline algorithms draw a distinct line between the planning phase and the execution phase. The entire plan is already developed prior to real-world (or simulation based) execution. Online planners tend to perform planning and execution in tandem. Generally, it senses the environment as it moves and computes the plan as it goes. The environment is not known a priori, as it is with offline planners. \cite{AIbook}
+One final concept to grasp for motion planning, is the difference between online and offline planners. Offline algorithms draw a distinct line between the planning phase and the execution phase. The entire plan is already developed prior to real-world (or simulation based) execution, since the environment is known. Online planners tend to perform planning and execution in tandem. Generally, the environment is sensed as the agent moves and the plan is computed as it goes. The environment is either not known a priori, or is too costly to give as an input for the application. \cite{AIbook}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,trim={7cm 8.5cm 6.5cm 1.5cm},clip]{figs/Motion.pdf} % L  R
@@ -64,7 +64,7 @@ Distributed, for the purpose of this paper, refers to methods where the paths of
 
 \section{Single Robot Coverage Path Planning}
 \label{sec:lit SR CPP}
-Single robot coverage is discussed in some detail here because several of the \acs{mcpp} problems make use of them. Distributed problems tend to divide an environment into sub-regions that can then be covered using single robot techniques. Several of the other methods simply use the single robot methods and scale them to multiple robot applications. %TODO: Subsection breakdown
+Single robot coverage is discussed in some detail here because several of the \acs{mcpp} problems make use of them. Distributed problems tend to divide an environment into sub-regions that can then be covered using single robot techniques. Several of the other methods simply use the single robot methods and scale them to multiple robot applications. The subsections discuss several planning algorithms that exist. There are a large array pf algorithms available and this is by no means a comprehensive list.%TODO: Subsection breakdown
 % Mention simple maneouvres
 \subsection{Exact Methods}
 \label{sec:lit SR CPP - Exact}
@@ -77,13 +77,19 @@ A popular method, that is mentioned in Lavalle's book, is the trapezoidal decomp
 The trapezoidal and boustrophedon decomposition methods are applicable in two-dimensional coverage problems. They are offline approaches, since the environment must be known a priori, and only operate with polygonal obstacles. The boustrophedon method reduces the number of cells by only looking at vertices where a line can extend both upwards and downward from it. This reduces the final length of the coverage path and makes it more efficient. \cite{CPP-Survey-2013} 
 % Some simplifications of the environment are probably made to make it polygonal. The lower poly it is, the more approximate the method can become. Still more accurate than grid based though.
 
-A more versatile exact method, that uses Morse functions for the decomposition, is also available \cite{Choset-Morse2000}. 
-\subsection{A* Path Coverage Path Planning}
+A more versatile exact method, that uses Morse functions for the decomposition, is also available \cite{Choset-Morse2000}. This no longer requires polygonal environments and can in theory be expanded to higher dimensional environments.
+\subsection{A* Coverage Path Planning}
+This is a discrete method of planning. As mentioned in Section \ref{sec:LR-Motion Planning}, A* is often used in point-to-point path planning. In combinatorial motion planning or multiple-query sampling-based methods such as \acs{prm}, roadmaps are generally formed to represent the environment. These roadmaps can then be navigated using A* or another discrete algorithm like Dijkstra's Algorithm or a Breadth-First Search Algorithm. \cite{Lavalle2006}.
+
+Some authors have taken to extending A* algorithms to coverage path planning. Here the environment is generally divided into a grid and the cells can represent obstacles or free space. The starting and end-points are always within one of the free space cells.
+
+In point-to-point path planning, the goal is usually to achieve the shortest path possible and the cost function is set up for that purpose. For \acs{cpp} ,the cost function is changed to maximize coverage instead.
 \subsection{Spanning Tree Coverage Path Planning}
 \label{sec:lit SR CPP - STC}
-
+\acsp{stc} is also applied to discrete environments. Generally a spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. These larger cells are then divided into four smaller cells each, which can then be the cells that are navigated by the agents. To reach each cell, the algorithm simply circumnavigates the tree. When operating in a continuous environment, the environment must be divided into the larger cells. A nice feature that this method provides is that it forms a closed loop path. The agent will always loop back to its starting point. 
 \subsection{Wavefront Planning}
 \subsection{Artificial Intelligence Based Planning}
+\subsection{Sampling-based?... Online?}
 \section{Distributed Offline MCPP}
 \label{sec:lit Ditributed MCPP}
 A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:lit SR CPP}.
