@@ -1,33 +1,34 @@
 \chapter{Environment Representation}
 \label{chp:ER}
+\acresetall
 This Chapter describes the thought process behind the environment representation. Section \ref{sec:ER-bg} gives relevant background information and context for the problem, and Section \ref{sec:ER-ED} describes how this information is used to formulate a discrete environment representation. Lastly, Section \ref{sec:ER-App} shows a few practical scenarios using this strategy with different on-board cameras. 
 
 \section{Background}
 \label{sec:ER-bg}
 \subsection{Assumptions}
-The goal of this paper is to develop a coverage path planning algorithm \hbox{applicable} in a \acl{sar} situation, using \acsp{uav}. To achieve success in such an application, the first step would be to find a way to represent the environment. Essentially, the context in which the \acsp{uav} exist needs to be described in some way for them to navigate it successfully.
+The goal of this paper is to develop a coverage path planning algorithm \hbox{applicable} in a \ac{sar} situation, using \acp{uav}. To achieve success in such an application, the first step would be to find a way to represent the environment. Essentially, the context in which the \acp{uav} exist needs to be described in some way for them to navigate it successfully.
  
 % Offline
-The starting assumption is that an offline approach is sufficient. This implies that there is always enough information known about the environment to represent it fully prior to the execution of the path planning algorithm. At the altitude that a \acs{uav} flies, it is reasonable to assume that any obstructions, for example power lines or mountains, can be mapped out a priori. Moreover, \acs{sar} operations often have fixed geographical bounds in which to search.
+The starting assumption is that an offline approach is sufficient. This implies that there is always enough information known about the environment to represent it fully prior to the execution of the path planning algorithm. At the altitude that a \ac{uav} flies, it is reasonable to assume that any obstructions, for example power lines or mountains, can be mapped out a priori. Moreover, \ac{sar} operations often have fixed geographical bounds in which to search.
 
 % No dynamic obstacles or moving target
 % TODO: Justify why the target is not assumed to be in motion
-Furthermore, it is also assumed that there are no transients in the environment, such as a moving target or dynamic obstacles. Search and rescue operations will rarely have moving elements at the altitude of the \acsp{uav}. They are more likely to have fixed no fly zones and static obstacles.
+Furthermore, it is also assumed that there are no transients in the environment, such as a moving target or dynamic obstacles. Search and rescue operations will rarely have moving elements at the altitude of the \acp{uav}. They are more likely to have fixed no fly zones and static obstacles.
 
 % Two dimensional
-Because they are airborne vehicles,\acsp{uav} can execute three dimensional movements, which implies the necessity for a three dimensional representation of the environment. In this paper however, it is assumed that altitude changes are not necessary to search an area. Assuming that there is some form of camera on-board the \acs{uav}, a constant altitude will be an advantage. It means that the \acf{gsd} will remain roughly constant, which is a widely accepted measure of camera accuracy. Assuming a camera is on a \acs{uav} pointing down towards the ground, \acs{gsd} is the distance on the ground as represented by the width of one pixel in an image \cite{PropellerAero2021}.
+Because they are airborne vehicles,\acp{uav} can execute three dimensional movements, which implies the necessity for a three dimensional representation of the environment. In this paper however, it is assumed that altitude changes are not necessary to search an area. Assuming that there is some form of camera on-board the \ac{uav}, a constant altitude will be an advantage. It means that the \ac{gsd} will remain roughly constant, which is a widely accepted measure of camera accuracy. Assuming a camera is on a \ac{uav} pointing down towards the ground, \ac{gsd} is the distance on the ground as represented by the width of one pixel in an image \cite{PropellerAero2021}.
 
-Without altitude changes, \acs{uav} motions can be represented in two-dimensional space, which greatly simplifies the problem. For offline coverage path planning, it is important to have some demarcated two-dimensional region that requires coverage. The identified region, or environment, can be represented in either a discrete or continuous manner. 
+Without altitude changes, \ac{uav} motions can be represented in two-dimensional space, which greatly simplifies the problem. For offline coverage path planning, it is important to have some demarcated two-dimensional region that requires coverage. The identified region, or environment, can be represented in either a discrete or continuous manner. 
 
 % Discrete
 % TODO: Mention drawbacks of continuous implementations
 % TODO: Mention reasons for choosing discrete - wavefront planner paper pg 674 "An exact cell decomposition is ineffiecient because we are interested in acquiring an equally sized set of images"
-In the context of \acs{sar}, complete coverage is very important. It will ensure that every possible point in the environment map is covered. In this scenario, it implies that the camera will have viewed all points on the map. Achieving completeness is by no means trivial, but is more achievable in complex environments when using a discrete approach.
+In the context of \ac{sar}, complete coverage is very important. It will ensure that every possible point in the environment map is covered. In this scenario, it implies that the camera will have viewed all points on the map. Achieving completeness is by no means trivial, but is more achievable in complex environments when using a discrete approach.
 
 \subsection{Discretisation Using Cameras}
-Discretising the environment can be done in a few different ways. Assuming a generic \acs{uav} with some thermal or visual camera on-board, one has a few options. One can discretise the area based on the \acs{uav} size, but a more common practice is to base it off the tool size. In this case, that would be the \acf{fov} of the on-board camera. This also makes the process of complete coverage easier, because if the camera is guaranteed to see the entirety of each discrete cell, it is a complete algorithm so long as each cell is visited.
+Discretising the environment can be done in a few different ways. Assuming a generic \ac{uav} with some thermal or visual camera on-board, one has a few options. One can discretise the area based on the \ac{uav} size, but a more common practice is to base it off the tool size. In this case, that would be the \ac{fov} of the on-board camera. This also makes the process of complete coverage easier, because if the camera is guaranteed to see the entirety of each discrete cell, it is a complete algorithm so long as each cell is visited.
 
-Therefore, to discretise the environment, the \acl{fov} needs to be calculated. The camera specifications and \acs{uav} altitude will be the determining factors to calculate the \acs{fov}. The type of camera and the flight altitude are design decisions and will depend on the \acs{gsd} necessary to realistically be able to locate the target in a \acl{sar} operation.
+Therefore, to discretise the environment, the \ac{fov} needs to be calculated. The camera specifications and \ac{uav} altitude will be the determining factors to calculate the \ac{fov}. The type of camera and the flight altitude are design decisions and will depend on the \ac{gsd} necessary to realistically be able to locate the target in a \ac{sar} operation.
 
 The diagram in Figure \ref{fig:FOV} shows all the relevant variables needed to calculate the \acl{fov} along one dimension ($FOV_x$). A similar diagram can be used to calculate the \acl{fov} along the other dimension ($FOV_y$). The only difference would be the sensor size variable, which changes from the sensor width ($w_{len}$) to the sensor height ($h_{len}$). The other variables include the focal length of the camera ($f$), the height of the lens above ground ($H$) and the camera's angle of view ($AOV$). Lastly, there is the variable $\phi$ which is an angle created due to the sensor being slightly smaller than the diameter of the cone of light projected onto it.
 
@@ -146,7 +147,7 @@ The resulting \acl{fov} will be a rectangle of the same aspect ratio of the came
 	\caption{Diagram showing relevant variables concerned with calculating the Field of View for a camera.}
 	\label{fig:FOV}
 \end{figure}
-The calculations required to do a discretisation based on the camera \acl{fov} will now be discussed. The first equation that is required is the calculation of the angle $\phi$ which makes use of the small triangle:
+The calculations required to do a discretisation based on the camera \ac{fov} will now be discussed. The first equation that is required is the calculation of the angle $\phi$ which makes use of the small triangle:
 \begin{equation}
 	\label{eqn:phi}
 	\begin{aligned}
@@ -234,17 +235,17 @@ Taking the conservative approach, the assumption is that one is looking for a hu
 To calculate \acs{gsd}, a minimum number of pixels needed to make a human visible must be chosen. There is an article wherein they developed an image processing algorithm for human detection in a \acl{sar} scenario \cite{Rudol2008}. In this article they made the decision to put a 30 pixel requirement on human detection.
 % TODO: Maybe refer back to the literature review where the Rudol paper should be mentioned for the first time.
 Figure \ref{fig:GSD} shows the rectangular approximation for a human that the 30 pixels should represent.\\
-Using the lower percentile measurements of 170mm chest depth and 390mm elbow-to-elbow length along with the 30 pixel requirement, one gets a \acs{gsd} of roughly 4.7cm/px. For a child, these values could be even smaller. Therefore, 4cm/px will be used to calculate an appropriate flying height, which is a reasonable value considering that most aerial surveys operate at a \acs{gsd} of less than 5cm/px \cite{PropellerAero2021}.\\
-To show how the \acs{gsd} requirement can be used, a series of cameras are chosen to demonstrate how the discretisation could be determined using the camera specifications and the maximum allowable \acs{gsd}. Before showing the calculations applied to a specific scenario, they are shown in a more general sense. Firstly, one calculates the maximum allowable height:
+Using the lower percentile measurements of 170mm chest depth and 390mm elbow-to-elbow length along with the 30 pixel requirement, one gets a \ac{gsd} of roughly 4.7cm/px. For a child, these values could be even smaller. Therefore, 4cm/px will be used to calculate an appropriate flying height, which is a reasonable value considering that most aerial surveys operate at a \ac{gsd} of less than 5cm/px \cite{PropellerAero2021}.\\
+To show how the \ac{gsd} requirement can be used, a series of cameras are chosen to demonstrate how the discretisation could be determined using the camera specifications and the maximum allowable \ac{gsd}. Before showing the calculations applied to a specific scenario, they are shown in a more general sense. Firstly, one calculates the maximum allowable height:
 \begin{equation}
 	\label{eqn:height_calculation}
 	\begin{aligned}
 		H_{max} &= \frac{GSD_{max} \times f \times px_w}{100w_{len}}
 	\end{aligned}
 \end{equation}
-It is desirable to fly as high as possible, because this decreases the coverage time by increasing the camera \acl{fov}. Therefore, the assumption is that the height chosen would be the maximum, provided this is within the capabilities of the \acs{uav}. Using Equations \ref{eqn:fov_x} and \ref{eqn:fov_y}, one can then calculate the camera \acs{fov} at the height chosen.\\
+It is desirable to fly as high as possible, because this decreases the coverage time by increasing the camera \ac{fov}. Therefore, the assumption is that the height chosen would be the maximum, provided this is within the capabilities of the \ac{uav}. Using Equations \ref{eqn:fov_x} and \ref{eqn:fov_y}, one can then calculate the camera \ac{fov} at the height chosen.\\
 % discretisation - square vs rectangular
-One can now discretise the environment based on this field of view. One option is to do a square discretisation. One would make the squares have sides equal to the smaller \acs{fov} dimension, which is $FOV_y$. An example of this discretisation can be seen in Figure \ref{fig:Overlap-sqr}. This technique will always have cross-track overlap. This means that there will be a percentage of redundant coverage. If a camera has a square \acs{fov} then the overlap goes away, but this is uncommon. They tend to have a 4:3 or 3:2 aspect ratio. There is the option of making the squares have side lengths equal to $FOV_x$, but then complete coverage would not be achievable by simply following the square centroids. This adds a layer of complexity unnecessarily. Setting the square side length equal to $l$, one can calculate the cross-track overlap using the following equation:
+One can now discretise the environment based on this field of view. One option is to do a square discretisation. One would make the squares have sides equal to the smaller \ac{fov} dimension, which is $FOV_y$. An example of this discretisation can be seen in Figure \ref{fig:Overlap-sqr}. This technique will always have cross-track overlap. This means that there will be a percentage of redundant coverage. If a camera has a square \ac{fov} then the overlap goes away, but this is uncommon. They tend to have a 4:3 or 3:2 aspect ratio. There is the option of making the squares have side lengths equal to $FOV_x$, but then complete coverage would not be achievable by simply following the square centroids. This adds a layer of complexity unnecessarily. Setting the square side length equal to $l$, one can calculate the cross-track overlap using the following equation:
 \begin{equation}
 	\label{eqn:overlap_sqr}
 	\begin{aligned}
@@ -259,7 +260,7 @@ Figure \ref{fig:Overlap-rect} shows an alternative technique where the environme
 		\%Overlap &= \frac{FOV_x(FOV_x-FOV_y)}{FOV_x-FOV_y} \times 100&
 	\end{aligned}
 \end{equation}
-Both techniques assume sharp 90 degree turns are possible. Some \acsp{uav} can make sharp turns, such as multi-rotors, but this often requires deceleration to a hover, which significantly slows coverage time by lowering the average velocity during coverage. Chapter \ref{chp:Dynamic} covers a proposed solution for a constant speed scenario. This is considerably more favourable in a scenario where a fixed-wing \acs{uav} is used instead of a multi-rotor. Fixed-wing craft are desirable for \acs{sar} due to there high endurance. They can generally cover larger areas before needing to refuel.\\
+Both techniques assume sharp 90 degree turns are possible. Some \acp{uav} can make sharp turns, such as multi-rotors, but this often requires deceleration to a hover, which significantly slows coverage time by lowering the average velocity during coverage. Chapter \ref{chp:Dynamic} covers a proposed solution for a constant speed scenario. This is considerably more favourable in a scenario where a fixed-wing \ac{uav} is used instead of a multi-rotor. Fixed-wing craft are desirable for \ac{sar} due to there high endurance. They can generally cover larger areas before needing to refuel.\\
 % TODO: check if you used chapter in all chapter references.
 \begin{figure}[]
 	\centering

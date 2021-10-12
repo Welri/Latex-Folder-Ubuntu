@@ -114,6 +114,8 @@
 \maxsecnumdepth{subsubsection}
 \maxtocdepth{section}
 
+ \include{frontmatter/Acronyms}
+
 \begin{document}
 
 %==== Front matter ==================================================
@@ -137,8 +139,11 @@
  \clearpage
 
  \include{frontmatter/Nomencl}
+
+ \chapter{Acronyms}
+ \printacronyms[heading=Acronyms,template=description,sort=true]
  
- \include{frontmatter/Acronyms}
+ %\include{frontmatter/Acronyms}
  
 %==== Main document =================================================
 \mainmatter
