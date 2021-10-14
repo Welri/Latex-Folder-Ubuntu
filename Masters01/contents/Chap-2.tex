@@ -84,10 +84,16 @@ This is a discrete method of planning. As mentioned in Section \ref{sec:LR-Motio
 
 Some authors have taken to extending A* algorithms to \ac{cpp}. Here the environment is generally divided into a grid and the cells can represent obstacles or free space. The starting and end-points are always within free space cells.
 
-In point-to-point path planning, the goal is usually to achieve the shortest path possible and the cost function is set up for that purpose. For \ac{cpp}, the cost function is changed to maximize coverage instead.
+One of the earlier interpretations of A* \ac{cpp} is a combination of the boustrophedon method described in \ref{sec:lit SR CPP - Exact} and A* \cite{Viet2012}. This is an online method that constructs boustrophedon regions incrementally and uses A* to move from one region to the next. 
+
+In point-to-point path planning, the goal is usually to achieve the shortest path possible and the heuristic function is set up for that purpose. For \ac{cpp}, the cost function is changed to maximize coverage instead. One such implementation uses A* in a grid-based, offline approach where they try to minimise the amount of cells that get revisited \cite{Le2018}. They use critical waypoints and A* based zigzag motions. 
+
+Another implementation uses a heuristic function with the goal of minimising the number of rotations \cite{Dogru2017}. This is useful, because rotations often consume more energy that straight line motions.
 \subsection{Spanning Tree Coverage Path Planning}
 \label{sec:lit SR CPP - STC}
-\acp{stc} is also applied to discrete environments. Generally a spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. These larger cells are then divided into four smaller cells each, which can then be the cells that are navigated by the agents. To reach each cell, the algorithm simply circumnavigates the tree. When operating in a continuous environment, the environment must be divided into the larger cells. A nice feature that this method provides is that it forms a closed loop path. The agent will always loop back to its starting point. 
+Spanning trees are a applied in discrete environments. They can be applied in an offline scenarios or incrementally grown for online applications \cite{Gabriely2001}. A spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. 
+
+These larger cells are then divided into four smaller cells each, which can then be the cells that are navigated by the agents. To reach each cell, the algorithm simply circumnavigates the tree. When operating in a continuous environment, the environment must be divided into the larger cells. A nice feature that this method provides is that it forms a closed loop path. The agent will always loop back to its starting point. \cite{Hazon2005} 
 \subsection{Wavefront Planning}
 \subsection{Artificial Intelligence Based Planning}
 \subsection{Sampling-based?... Online?}

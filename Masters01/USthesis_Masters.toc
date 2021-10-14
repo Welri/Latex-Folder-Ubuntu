@@ -33,35 +33,35 @@
 \contentsline {subsection}{\numberline {2.4.1}Hexagonal Segmentation}{10}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Voronoi Partitioning}{11}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Negotiation Protocol}{12}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}MSTC}{13}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}DARP}{14}{subsection.2.4.5}%
-\contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{14}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}MFC}{14}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Sampling-Based}{15}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Artificial-Intelligence-Based}{15}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Online MCPP}{15}{section.2.6}%
-\contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{15}{section.2.7}%
-\contentsline {chapter}{\chapternumberline {3}Environment Representation}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Background}{16}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Assumptions}{16}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Discretisation Using Cameras}{17}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Discretisation Methodology}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Implementation with Different Cameras}{21}{section.3.3}%
-\contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Background Theory}{22}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Algorithm Description}{23}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Distance Measure Comparisons}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Implementation with Different Scenarios}{23}{section.4.3}%
-\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Background}{25}{section.5.1}%
-\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{26}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Background}{26}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Background}{27}{section.7.1}%
-\contentsline {chapter}{\chapternumberline {8}Results}{28}{chapter.8}%
-\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{29}{chapter.9}%
-\contentsline {chapter}{Appendices}{30}{section*.23}%
-\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{31}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Ball elements}{31}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{31}{subsection.A.1.1}%
-\contentsline {chapter}{List of References}{32}{appendix*.25}%
+\contentsline {subsection}{\numberline {2.4.4}MSTC}{14}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}DARP}{15}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}MFC}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Sampling-Based}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Artificial-Intelligence-Based}{16}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Online MCPP}{16}{section.2.6}%
+\contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{16}{section.2.7}%
+\contentsline {chapter}{\chapternumberline {3}Environment Representation}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Background}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Assumptions}{17}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Discretisation Using Cameras}{18}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Discretisation Methodology}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Implementation with Different Cameras}{22}{section.3.3}%
+\contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Background Theory}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Algorithm Description}{24}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Distance Measure Comparisons}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Implementation with Different Scenarios}{24}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Background}{26}{section.5.1}%
+\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Background}{27}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{28}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Background}{28}{section.7.1}%
+\contentsline {chapter}{\chapternumberline {8}Results}{29}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{30}{chapter.9}%
+\contentsline {chapter}{Appendices}{31}{section*.23}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{32}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Ball elements}{32}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{32}{subsection.A.1.1}%
+\contentsline {chapter}{List of References}{33}{appendix*.25}%

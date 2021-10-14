@@ -10,19 +10,19 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Flow diagram showing a breakdown of the different kinds of path planning as part of motion planning.\relax }}{7}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Simulation showing coverage of hexagonal partitions with back and forth motions with three robots. \cite {Azpurua2018}\relax }}{11}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Figures showing results for the Voronoi partitioning scheme for two different distance measures. \cite {Nair2020}\relax }}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Figures showing results for the Voronoi partitioning scheme for two different distance measures. \cite {Nair2020}\relax }}{13}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Figure showing the resulting area partition using the negotiation protocol. This example is for two robots and includes a no fly zone. \cite {Rossi2009}\relax }}{14}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces MSTC algorithm showing the paths for three robots on an environment grid. \cite {Hazon2005}\relax }}{15}{figure.caption.18}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram showing relevant variables concerned with calculating the Field of View for a camera.\relax }}{18}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Figure showing the rectangular approximation for a human viewed from above for calculation of the GSD\relax }}{19}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrams showing cross track overlap for camera Field of View for different discretisation techniques.\relax }}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram showing relevant variables concerned with calculating the Field of View for a camera.\relax }}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Figure showing the rectangular approximation for a human viewed from above for calculation of the GSD\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrams showing cross track overlap for camera Field of View for different discretisation techniques.\relax }}{22}{figure.caption.21}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow diagram representing the logic for DARP.\relax }}{24}{figure.caption.22}%
-\addvspace {10pt}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow diagram representing the logic for DARP.\relax }}{25}{figure.caption.22}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{31}{figure.caption.24}%
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{32}{figure.caption.24}%

@@ -4,7 +4,6 @@ The top-level auxiliary file: USthesis_Masters.aux
 The style file: IEEEtranN.bst
 A level-1 auxiliary file: frontmatter/Chap-Front.aux
 A level-1 auxiliary file: frontmatter/Nomencl.aux
-A level-1 auxiliary file: frontmatter/Acronyms.aux
 A level-1 auxiliary file: contents/Chap-1.aux
 A level-1 auxiliary file: contents/Chap-2.aux
 A level-1 auxiliary file: contents/Chap-3.aux
@@ -31,45 +30,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--empty journal in Jurgens1998
 
 Done.
-You've used 35 entries,
+You've used 39 entries,
             4855 wiz_defined-function locations,
-            1179 strings with 15266 characters,
-and the built_in function-call counts, 26793 in all, are:
-= -- 2400
-> -- 874
-< -- 151
-+ -- 416
-- -- 204
-* -- 1555
-:= -- 4265
-add.period$ -- 70
-call.type$ -- 35
-change.case$ -- 68
-chr.to.int$ -- 341
-cite$ -- 37
-duplicate$ -- 1824
-empty$ -- 1883
-format.name$ -- 289
-if$ -- 5928
+            1202 strings with 15990 characters,
+and the built_in function-call counts, 29769 in all, are:
+= -- 2675
+> -- 974
+< -- 166
++ -- 462
+- -- 228
+* -- 1734
+:= -- 4746
+add.period$ -- 78
+call.type$ -- 39
+change.case$ -- 76
+chr.to.int$ -- 369
+cite$ -- 41
+duplicate$ -- 2033
+empty$ -- 2087
+format.name$ -- 325
+if$ -- 6584
 int.to.chr$ -- 1
-int.to.str$ -- 36
-missing$ -- 279
-newline$ -- 141
-num.names$ -- 102
-pop$ -- 765
+int.to.str$ -- 40
+missing$ -- 312
+newline$ -- 153
+num.names$ -- 114
+pop$ -- 848
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 39
 quote$ -- 2
-skip$ -- 1946
+skip$ -- 2163
 stack$ -- 0
-substring$ -- 810
-swap$ -- 1223
-text.length$ -- 33
+substring$ -- 878
+swap$ -- 1363
+text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 534
+type$ -- 598
 warning$ -- 1
-while$ -- 121
+while$ -- 133
 width$ -- 0
-write$ -- 417
+write$ -- 462
 (There was 1 warning)
