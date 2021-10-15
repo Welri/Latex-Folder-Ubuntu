@@ -79,7 +79,15 @@ The trapezoidal and boustrophedon decomposition methods are applicable in two-di
 % Some simplifications of the environment are probably made to make it polygonal. The lower poly it is, the more approximate the method can become. Still more accurate than grid based though.
 
 A more versatile exact method, that uses Morse functions for the decomposition, is also available \cite{Choset-Morse2000}. This no longer requires polygonal environments and can in theory be expanded to higher dimensional environments.
-\subsection{A* Coverage Path Planning}
+\subsection{Sampling-based Methods}
+Sampling-based methods have been adapted for coverage path planning. They are more easily scaled to three dimensional environments and are better suited to online or real-time approaches. They also deal with changing environments with dynamic obstacles more easily. 
+
+\ac{rrt} has been adapted to \ac{cpp}. An example of this is an application involving automated lawn mowing. They used \ac{rrt} as a local planner in combination with a global planner that uses a spiral motion to cover the points in a map. A solution is however, not guaranteed. Complete coverage is also not necessarily achieved because of the random nature of the paths, but it is considered a real-time approach. \cite{Nourani-Vatani2006}
+
+Two other problems, that are both proven to be probabilistically complete, are the watchman rout algorithm and the redundant roadmap algorithm \cite{Englot2012}. The watchman method constructs a roadmap, and coverage is achieved using a minimum spanning tree. Roadmap construction is generally done using a \ac{prm} \cite{Danner2000}.% Watchmen method
+
+The redundant roadmap method also constructs a roadmap and then conducts point-to-point planning using \ac{rrt}, where collision avoidance is also implemented \cite{Englot2011}.
+\subsection{A* Based Coverage}
 This is a discrete method of planning. As mentioned in Section \ref{sec:LR-Motion Planning}, A* is often used in point-to-point path planning. In combinatorial motion planning or multiple-query sampling-based methods such as \ac{prm}, roadmaps are generally formed to represent the environment. These roadmaps can then be navigated using A* or another discrete algorithm like Dijkstra's Algorithm or a Breadth-First Search Algorithm. \cite{Lavalle2006}.
 
 Some authors have taken to extending A* algorithms to \ac{cpp}. Here the environment is generally divided into a grid and the cells can represent obstacles or free space. The starting and end-points are always within free space cells.
@@ -89,14 +97,20 @@ One of the earlier interpretations of A* \ac{cpp} is a combination of the boustr
 In point-to-point path planning, the goal is usually to achieve the shortest path possible and the heuristic function is set up for that purpose. For \ac{cpp}, the cost function is changed to maximize coverage instead. One such implementation uses A* in a grid-based, offline approach where they try to minimise the amount of cells that get revisited \cite{Le2018}. They use critical waypoints and A* based zigzag motions. 
 
 Another implementation uses a heuristic function with the goal of minimising the number of rotations \cite{Dogru2017}. This is useful, because rotations often consume more energy that straight line motions.
-\subsection{Spanning Tree Coverage Path Planning}
+\subsection{Spanning Tree Coverage}
 \label{sec:lit SR CPP - STC}
-Spanning trees are a applied in discrete environments. They can be applied in an offline scenarios or incrementally grown for online applications \cite{Gabriely2001}. A spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. 
+Spanning trees are a appin discrete environments. They can be applied in an offline scenarios or incrementally grown for online applications \cite{Gabriely2001}. A spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. 
 
 These larger cells are then divided into four smaller cells each, which can then be the cells that are navigated by the agents. To reach each cell, the algorithm simply circumnavigates the tree. When operating in a continuous environment, the environment must be divided into the larger cells. A nice feature that this method provides is that it forms a closed loop path. The agent will always loop back to its starting point. \cite{Hazon2005} 
+
+The spanning trees used are usually minimum spanning trees, constructed using algorithms such as Prim's algorithm. These algorithms can minimise tree weight. This weight can represent distance, or any number of other costs. They can even be used to reduce rotations by encouraging the robot to scan an area along a particular direction. \cite{Gabriely2001}
 \subsection{Wavefront Planning}
-\subsection{Artificial Intelligence Based Planning}
-\subsection{Sampling-based?... Online?}
+\subsection{Artificial Intelligence Methods}
+One author compared several \ac{ai} techniques for \ac{cpp}. Four methods were compared, including one that employs a \ac{ga}. The four methods are the La Palma attraction, La Palma fuzzy logic, \ac{anfis} and \ac{pso} approaches. \cite{Juan2018}
+
+All of the methods were implemented in a discretized environment (a grid). In this paper they also generate what they call a \emph{Risk/Occupancy Map}. This is given as an input for their algorithms to encourage searching of certain areas first. For each cell, they generate a potential risk/occupancy value ($P$). The higher the value, the higher the priority of searching that cell.
+
+They evaluated performance of these algorithms in the context of search and rescue and found that the \ac{anfis} approach gives the best performance for that application. The attraction method works well for environments with maps that don't have a varying $P$ value. Fuzzy logic works well when a big portion of the map has high $P$ values, but has a lower success rate. \ac{pso} was shown to not work well at all.
 \section{Distributed Offline MCPP}
 \label{sec:lit Ditributed MCPP}
 A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:lit SR CPP}.
@@ -187,6 +201,8 @@ Based on the simulations they ran with \ac{mstc} and \ac{mfc}, they found that \
 \section{Online MCPP}
 \label{sec:lit Online MCPP}
 \section{UAVs and Search and Rescue}
+\subsection{AI method}
+\subsection{DroneSAR}
 %DroneSAR
 %Rotary Wing vs Fixed-Wing UAVs}
 
