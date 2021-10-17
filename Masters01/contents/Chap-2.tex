@@ -44,7 +44,7 @@ A number of surveys have been done to give an overview of the literature availab
 Choset addresses heuristic and/or randomized approaches and also looks at three type of cellular decompositions, namely approximate, semi-approximate and exact. He continues in briefly addressing the multi robot scenario. The cellular decompositions all rely on simplifying the environment to achieve provably complete coverage. 
 
 % TODO: STC is an approximate method. maybe reference the section that discusses that, along with other approximate methods
-The approximate methods mean the environment is modelled as a set of cells with equal size and shape, generally a grid. These algorithms can achieve complete coverage of the discrete approximation of the environment, but don't guarantee complete coverage for the actual environment. Exact cellular decompositions divide the environment into polygons and cover these using simple motions e.g. back-and-forth manoeuvres. This can achieve complete coverage of the actual environment, hence the term \emph{exact}. This is further discussed in Section \ref{sec:lit SR CPP - Exact}. 
+The approximate methods mean the environment is modelled as a set of cells with equal size and shape, generally a grid. These algorithms can achieve complete coverage of the discrete approximation of the environment, but don't guarantee complete coverage for the actual environment. Exact cellular decompositions divide the environment into polygons and cover these using simple motions e.g. back-and-forth manoeuvres. This can achieve complete coverage of the actual environment, hence the term \emph{exact}. This is further discussed in Section \ref{sec:LR - sExact}. 
 
 % 2013 and 2019 Survey
 In 2013, a survey was done regarding \ac{cpp} in robotics \cite{CPP-Survey-2013}. It expands on Choset's taxonomy and gives more detail on recent developments in each category. This paper also addresses \ac{cpp} in three-dimensional scenarios, and briefly looks at \ac{cpp} where \ac{slam} is applied due to localization uncertainties. 
@@ -58,17 +58,17 @@ Generally multi-robot approaches add a layer of complexity to \ac{cpp}. The most
 % TODO: Should you mention Centralized vs Decentralized (2020 paper looks at that in more detail)
 
 % Description of offline vs online and mention that the next sections are offline, offline and online
-In this chapter, a number of \ac{cpp} techniques are explored. Methods using a single robot for coverage are discussed in Section \ref{sec:lit SR CPP}. Sections \ref{sec:lit Ditributed MCPP} and \ref{sec:lit Non-Distributed MCPP} refer to offline methods of \ac{mcpp} and Section \ref{sec:lit Online MCPP} looks at online methods. The sections that discuss offline methods are categorised as distributed and non-distributed.
+In this chapter, a number of \ac{cpp} techniques are explored. Methods using a single robot for coverage are discussed in Section \ref{sec:LR sCPP}. Sections \ref{sec:LR Ditributed MCPP} and \ref{sec:LR Non-Distributed MCPP} refer to offline methods of \ac{mcpp} and Section \ref{sec:LR Online MCPP} looks at online methods. The sections that discuss offline methods are categorised as distributed and non-distributed.
 
 % Definition of distributed
 Distributed, for the purpose of this paper, refers to methods where the paths of individual \acp{uav} do not overlap. They are expected to fly in their own isolated sub-regions within an environment. In non-distributed methods,\acsp{uav} are free to cross paths. The area division step is not performed and so their paths are simply computed simultaneously, with knowledge of which cells have already been visited. \cite{Juan2018}
 
 \section{Single Robot Coverage Path Planning}
-\label{sec:lit SR CPP}
+\label{sec:LR sCPP}
 Single robot coverage is discussed in some detail here because several of the \ac{mcpp} problems make use of them. Distributed problems tend to divide an environment into sub-regions that can then be covered using single robot techniques. Several of the other methods simply use the single robot methods and scale them to multiple robot applications. The subsections discuss several existing planning algorithms. This is by no means a comprehensive list of all the algorithms available, but gives a brief overview of varying techniques.%TODO: Subsection breakdown
 % Mention simple maneouvres
 \subsection{Exact Methods}
-\label{sec:lit SR CPP - Exact}
+\label{sec:LR - sExact}
 Combinatorial methods, as described by Lavalle, are also referred to as exact methods \cite{Lavalle2006}. Exact methods for \ac{cpp} make use of the same geometric principles to divide an area into cells. However, instead of creating a roadmap, an adjacency graph is created and used to move between cells. Each cell is then individually covered, generally using simple manoeuvres \cite{CPP-Survey-2013}. 
 
 Each cell in the decomposition is a node in the adjacency graph. An exhaustive walk is used to ascertain the sequence in which to visit these nodes to achieve coverage. Simple manoeuvres, such as back-and-forth motions, are then used to cover each cell individually. These algorithms are complete, so will completely cover the environment when possible. \cite{Choset-Bous1997}
@@ -80,6 +80,7 @@ The trapezoidal and boustrophedon decomposition methods are applicable in two-di
 
 A more versatile exact method, that uses Morse functions for the decomposition, is also available \cite{Choset-Morse2000}. This no longer requires polygonal environments and can in theory be expanded to higher dimensional environments.
 \subsection{Sampling-based Methods}
+\label{sec:LR - sSampling}
 Sampling-based methods have been adapted for coverage path planning. They are more easily scaled to three dimensional environments and are better suited to online or real-time approaches. They also deal with changing environments with dynamic obstacles more easily. 
 
 \ac{rrt} has been adapted to \ac{cpp}. An example of this is an application involving automated lawn mowing. They used \ac{rrt} as a local planner in combination with a global planner that uses a spiral motion to cover the points in a map. A solution is however, not guaranteed. Complete coverage is also not necessarily achieved because of the random nature of the paths, but it is considered a real-time approach. \cite{Nourani-Vatani2006}
@@ -87,37 +88,45 @@ Sampling-based methods have been adapted for coverage path planning. They are mo
 Two other problems, that are both proven to be probabilistically complete, are the watchman rout algorithm and the redundant roadmap algorithm \cite{Englot2012}. The watchman method constructs a roadmap, and coverage is achieved using a minimum spanning tree. Roadmap construction is generally done using a \ac{prm} \cite{Danner2000}.% Watchmen method
 
 The redundant roadmap method also constructs a roadmap and then conducts point-to-point planning using \ac{rrt}, where collision avoidance is also implemented \cite{Englot2011}.
-\subsection{A* Based Coverage}
-This is a discrete method of planning. As mentioned in Section \ref{sec:LR-Motion Planning}, A* is often used in point-to-point path planning. In combinatorial motion planning or multiple-query sampling-based methods such as \ac{prm}, roadmaps are generally formed to represent the environment. These roadmaps can then be navigated using A* or another discrete algorithm like Dijkstra's Algorithm or a Breadth-First Search Algorithm. \cite{Lavalle2006}.
+\subsection{A* and Wavefront Based Coverage}
+\label{sec:LR - sA*}
+This is a discrete method of planning. As mentioned in Section \ref{sec:LR-Motion Planning}, A* is often used in point-to-point path planning. In combinatorial motion planning or multiple-query sampling-based methods such as \ac{prm}, roadmaps are generally formed to represent the environment. These roadmaps can then be navigated using A* or another discrete algorithm like Dijkstra's algorithm or a forward search. \cite{Lavalle2006}.
 
-Some authors have taken to extending A* algorithms to \ac{cpp}. Here the environment is generally divided into a grid and the cells can represent obstacles or free space. The starting and end-points are always within free space cells.
+A* was built from Dijkstra's algorithm, which is like a forward search that takes cost into account for the priority queue. A* is an extension of this that also predicts the cost to reach the goal using a heuristic. 
 
-One of the earlier interpretations of A* \ac{cpp} is a combination of the boustrophedon method described in \ref{sec:lit SR CPP - Exact} and A* \cite{Viet2012}. This is an online method that constructs boustrophedon regions incrementally and uses A* to move from one region to the next. 
+Dijkstra has also been optimised into what is called a wavefront planner. With this technique, equal cost points are grouped together into "waves" and the algorithm essentially propagates out in waves until it reaches the goal \cite{Lavalle2006}. This wavefront type planning has also been used for \ac{cpp}, with the goal to minimise rotations and the number of revisited cells \cite{Barrientos2011}.
+
+Some authors have taken to extending A* algorithms to \ac{cpp} as well. Here the environment is generally divided into a grid and the cells can represent obstacles or free space. The starting and end-points are always within free space cells.
+
+One of the earlier interpretations of A* \ac{cpp} is a combination of the boustrophedon method described in \ref{sec:LR - sExact} and A* \cite{Viet2012}. This is an online method that constructs boustrophedon regions incrementally and uses A* to move from one region to the next. 
 
 In point-to-point path planning, the goal is usually to achieve the shortest path possible and the heuristic function is set up for that purpose. For \ac{cpp}, the cost function is changed to maximize coverage instead. One such implementation uses A* in a grid-based, offline approach where they try to minimise the amount of cells that get revisited \cite{Le2018}. They use critical waypoints and A* based zigzag motions. 
 
-Another implementation uses a heuristic function with the goal of minimising the number of rotations \cite{Dogru2017}. This is useful, because rotations often consume more energy that straight line motions.
+Another implementation uses a heuristic function with the goal of minimising the number of rotations, as was the goal of the wavefront planner mentioned earlier in this section \cite{Dogru2017}. This is useful, because rotations often consume more energy than straight line motions.
 \subsection{Spanning Tree Coverage}
-\label{sec:lit SR CPP - STC}
+\label{sec: LR - sSTC}
 Spanning trees are a appin discrete environments. They can be applied in an offline scenarios or incrementally grown for online applications \cite{Gabriely2001}. A spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. 
 
 These larger cells are then divided into four smaller cells each, which can then be the cells that are navigated by the agents. To reach each cell, the algorithm simply circumnavigates the tree. When operating in a continuous environment, the environment must be divided into the larger cells. A nice feature that this method provides is that it forms a closed loop path. The agent will always loop back to its starting point. \cite{Hazon2005} 
 
 The spanning trees used are usually minimum spanning trees, constructed using algorithms such as Prim's algorithm. These algorithms can minimise tree weight. This weight can represent distance, or any number of other costs. They can even be used to reduce rotations by encouraging the robot to scan an area along a particular direction. \cite{Gabriely2001}
-\subsection{Wavefront Planning}
+
 \subsection{Artificial Intelligence Methods}
+\label{sec:LR - sAI}
 One author compared several \ac{ai} techniques for \ac{cpp}. Four methods were compared, including one that employs a \ac{ga}. The four methods are the La Palma attraction, La Palma fuzzy logic, \ac{anfis} and \ac{pso} approaches. \cite{Juan2018}
 
 All of the methods were implemented in a discretized environment (a grid). In this paper they also generate what they call a \emph{Risk/Occupancy Map}. This is given as an input for their algorithms to encourage searching of certain areas first. For each cell, they generate a potential risk/occupancy value ($P$). The higher the value, the higher the priority of searching that cell.
 
 They evaluated performance of these algorithms in the context of search and rescue and found that the \ac{anfis} approach gives the best performance for that application. The attraction method works well for environments with maps that don't have a varying $P$ value. Fuzzy logic works well when a big portion of the map has high $P$ values, but has a lower success rate. \ac{pso} was shown to not work well at all.
+
+
 \section{Distributed Offline MCPP}
-\label{sec:lit Ditributed MCPP}
-A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:lit SR CPP}.
+\label{sec:LR Ditributed MCPP}
+A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:LR sCPP}.
 %TODO: Distributed vs Non-distributed - give the definition for the purpose of this paper
 \subsection{Hexagonal Segmentation}
-\label{subsec:Hex}
-A notable distributed approach uses regular hexagons to segment the area of interest \cite{Azpurua2018}. This implementation is reminiscent of the exact methods often used for single robot coverage path planning mentioned in Section \ref{sec:lit SR CPP - Exact}. Exact methods generally divide an area into arbitrarily sized polygons called cells. The robot moves between these cells and covers them using simple motions. In the multi-robot scenario, the area is still divided into cells, but they need to be distributed between the robots evenly for searching. The ideal situation is to assign equal sized areas to each robot so that their path lengths are similar and they can complete their paths at roughly the same time.\\
+\label{sec:LR-Hex}
+A notable distributed approach uses regular hexagons to segment the area of interest \cite{Azpurua2018}. This implementation is reminiscent of the exact methods often used for single robot coverage path planning mentioned in Section \ref{sec:LR - sExact}. Exact methods generally divide an area into arbitrarily sized polygons called cells. The robot moves between these cells and covers them using simple motions. In the multi-robot scenario, the area is still divided into cells, but they need to be distributed between the robots evenly for searching. The ideal situation is to assign equal sized areas to each robot so that their path lengths are similar and they can complete their paths at roughly the same time.\\
 Hexagonal cells make it easier to assign cells to robots, seen as they are all of the same size. Hexagons are clustered using the K-means algorithm to ensure a similar number of cells are assigned to each robot. The seeds are synonymous with the robots, therefore once the seed locations are finalized for even cell distribution, the robot initial positions are established. The robots cannot start from any random location, which can be undesirable. \\
 The hexagons that are assigned to a given robot are contiguous and form a sub-region that is then covered using simple manoeuvres. Back and forth motions are generally quite popular. Static obstacles are considered in this implementation, but the smallest obstacle resolution is the size of a hexagon which may not be very representative of the environment. Figure \ref{fig:Hex}, taken directly from their paper, illustrates the back and forth manoeuvres used to cover the hexagonal partitions. Black hexagons represent no-fly zones and/or static obstacles. The dark red, green and blue regions represent the sub-regions as they are assigned to the respective robots for coverage.\\
 \begin{figure}[h!]
@@ -127,7 +136,7 @@ The hexagons that are assigned to a given robot are contiguous and form a sub-re
 	\label{fig:Hex}
 \end{figure}
 \subsection{Voronoi Partitioning}
-\label{subsec:Voronoi}
+\label{sec:LR-Voronoi}
 % Polygons
 In the mathematics field, there are methods of area division to divide a polygon into a number of equal area polygons \cite{Nandakumar2012}. Another relevant method that also stems from the field of mathematics, is the Voronoi partition. This assigns regions within an area to seeds based on distance. The idea is that a region assigned to a seed represents all the points where the distance to that seed is shorter than to any other seed.\\
 % Voronoi
@@ -157,7 +166,7 @@ Figure \ref{fig:Voronoi - Euclid} shows the results using Euclidean distances. H
 \label{fig:Voronoi}
 \end{figure}
 \subsection{Negotiation Protocol}
-\label{subsec:Negotiation}
+\label{sec:Negotiation}
 A negotiation or bargaining protocol refers to a process involving task partitioning. In the context of area division for \ac{cpp}, the task represents the area to be divided \cite{Rossi2009}. The authors of \cite{Rossi2009} present a negotiation model based on Rubinstein's alternate-offers protocol, for the purpose of area division. The focus of their implementation was to develop a distributed algorithm capable of considering robot capabilities. This means that the robots wouldn't have to be homogeneous and can have different flight-time capabilities, manoeuvrability, on-board equipment and so forth \cite{Barrientos2011}.\\ 
 They implemented their algorithm and found that it can achieve near optimum results. It tries to maximise the size of each robot's subdivision of the area (based on its capabilities), while also minimising sub-area overlap. The algorithm also works to avoid static obstacles or no fly zones that are present in the area. Moreover, they proved that it could be applied in a situation where re-planning may be necessary.\\
 % Re-planning is necessary in a scenario when carrying out the plan changes the environment, thereby requireing replanning wiht the new environment scenario
@@ -172,8 +181,8 @@ One visible drawback in their implementation is that they coverage appears incom
 	\label{fig:NegProt}
 \end{figure}
 \subsection{MSTC}
-\label{subsec:mstc}
-\ac{mstc} is a variant of single robot \ac{stc} as presented in Section \ref{sec:lit SR CPP - STC}. The authors of \cite{Hazon2005} designed the first variants of \ac{mstc}. The two variations they suggest are one that allows for backtracking and one that does not. Both variations still utilize a single spanning tree, but simply circumnavigate the tree with multiple robots instead of a single one.\\
+\label{sec:LR-MSTC}
+\ac{mstc} is a variant of single robot \ac{stc} as presented in Section \ref{sec: LR - sSTC}. The authors of \cite{Hazon2005} designed the first variants of \ac{mstc}. The two variations they suggest are one that allows for backtracking and one that does not. Both variations still utilize a single spanning tree, but simply circumnavigate the tree with multiple robots instead of a single one.\\
 They place a lot of emphasis on robustness and efficiency, in addition to completeness. They demonstrate an algorithm that segments the path around a spanning tree to evenly distribute it among robots. This distribution of robots is however, unrealistic. Their method becomes incredibly inefficient when robots are clustered closely together. This is because a robot simply navigates the path until it reaches the initial position of the next robot on the path.\\
 Figure \ref{fig:MSTC} shows the paths that are generated when the robots are evenly distributed along the path that circumnavigates the tree. Blue dots represent the robot initial positions and the spanning tree is shown in red. The second method they suggest remedies this somewhat. It allows for backtracking and improves the efficiency.\\
 The ideal situation is that all the robots have near equal path lengths, provided they are homogeneous robots. This is not guaranteed with this algorithm when the robots have random starting positions, but allowing for backtracking can improve the results and allow the coverage to be completed in a shorter amount of time.\\
@@ -185,21 +194,18 @@ The ideal situation is that all the robots have near equal path lengths, provide
 \end{figure}
 
 \subsection{DARP}
-\label{subsec:lit DARP}
+\label{sec:LR DARP}
 \section{Non-Distributed Offline MCPP}
-\label{sec:lit Non-Distributed MCPP}
+\label{sec:LR Non-Distributed MCPP}
 \subsection{MFC}
 % insert MFC
-\ac{mfc} is a method that was developed by the authors in \cite{Zheng2005} to improve upon the \ac{mstc} method mentioned in Section \ref{subsec:mstc}. Their intent was to construct a tree with the consideration that it will be divided afterwards, unlike what \ac{mstc} does. It allows for robot path overlap, which means there is redundant coverage and collision avoidance would need to be considered. However it can handle unique scenarios, where backtracking is unavoidable, quite well.\\ 
+\ac{mfc} is a method that was developed by the authors in \cite{Zheng2005} to improve upon the \ac{mstc} method mentioned in Section \ref{sec:LR-MSTC}. Their intent was to construct a tree with the consideration that it will be divided afterwards, unlike what \ac{mstc} does. It allows for robot path overlap, which means there is redundant coverage and collision avoidance would need to be considered. However it can handle unique scenarios, where backtracking is unavoidable, quite well.\\ 
 Their implementation is based on an algorithm presented in \cite{Even2003}. This is an approximation algorithm and they specifically looked at the rooted tree cover scenario. The roots represent the robot initial positions and then a tree is generated for each robot, using the objective to minimize the weight of the maximum weight tree. These trees are each circumnavigated by their robot (root) to cover the area.\\
 Based on the simulations they ran with \ac{mstc} and \ac{mfc}, they found that \ac{mfc} generated closer to optimum results and generally achieved coverage in a shorter amount of time.	Because there is path overlap in certain scenarios, \ac{mfc} is not a truly distributed method.
-\subsection{Sampling-Based}
-% Check Lavalle
 \subsection{Artificial-Intelligence-Based}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Linear Programming}
 \section{Online MCPP}
-\label{sec:lit Online MCPP}
+\label{sec:LR Online MCPP}
 \section{UAVs and Search and Rescue}
 \subsection{AI method}
 \subsection{DroneSAR}

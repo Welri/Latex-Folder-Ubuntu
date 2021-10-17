@@ -25,20 +25,18 @@
 \contentsline {section}{\numberline {2.3}Single Robot Coverage Path Planning}{8}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Exact Methods}{9}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Sampling-based Methods}{9}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}A* Based Coverage}{10}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}A* and Wavefront Based Coverage}{10}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Spanning Tree Coverage}{10}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Wavefront Planning}{11}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Artificial Intelligence Methods}{11}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.5}Artificial Intelligence Methods}{11}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}Distributed Offline MCPP}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Hexagonal Segmentation}{11}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Voronoi Partitioning}{12}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Negotiation Protocol}{13}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.1}Hexagonal Segmentation}{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Voronoi Partitioning}{13}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Negotiation Protocol}{14}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}MSTC}{15}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}DARP}{16}{subsection.2.4.5}%
 \contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{16}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}MFC}{16}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Sampling-Based}{17}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Artificial-Intelligence-Based}{17}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.2}Artificial-Intelligence-Based}{17}{subsection.2.5.2}%
 \contentsline {section}{\numberline {2.6}Online MCPP}{17}{section.2.6}%
 \contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{17}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}AI method}{17}{subsection.2.7.1}%

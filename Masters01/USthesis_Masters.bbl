@@ -41,8 +41,8 @@ V.~G. Nair and K.~R. Guruprasad, ``{GM-VPC: An Algorithm for Multi-robot
   Coverage of Known Spaces Using Generalized Voronoi Partition},''
   \emph{Robotica}, vol.~38, no.~5, pp. 845--860, 2020.
 
-\bibitem[Rossi et~al.(2009)Rossi, Aldama, and Barrientos]{Rossi2009}
-C.~Rossi, L.~Aldama, and A.~Barrientos, ``{Simultaneous task subdivision and
+\bibitem[Rossi et~al.(2009)Rossi, Aldama, and ententos]{Rossi2009}
+C.~Rossi, L.~Aldama, and A.~ententos, ``{Simultaneous task subdivision and
   allocation for teams of heterogeneous robots},'' \emph{Proceedings - IEEE
   International Conference on Robotics and Automation}, no. May, pp. 946--951,
   2009.
@@ -189,6 +189,13 @@ B.~Englot and F.~Hover, ``{Planning complex inspection tasks using redundant
   roadmaps},'' \emph{Proc. of the International Symposium of Robotics Research
   (ISRR)}, vol. 100, no. January, 2011.
 
+\bibitem[Barrientos et~al.(2011)Barrientos, Colorado, Cerro, Martinez, Rossi,
+  Sanz, and Valente]{Barrientos2011}
+A.~Barrientos, J.~Colorado, J.~D. Cerro, A.~Martinez, C.~Rossi, D.~Sanz, and
+  J.~Valente, ``{Aerial remote sensing in agriculture: A practical approach to
+  area coverage and path planning for fleets of mini aerial robots},''
+  \emph{Journal of Field Robotics}, vol.~28, no.~5, pp. 667--689, sep 2011.
+
 \bibitem[Viet et~al.(2012)Viet, Dang, Laskar, and Chung]{Viet2012}
 H.~H. Viet, V.~H. Dang, M.~N.~U. Laskar, and T.~Chung, ``{BA: An online
   complete coverage algorithm for cleaning robots},'' \emph{Applied
@@ -214,13 +221,6 @@ Y.~Gabriely and E.~Rimon, ``{Spanning-tree based coverage of contin uous areas
 R.~Nandakumar and N.~{Ramana Rao}, ``{Fair partitions of polygons: An
   elementary introduction},'' \emph{Proceedings of the Indian Academy of
   Sciences: Mathematical Sciences}, vol. 122, no.~3, pp. 459--467, 2012.
-
-\bibitem[Barrientos et~al.(2011)Barrientos, Colorado, Cerro, Martinez, Rossi,
-  Sanz, and Valente]{Barrientos2011}
-A.~Barrientos, J.~Colorado, J.~D. Cerro, A.~Martinez, C.~Rossi, D.~Sanz, and
-  J.~Valente, ``{Aerial remote sensing in agriculture: A practical approach to
-  area coverage and path planning for fleets of mini aerial robots},''
-  \emph{Journal of Field Robotics}, vol.~28, no.~5, pp. 667--689, sep 2011.
 
 \bibitem[Zheng et~al.(2005)Zheng, Jain, Koenig, and Kempe]{Zheng2005}
 X.~Zheng, S.~Jain, S.~Koenig, and D.~Kempe, ``{Multi-Robot Forest Coverage
