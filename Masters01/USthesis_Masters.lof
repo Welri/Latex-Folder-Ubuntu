@@ -14,15 +14,15 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Figure showing the resulting area partition using the negotiation protocol. This example is for two robots and includes a no fly zone. \cite {Rossi2009}\relax }}{15}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces MSTC algorithm showing the paths for three robots on an environment grid. \cite {Hazon2005}\relax }}{16}{figure.caption.18}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram showing relevant variables concerned with calculating the Field of View for a camera.\relax }}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Figure showing the rectangular approximation for a human viewed from above for calculation of the GSD\relax }}{21}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrams showing cross track overlap for camera Field of View for different discretisation techniques.\relax }}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram showing relevant variables concerned with calculating the Field of View for a camera.\relax }}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Figure showing the rectangular approximation for a human viewed from above for calculation of the GSD\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrams showing cross track overlap for camera Field of View for different discretisation techniques.\relax }}{24}{figure.caption.21}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow diagram representing the logic for DARP.\relax }}{26}{figure.caption.22}%
-\addvspace {10pt}
-\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow diagram representing the logic for DARP.\relax }}{27}{figure.caption.22}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{33}{figure.caption.24}%
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{34}{figure.caption.24}%

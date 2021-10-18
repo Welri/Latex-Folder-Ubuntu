@@ -210,6 +210,19 @@ Based on the simulations they ran with \ac{mstc} and \ac{mfc}, they found that \
 \subsection{AI method}
 \subsection{DroneSAR}
 \subsection{Decision Theory}
+Several works by the same group of authors were presented regarding the use of \acp{uav} for \acl{sar} in the years 2009 and 2010. The authors published their preliminary work regarding coordinated search operations with multiple \acp{uav} \cite{Waharte2009}. 
+
+Their setup uses quad rotors searching for a single target in a two dimensional environment. They utilise a downward pointing camera as the sensing device for target detection and onboard GPS for localisation. The environment is divided into a grid and each cell is assigned a probability. This probabilistic map represents a likelihood of the target lying within each cell and forms what is called an \emph{occupancy grid}.
+
+Updating the occupancy grid is done using a recursive Bayesian technique. The assumption of a stationary target means that all the cells are updated for every observation. The occupancy grids are calculated locally on each \ac{uav} and are only communicated to others when in communication range. This is referred to as a decoupled approach. 
+
+Deciding on a next cell to visit is done by applying a steepest gradient method to the occupancy grid. Their simulation results show that using multiple \acp{uav}, that share information, significantly decreases the time to find the target.
+
+In a separate paper, also by theses authors, they build on their model by including the ability to have multiple observations for one cell and account for changing altitudes of \acp{uav} \cite{Waharte2010}. Another paper addresses the actual target detection algorithm \cite{Symington2010}.
+
+For target detection, the once again use a Bayesian estimator and evaluate the probability of target detection at changing altitudes using video data. They found that the sampling rate should be chosen according to the application. For search and rescue it should be chosen so as to minimise false negatives.
+
+Ultimately they conclude that changing altitudes can speed up the search process. They went on to test this strategy online with three different approaches, specifically for \acl{sar} applications. The approaches were designed to deal with information sharing limitations, collision avoidance and uncertainties in the sensor data. The approach that gave the fastest target detection was the Partially Observable Markov Decision Process. \cite{WaharteFINAL2010} 
 %DroneSAR
 %Rotary Wing vs Fixed-Wing UAVs}
 
