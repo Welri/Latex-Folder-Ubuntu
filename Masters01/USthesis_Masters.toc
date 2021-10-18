@@ -37,6 +37,7 @@
 \contentsline {section}{\numberline {2.5}Non-Distributed Offline MCPP}{16}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}MFC}{16}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Artificial-Intelligence-Based}{17}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Linear Programming}{17}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Online MCPP}{17}{section.2.6}%
 \contentsline {section}{\numberline {2.7}UAVs and Search and Rescue}{17}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}AI method}{17}{subsection.2.7.1}%
