@@ -28,6 +28,7 @@ Repeated entry---line 1169 of file backmatter/USbib-sample.bib
  : @article{Englot2012
  :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 -- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -35,49 +36,50 @@ I'm skipping whatever remains of this entry
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--empty journal in Avellar2015
 Warning--empty journal in Nourani-Vatani2006
 Warning--empty journal in Jurgens1998
 
 Done.
-You've used 46 entries,
+You've used 48 entries,
             4855 wiz_defined-function locations,
-            1242 strings with 17348 characters,
-and the built_in function-call counts, 36088 in all, are:
-= -- 3258
-> -- 1164
-< -- 218
-+ -- 557
-- -- 268
-* -- 2102
-:= -- 5706
-add.period$ -- 92
-call.type$ -- 46
-change.case$ -- 90
-chr.to.int$ -- 484
-cite$ -- 49
-duplicate$ -- 2451
-empty$ -- 2500
-format.name$ -- 385
-if$ -- 8005
+            1255 strings with 17782 characters,
+and the built_in function-call counts, 37917 in all, are:
+= -- 3421
+> -- 1232
+< -- 230
++ -- 589
+- -- 284
+* -- 2218
+:= -- 5995
+add.period$ -- 96
+call.type$ -- 48
+change.case$ -- 94
+chr.to.int$ -- 510
+cite$ -- 52
+duplicate$ -- 2569
+empty$ -- 2614
+format.name$ -- 405
+if$ -- 8408
 int.to.chr$ -- 1
-int.to.str$ -- 47
-missing$ -- 373
-newline$ -- 174
-num.names$ -- 135
-pop$ -- 992
+int.to.str$ -- 49
+missing$ -- 393
+newline$ -- 182
+num.names$ -- 141
+pop$ -- 1040
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 48
 quote$ -- 2
-skip$ -- 2630
+skip$ -- 2760
 stack$ -- 0
-substring$ -- 1151
-swap$ -- 1685
-text.length$ -- 51
+substring$ -- 1213
+swap$ -- 1775
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 710
-warning$ -- 2
-while$ -- 163
+type$ -- 742
+warning$ -- 3
+while$ -- 171
 width$ -- 0
-write$ -- 544
+write$ -- 570
 (There were 2 error messages)
