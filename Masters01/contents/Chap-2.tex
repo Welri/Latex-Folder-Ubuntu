@@ -113,7 +113,7 @@ The spanning trees used are usually minimum spanning trees, constructed using al
 
 \subsection{Artificial Intelligence Methods}
 \label{sec:LR - sAI}
-One author compared several \ac{ai} techniques for \ac{cpp}. Four methods were compared, including one that employs a \ac{ga}. The four methods are the La Palma attraction, La Palma fuzzy logic, \ac{anfis} and \ac{pso} approaches. \cite{Juan2018}
+ One article compared several \ac{ai} techniques for \ac{cpp}. Four methods were compared, including one that employs a \ac{ga}. The four methods are the La Palma attraction, La Palma fuzzy logic, \ac{anfis} and \ac{pso} approaches. \cite{Juan2018}
 
 All of the methods were implemented in a discretized environment (a grid). In this paper they also generate what they call a \emph{Risk/Occupancy Map}. This is given as an input for their algorithms to encourage searching of certain areas first. For each cell, they generate a potential risk/occupancy value ($P$). The higher the value, the higher the priority of searching that cell.
 
@@ -202,14 +202,35 @@ The ideal situation is that all the robots have near equal path lengths, provide
 \ac{mfc} is a method that was developed by the authors in \cite{Zheng2005} to improve upon the \ac{mstc} method mentioned in Section \ref{sec:LR-MSTC}. Their intent was to construct a tree with the consideration that it will be divided afterwards, unlike what \ac{mstc} does. It allows for robot path overlap, which means there is redundant coverage and collision avoidance would need to be considered. However it can handle unique scenarios, where backtracking is unavoidable, quite well.\\ 
 Their implementation is based on an algorithm presented in \cite{Even2003}. This is an approximation algorithm and they specifically looked at the rooted tree cover scenario. The roots represent the robot initial positions and then a tree is generated for each robot, using the objective to minimize the weight of the maximum weight tree. These trees are each circumnavigated by their robot (root) to cover the area.\\
 Based on the simulations they ran with \ac{mstc} and \ac{mfc}, they found that \ac{mfc} generated closer to optimum results and generally achieved coverage in a shorter amount of time.	Because there is path overlap in certain scenarios, \ac{mfc} is not a truly distributed method.
-\subsection{Artificial-Intelligence-Based}
-\subsection{Linear Programming}
+\subsection{Artificial Intelligence MCPP}
+\label{sec:LR-mAI}
+\acl{ai} based methods have already been mentioned in Section \ref{sec:LR - sAI}. In this same paper, the application was extended to the multiple robot scenario \cite{Juan2018}. They investigate the distributed case, however they don't present their method for dividing the environment into subregions. They also investigate the free formation case for the two and three \ac{uav} scenario, and this is of more interest for the purpose of this literature review.
+
+Free formation means that the paths for multiple \acp{uav} are planned in tandem. This means that their paths will potentially cross, implying that collision avoidance would need consideration. Distributed methods explicitly divide an area into sub-regions to be searched by individual \acp{uav}. They will never cross each other's paths, and collision avoidance is not a consideration. This paper does not address collision avoidance in the free formation case. It simply allows the paths to cross.
+
+Three of the methods mentioned in Section \ref{sec:LR - sAI} are tested for distributed and free formation flying. \ac{pso} was not considered because it performed poorly in the single robot case. In general they found that the La Palma attraction method produces the shortest paths. The \ac{anfis} method comes in close second, and the fuzzy logic approach produces significantly longer paths. Therefore, if coverage time minimisation is important, then the attraction method performs the best.
+
+It should be mentioned that they implemented an occupancy grid, which they generate once. This encourages the algorithms to visit certain regions of the map first. Their performance in this regard may influence one's decision to choose one algorithm over another. This will be discussed further in \ref{sec:LR-SAR-AI}, as it becomes more relevant in its particular application to \ac{sar}.
+\subsection{MCPP Using Linear Programming}
 \section{Online MCPP}
 \label{sec:LR Online MCPP}
 \section{UAVs and Search and Rescue}
-\subsection{AI method}
+
+\subsection{SAR Using Artificial Intelligence}
+\label{sec:LR-SAR-AI}
+This method has been covered in Section \ref{sec:LR - sAI} for its application in the single robot case. It has also been addressed for multiple robots in Section \ref{sec:LR-mAI}. It should be noted that this paper was specifically developed to investigate these methods for \acl{sar} applications \cite{Juan2018}.
+
+They developed an risk/occupancy grid for this purpose. Within the environment grid, the generate a risk/occupancy value ($P$) for each cell. The term is generated by using three different contributions.
+
+The first of these contributions is the terrain factor ($P_{Terrain}$). This is calculated by assessing the likelihood that someone would stay within an area or enter an area and the level of danger they would be in within those areas. This factor has the biggest contribution to the final $P$-value. There is also an emergency factor ($P_{emergency}$) which represents emergency situations such as fires within an area. Lastly, there is a historical factor ($P_{historical}$) that assesses the likelihood of a historical event occurring again. This is a binary variably.
+
+Using the $P$-values for all the cells, an risk/occupancy grid is produced that causes the algorithms to favour visiting certain cells first. This grid is not updated recursively. It is only calculated once. In Section \ref{sec:LR-mAI}, three methods are discussed and it is mentioned that the La Palma attraction approach produces the shortest times.
+
+In a search and rescue operation, short distances are favourable because it reduces time to complete coverage. This means that a target will likely be found faster. However, this paper also has a performance measured called weight. This evaluates the algorithms' abilities to visit high $P$-value cells first. These are cells that have a high likelihood of containing the target or are high risk zones for the target to be in.
+
+The fuzzy logic approach was found to have the lowest weights of the three methods. However, this is by such a small margin that in the end the \ac{anfis} approach seems to give the best overall performance. It has much shorter distances than the fuzzy logic approach and lower weights than the attraction approach. Therefore, the authors concluded that this approach works best for \ac{sar} in both the distributed and free formation case. 
 \subsection{DroneSAR}
-\subsection{Decision Theory}
+\subsection{SAR Using Decision Theory}
 Several works by the same group of authors were presented regarding the use of \acp{uav} for \acl{sar} in the years 2009 and 2010. The authors published their preliminary work regarding coordinated search operations with multiple \acp{uav} \cite{Waharte2009}. 
 
 Their setup uses quad rotors searching for a single target in a two dimensional environment. They utilise a downward pointing camera as the sensing device for target detection and onboard GPS for localisation. The environment is divided into a grid and each cell is assigned a probability. This probabilistic map represents a likelihood of the target lying within each cell and forms what is called an \emph{occupancy grid}.
