@@ -28,7 +28,6 @@ Repeated entry---line 1169 of file backmatter/USbib-sample.bib
  : @article{Englot2012
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
 -- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -36,50 +35,51 @@ Warning--I didn't find a database entry for ""
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--empty journal in Avellar2015
 Warning--empty journal in Nourani-Vatani2006
+Warning--empty journal in Avellar2015
+Warning--empty journal in Hayat2020
 Warning--empty journal in Jurgens1998
 
 Done.
-You've used 48 entries,
+You've used 51 entries,
             4855 wiz_defined-function locations,
-            1255 strings with 17782 characters,
-and the built_in function-call counts, 37917 in all, are:
-= -- 3421
-> -- 1232
-< -- 230
-+ -- 589
-- -- 284
-* -- 2218
-:= -- 5995
-add.period$ -- 96
-call.type$ -- 48
-change.case$ -- 94
-chr.to.int$ -- 510
-cite$ -- 52
-duplicate$ -- 2569
-empty$ -- 2614
-format.name$ -- 405
-if$ -- 8408
+            1273 strings with 18479 characters,
+and the built_in function-call counts, 40481 in all, are:
+= -- 3650
+> -- 1321
+< -- 247
++ -- 631
+- -- 304
+* -- 2371
+:= -- 6394
+add.period$ -- 102
+call.type$ -- 51
+change.case$ -- 100
+chr.to.int$ -- 552
+cite$ -- 56
+duplicate$ -- 2736
+empty$ -- 2783
+format.name$ -- 433
+if$ -- 8977
 int.to.chr$ -- 1
-int.to.str$ -- 49
-missing$ -- 393
-newline$ -- 182
-num.names$ -- 141
-pop$ -- 1040
+int.to.str$ -- 52
+missing$ -- 418
+newline$ -- 193
+num.names$ -- 150
+pop$ -- 1109
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 51
 quote$ -- 2
-skip$ -- 2760
+skip$ -- 2942
 stack$ -- 0
-substring$ -- 1213
-swap$ -- 1775
-text.length$ -- 55
+substring$ -- 1312
+swap$ -- 1894
+text.length$ -- 58
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 742
-warning$ -- 3
-while$ -- 171
+type$ -- 790
+warning$ -- 4
+while$ -- 185
 width$ -- 0
-write$ -- 570
+write$ -- 605
 (There were 2 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  19 OCT 2021 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  21 OCT 2021 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1700,6 +1700,8 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \g__acro_slam_int=\count396
 \g__acro_rrt_int=\count397
 \g__acro_prm_int=\count398
+\g__acro_mopp_int=\count399
+\g__acro_qos_int=\count400
 ) (./USthesis_Masters.aux
 (./frontmatter/Chap-Front.aux) (./frontmatter/Nomencl.aux)
 (./contents/Chap-1.aux) (./contents/Chap-2.aux) (./contents/Chap-3.aux)
@@ -1742,16 +1744,16 @@ Package translations Info: no dictionary file `translations-basic-dictionary-af
 rikaans.trsl' found. on input line 119.
  (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count399
+\scratchcounter=\count401
 \scratchdimen=\dimen332
 \scratchbox=\box69
-\nofMPsegments=\count400
-\nofMParguments=\count401
+\nofMPsegments=\count402
+\nofMParguments=\count403
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count402
+\MPscratchCnt=\count404
 \MPscratchDim=\dimen333
-\MPnumerator=\count403
-\makeMPintoPDFobject=\count404
+\MPnumerator=\count405
+\makeMPintoPDFobject=\count406
 \everyMPtoPDFconversion=\toks48
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1786,7 +1788,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count405
+\c@section@level=\count407
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1903,52 +1905,52 @@ Overfull \hbox (5.38336pt too wide) in paragraph at lines 44--45
 -mate, semi-approximate
  []
 
-[7 <./figs/Motion.pdf>] [8] [9] [10]
-<figs/Hexagonal_Partitioning_Graphic.png, id=522, 416.30531pt x 377.91188pt>
+[7 <./figs/Motion.pdf>] [8] [9] [10] [11]
+<figs/Hexagonal_Partitioning_Graphic.png, id=536, 416.30531pt x 377.91188pt>
 File: figs/Hexagonal_Partitioning_Graphic.png Graphic file (type png)
 <use figs/Hexagonal_Partitioning_Graphic.png>
 Package pdftex.def Info: figs/Hexagonal_Partitioning_Graphic.png  used on input
- line 136.
+ line 138.
 (pdftex.def)             Requested size: 166.51917pt x 151.16206pt.
- [11]
-<figs/GM_VPC_Euclid.png, id=538, 380.92313pt x 301.125pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/GM_VPC_Euclid.png, id=545, 380.92313pt x 301.125pt>
 File: figs/GM_VPC_Euclid.png Graphic file (type png)
 <use figs/GM_VPC_Euclid.png>
-Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 156.
+Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 158.
 (pdftex.def)             Requested size: 152.36655pt x 120.44786pt.
-<figs/GM_VPC.png, id=539, 377.15906pt x 301.125pt>
+<figs/GM_VPC.png, id=546, 377.15906pt x 301.125pt>
 File: figs/GM_VPC.png Graphic file (type png)
 <use figs/GM_VPC.png>
-Package pdftex.def Info: figs/GM_VPC.png  used on input line 163.
+Package pdftex.def Info: figs/GM_VPC.png  used on input line 165.
 (pdftex.def)             Requested size: 150.86095pt x 120.44786pt.
 
-Overfull \hbox (8.74237pt too wide) in paragraph at lines 143--170
+Overfull \hbox (8.74237pt too wide) in paragraph at lines 145--172
 \T1/cmr/m/n/12 The Euclidean-based tech-nique re-sults in what the au-thors ter
 m "non-contiguous
  []
 
-[12 <./figs/Hexagonal_Partitioning_Graphic.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/Negotiation_Protocol.png, id=552, 485.56406pt x 503.63156pt>
+[12] [13 <./figs/Hexagonal_Partitioning_Graphic.png>]
+<figs/Negotiation_Protocol.png, id=565, 485.56406pt x 503.63156pt>
 File: figs/Negotiation_Protocol.png Graphic file (type png)
 <use figs/Negotiation_Protocol.png>
-Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 181.
+Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 183.
 
 (pdftex.def)             Requested size: 169.94997pt x 176.27368pt.
-[13] [14 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
-<figs/MSTC-Graphic.png, id=572, 479.54156pt x 474.27188pt>
+ [14 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
+<figs/MSTC-Graphic.png, id=579, 479.54156pt x 474.27188pt>
 File: figs/MSTC-Graphic.png Graphic file (type png)
 <use figs/MSTC-Graphic.png>
-Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 193.
+Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 195.
 (pdftex.def)             Requested size: 191.81322pt x 189.70538pt.
  [15 <./figs/Negotiation_Protocol.png>] [16 <./figs/MSTC-Graphic.png>] [17] [18
-] [19]) [20]
+] [19] [20] [21] [22]) [23]
 \openout2 = `contents/Chap-3.aux'.
 
-
-(./contents/Chap-3.tex [21
+ (./contents/Chap-3.tex
+[24
 
 
 
@@ -1964,24 +1966,24 @@ Overfull \hbox (17.85251pt too wide) in paragraph at lines 146--147
  [][] 
  []
 
-[22] [23] [24]
+[25] [26] [27]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 265.
 
-[25]) [26]
+[28]) [29]
 \openout2 = `contents/Chap-4.aux'.
 
  (./contents/Chap-4.tex
 
-LaTeX Warning: Reference `sec:lit Ditributed MCPP' on page 27 undefined on inpu
+LaTeX Warning: Reference `sec:lit Ditributed MCPP' on page 30 undefined on inpu
 t line 3.
 
 
-LaTeX Warning: Reference `subsec:lit DARP' on page 27 undefined on input line 3
+LaTeX Warning: Reference `subsec:lit DARP' on page 30 undefined on input line 3
 .
 
-[27
+[30
 
 
 
@@ -1990,7 +1992,7 @@ LaTeX Warning: Reference `subsec:lit DARP' on page 27 undefined on input line 3
 
 pdfTeX warning: pdflatex.exe (file ./figs/DARP_Diagram3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figs/DARP_Diagram3.pdf, id=704, 597.55246pt x 845.07724pt>
+<figs/DARP_Diagram3.pdf, id=739, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
 Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 31.
@@ -2006,10 +2008,10 @@ LaTeX Warning: Float too large for page by 64.1627pt on input line 34.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [28] [29 <./figs/DARP_Diagram3.pdf>]
+) [31] [32 <./figs/DARP_Diagram3.pdf>]
 \openout2 = `contents/Chap-5.aux'.
 
- (./contents/Chap-5.tex) [30
+ (./contents/Chap-5.tex) [33
 
 
 
@@ -2018,7 +2020,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `contents/Chap-6.aux'.
 
 
-(./contents/Chap-6.tex) [31
+(./contents/Chap-6.tex) [34
 
 
 
@@ -2026,7 +2028,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `contents/Chap-7.aux'.
 
- (./contents/Chap-7.tex) [32
+ (./contents/Chap-7.tex) [35
 
 
 
@@ -2035,7 +2037,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout2 = `contents/Chap-8.aux'.
 
 
-(./contents/Chap-8.tex) [33
+(./contents/Chap-8.tex) [36
 
 
 
@@ -2043,12 +2045,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `contents/Chap-9.aux'.
 
- (./contents/Chap-9.tex) [34
+ (./contents/Chap-9.tex) [37
 
 
 
 
-] [35
+] [38
 
 
 
@@ -2057,21 +2059,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=752, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=787, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (pdftex.def)             Requested size: 237.88815pt x 172.64456pt.
-) [36
+) [39
 
 
  <./figs/DEM-Def-Ball.pdf>] (./USthesis_Masters.bbl
-[37
+[40
 
 
 
 
-] [38] [39]) [40]
+] [41] [42] [43]) [44]
 \tf@toc=\write7
 \openout7 = `USthesis_Masters.toc'.
 
@@ -2081,8 +2083,8 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 \tf@lot=\write9
 \openout9 = `USthesis_Masters.lot'.
 
- (./USthesis_Masters.aux (./frontmatter/Chap-Front.aux)
-(./frontmatter/Nomencl.aux) (./contents/Chap-1.aux) (./contents/Chap-2.aux)
+ (./USthesis_Masters.aux (./frontmatter/Chap-Front.aux) (./frontmatter/Nomencl.
+aux) (./contents/Chap-1.aux) (./contents/Chap-2.aux)
 (./contents/Chap-3.aux) (./contents/Chap-4.aux) (./contents/Chap-5.aux)
 (./contents/Chap-6.aux) (./contents/Chap-7.aux) (./contents/Chap-8.aux)
 (./contents/Chap-9.aux) (./contents/App-1.aux) (./USthesis_Masters.acr))
@@ -2093,11 +2095,11 @@ Package rerunfilecheck Info: File `USthesis_Masters.out' has not changed.
 (rerunfilecheck)             Checksum: C38590ECA8277735C376C68C9A07AFBC;2704.
  ) 
 Here is how much of TeX's memory you used:
- 39175 strings out of 479303
- 937429 string characters out of 5871220
- 1383791 words of memory out of 5000000
- 55476 multiletter control sequences out of 15000+600000
- 435998 words of font info for 106 fonts, out of 8000000 for 9000
+ 39382 strings out of 479303
+ 945515 string characters out of 5871220
+ 1393138 words of memory out of 5000000
+ 55674 multiletter control sequences out of 15000+600000
+ 436604 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,15n,116p,1023b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
@@ -2127,10 +2129,10 @@ rm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 ve/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1440.pfb><c:/texlive/2020/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (51 pages, 3110600 bytes).
+Output written on USthesis_Masters.pdf (55 pages, 3121636 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
- 827 compressed objects within 9 object streams
- 196 named destinations out of 1000 (max. 500000)
+ 988 PDF objects out of 1000 (max. 8388607)
+ 866 compressed objects within 9 object streams
+ 205 named destinations out of 1000 (max. 500000)
  435 words of extra memory for PDF output out of 10000 (max. 10000000)
 

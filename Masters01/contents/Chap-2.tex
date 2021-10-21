@@ -81,15 +81,17 @@ The trapezoidal and boustrophedon decomposition methods are applicable in two-di
 A more versatile exact method, that uses Morse functions for the decomposition, is also available \cite{Choset-Morse2000}. This no longer requires polygonal environments and can in theory be expanded to higher dimensional environments.
 
 One paper sought to optimize exact cellular decomposition somewhat. This is also applied in polygonal environments. They use a greedy recursive technique to preform the decomposition and optimize the sweep direction to reduce the number of rotations. For their application, they proved that one can reduce energy consumption and the coverage route length, and thereby the time to complete coverage, by minimising rotations. \cite{Li2011}
-\subsection{Sampling-based Methods}
+\subsection{Sampling-Based Methods}
 \label{sec:LR - sSampling}
-Sampling-based methods have been adapted for coverage path planning. They are more easily scaled to three dimensional environments and are better suited to online or real-time approaches. They also deal with changing environments with dynamic obstacles more easily. 
+Sampling-based methods have been adapted for coverage path planning. They are more easily scaled to three dimensional environments and are better suited to online or real-time approaches. They also deal with changing environments with dynamic obstacles more easily. \cite{Lavalle2006}
 
 \ac{rrt} has been adapted to \ac{cpp}. An example of this is an application involving automated lawn mowing. They used \ac{rrt} as a local planner in combination with a global planner that uses a spiral motion to cover the points in a map. A solution is however, not guaranteed. Complete coverage is also not necessarily achieved because of the random nature of the paths, but it is considered a real-time approach. \cite{Nourani-Vatani2006}
 
-Two other problems, that are both proven to be probabilistically complete, are the watchman rout algorithm and the redundant roadmap algorithm \cite{Englot2012}. The watchman method constructs a roadmap, and coverage is achieved using a minimum spanning tree. Roadmap construction is generally done using a \ac{prm} \cite{Danner2000}.% Watchmen method
+Two other problems, that are both proven to be probabilistically complete, are the watchman route algorithm and the redundant roadmap algorithm \cite{Englot2012}. The watchman method constructs a roadmap, and coverage is achieved using a minimum spanning tree. Roadmap construction is generally done using a \ac{prm} \cite{Danner2000}.% Watchmen method
 
-The redundant roadmap method also constructs a roadmap and then conducts point-to-point planning using \ac{rrt}, where collision avoidance is also implemented \cite{Englot2011}.
+The redundant roadmap method also constructs a roadmap and then conducts local point-to-point planning using \ac{rrt}, which also encompasses collision avoidance \cite{Englot2011}. 
+
+An example of an online algorithm takes \ac{prm} and \ac{rrt} and combines them into a single point-to-point path planner, which includes dynamic replanning capabilities \cite{Wzorek2006}. These authors later expanded this to a coverage solution involving back and forth manoeuvres \cite{Rudol2008}. This is discussed in more detail in Section \ref{sec:LR SAR-Sampling}.
 \subsection{A* and Wavefront Based Coverage}
 \label{sec:LR - sA*}
 This is a discrete method of planning. As mentioned in Section \ref{sec:LR-Motion Planning}, A* is often used in point-to-point path planning. In combinatorial motion planning or multiple-query sampling-based methods such as \ac{prm}, roadmaps are generally formed to represent the environment. These roadmaps can then be navigated using A* or another discrete algorithm like Dijkstra's algorithm or a forward search. \cite{Lavalle2006}.
@@ -107,7 +109,7 @@ In point-to-point path planning, the goal is usually to achieve the shortest pat
 Another implementation uses a heuristic function with the goal of minimising the number of rotations, as was the goal of the wavefront planner mentioned earlier in this section \cite{Dogru2017}. This is useful, because rotations often consume more energy than straight line motions.
 \subsection{Spanning Tree Coverage}
 \label{sec: LR - sSTC}
-Spanning trees are a appin discrete environments. They can be applied in an offline scenarios or incrementally grown for online applications \cite{Gabriely2001}. A spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. 
+Spanning trees are a applied in discrete environments. They can be applied in an offline scenarios or incrementally grown for online applications \cite{Gabriely2001}. A spanning tree is created to reach all nodes in an environment. To make a path efficient, the spanning tree is generally used on nodes that represent the centres of larger cells. 
 
 These larger cells are then divided into four smaller cells each, which can then be the cells that are navigated by the agents. To reach each cell, the algorithm simply circumnavigates the tree. When operating in a continuous environment, the environment must be divided into the larger cells. A nice feature that this method provides is that it forms a closed loop path. The agent will always loop back to its starting point. \cite{Hazon2005} 
 
@@ -124,7 +126,7 @@ They evaluated performance of these algorithms in the context of search and resc
 
 \section{Distributed Offline MCPP}
 \label{sec:LR Ditributed MCPP}
-A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:LR sCPP}.
+A well established offline coverage path planning approach involves the divide areas technique. This partitions an area into regions for individual robots to cover. Each robot should then be able to cover its area using one of the individual area coverage techniques mentioned in Section \ref{sec:LR sCPP}. The subsections are divided into different implementations, sorted according to the area division step in the planning process. The methods used to perform coverage of the sub-regions are mentioned in each section seen as these are important in generating the final coverage plan.
 %TODO: Distributed vs Non-distributed - give the definition for the purpose of this paper
 \subsection{Hexagonal Segmentation}
 \label{sec:LR-Hex}
@@ -152,17 +154,17 @@ Figure \ref{fig:Voronoi - Euclid} shows the results using Euclidean distances. H
 \begin{figure}[h!]
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
-	\centering
-	\includegraphics[scale=0.4]{figs/GM_VPC_Euclid}
-	\caption{Euclidean}
-	\label{fig:Voronoi - Euclid}
+\centering
+\includegraphics[scale=0.4]{figs/GM_VPC_Euclid}
+\caption{Euclidean}
+\label{fig:Voronoi - Euclid}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.45\textwidth}
-	\centering
-	\includegraphics[scale=0.4]{figs/GM_VPC}
-	\caption{Geodesic-Manhattan}
-	\label{fig:Voronoi - GM}
+\centering
+\includegraphics[scale=0.4]{figs/GM_VPC}
+\caption{Geodesic-Manhattan}
+\label{fig:Voronoi - GM}
 \end{subfigure}
 \caption{Figures showing results for the Voronoi partitioning scheme for two different distance measures. \cite{Nair2020}}
 \label{fig:Voronoi}
@@ -199,11 +201,12 @@ The ideal situation is that all the robots have near equal path lengths, provide
 \label{sec:LR DARP}
 \section{Non-Distributed Offline MCPP}
 \label{sec:LR Non-Distributed MCPP}
+This section covers methods that cannot be classified as distributed because the \acp{uav} would likely cross each others paths. The area is not divided into sub-regions as part of the planning process. These are not the type of methods that will be applied in this research paper and is therefore covered in less detail than the distributed case. The different subsections cover different techniques, as with previous sections. Interesting to note is that these methods generally build on single robot coverage techniques like those mentioned in Section \ref{sec:LR sCPP}.
 \subsection{MCPP Using MFC}
 % insert MFC
 \ac{mfc} is a method that was developed by the authors in \cite{Zheng2005} to improve upon the \ac{mstc} method mentioned in Section \ref{sec:LR-MSTC}. Their intent was to construct a tree with the consideration that it will be divided afterwards, unlike what \ac{mstc} does. It allows for robot path overlap, which means there is redundant coverage and collision avoidance would need to be considered. However it can handle unique scenarios, where backtracking is unavoidable, quite well.\\ 
 Their implementation is based on an algorithm presented in \cite{Even2003}. This is an approximation algorithm and they specifically looked at the rooted tree cover scenario. The roots represent the robot initial positions and then a tree is generated for each robot, using the objective to minimize the weight of the maximum weight tree. These trees are each circumnavigated by their robot (root) to cover the area.\\
-Based on the simulations they ran with \ac{mstc} and \ac{mfc}, they found that \ac{mfc} generated closer to optimum results and generally achieved coverage in a shorter amount of time.	Because there is path overlap in certain scenarios, \ac{mfc} is not a truly distributed method.
+Based on the simulations they ran with \ac{mstc} and \ac{mfc}, they found that \ac{mfc} generated closer to optimum results and generally achieved coverage in a shorter amount of time.	Because there is path overlap in certain scenarios, \ac{mfc} is not a truly distributed method. Results generated by this algorithm can resemble a distributed algorithm quite closely, depending on the environment.
 \subsection{MCPP Using Artificial Intelligence}
 \label{sec:LR-mAI}
 \acl{ai} based methods have already been mentioned in Section \ref{sec:LR - sAI}. In this same paper, the application was extended to the multiple robot scenario \cite{Juan2018}. They investigate the distributed case, however they don't present their method for dividing the environment into subregions. They also investigate the free formation case for the two and three \ac{uav} scenario, and this is of more interest for the purpose of this literature review.
@@ -225,9 +228,32 @@ They apply several constraints to the problem. They limit the flight times of \a
 To ensure complete coverage they develop a constraint that ensures all nodes in one row are visited by one \ac{uav}. They also have two optional constraints to avoid diagonal lines that cross the environment. Obstacles are not considered in their implementation nor are \ac{uav} collisions. In some cases, their implementations resemble the results of a distributed case, but in some cases the algorithm still causes paths to cross.
 \section{Online MCPP}
 \label{sec:LR Online MCPP}
-\section{UAVs and Search and Rescue}
+Online path planning generally refers to scenarios where a plan is generated while information about the environment is still being collected. This is often applicable in highly dynamic environments, where obstacle positions are difficult (or costly) to predict a priori. This type of planning will not be used in this project, as the environment is mapped out a priori and is not considered to by dynamic. Therefore, online planning will only be discussed briefly.
 
-\subsection{SAR Using Artificial Intelligence}
+Some of the single robot coverage algorithms of Section \ref{sec:LR sCPP} have online versions. One example uses boustrophedon-A*, where the boustrophedon regions of an environment are constructed incrementally and A* is used to move from one region to the next for coverage\cite{Viet2012}. \ac{stc} can also be done online, by growing the tree incrementally \cite{Gabriely2001}. 
+
+Sampling-based methods are well suited to online approaches. Single query approaches like \ac{rrt} avoid explicit representation of the environment and can therefore be used in dynamic environments more easily \cite{Lavalle2006}.
+
+Often algorithms also use a hybrid of online and offline, where some information about the environment is known a priori, but data is still collected to update certain aspects of the environment incrementally. Often, because of the online element in the algorithm, overall it is still considered as an online approach. 
+
+The paths of the \acp{uav} are generally created dynamically for online path planning, and because all the environment information cannot be known a priori, it is not possible to guarantee complete coverage.
+
+When it comes to online \ac{cpp} with multiple robots, there are a few examples. One such example is a plan for multiple cleaning robots \cite{Luo2002}. This application implements a neural network to plan paths for multiple robots in a dynamic environment. No learning procedures were executed for this algorithm. 
+
+The robots treat each other as dynamic obstacles within an environment and are at all times aware of the other robot positions relative to themselves. The goal is also to minimise rotations and avoid collisions with other obstacles and robots in the environment, while also covering the whole area. 
+
+In their paper they show that the algorithm works effectively in a warehouse environment with ground vehicles, and gives real-time performance. The robots cover the entire area while avoiding collisions with each other and obstacles, and without ever crossing paths or backtracking.
+
+An online application with multiple \acp{uav}, intended for \acl{sar} operations, was also developed. This implementation is discussed in detail in Section \ref{sec:LR SAR Decision Theory} \cite{WaharteFINAL2010}. Their algorithm iteratively updates an occupancy grid of the environment. This represents the likelihood of the target being in any given grid cell, based on the information collected. 
+
+This information is used by each \ac{uav} to choose its next action using a steepest gradient method. This approach can arguable be considered to favour target finding over achieving coverage, but the result is similar to that of a coverage algorithm. 
+
+Section \ref{sec:LR SAR QoS} describes another online algorithm. Here, \acs{ga} are used to optimize coverage and communication with multiple \acs{uav} in a \ac{sar} operation. Connectivity to the ground station can be prioritised to ensure new information about the target can reach the ground station efficiently. This information can be used for dynamic replanning of \ac{uav} paths. \cite{Hayat2020}
+
+\section{UAVs and Search and Rescue}
+This section covers several applications where \acp{uav} were used in \ac{sar} scenarios. These examples are not limited to the coverage scenario, and are also not limited to applications with multiple \acp{uav}. Both online and offline approaches are also mentioned. The headings in this section are designed to show the unique attributes of each implementation, which are emphasised by the respective authors in their work and add to the value of their work.
+\subsection{Complete Implementation by DroneSAR}
+\subsection{Artificial Intelligence Based Approaches with Multiple UAVs}
 \label{sec:LR-SAR-AI}
 This method has been covered in Section \ref{sec:LR - sAI} for its application in the single robot case. It has also been addressed for multiple robots in Section \ref{sec:LR-mAI}. It should be noted that this paper was specifically developed to investigate these methods for \acl{sar} applications \cite{Juan2018}.
 
@@ -240,11 +266,11 @@ Using the $P$-values for all the cells, an risk/occupancy grid is produced that 
 In a search and rescue operation, short distances are favourable because it reduces time to complete coverage. This means that a target will likely be found faster. However, this paper also has a performance measured called weight. This evaluates the algorithms' abilities to visit high $P$-value cells first. These are cells that have a high likelihood of containing the target or are high risk zones for the target to be in.
 
 The fuzzy logic approach was found to have the lowest weights of the three methods. However, this is by such a small margin that in the end the \ac{anfis} approach seems to give the best overall performance. It has much shorter distances than the fuzzy logic approach and lower weights than the attraction approach. Therefore, the authors concluded that this approach works best for \ac{sar} in both the distributed and free formation case. 
-\subsection{DroneSAR}
-\subsection{SAR Using Decision Theory}
+\subsection{Online Approach with Multiple UAVs and Changing Altitudes}
+\label{sec:LR SAR Decision Theory}
 Several works by the same group of authors were presented regarding the use of \acp{uav} for \acl{sar} in the years 2009 and 2010. The authors published their preliminary work regarding coordinated search operations with multiple \acp{uav} \cite{Waharte2009}. 
 
-Their setup uses quad rotors searching for a single target in a two dimensional environment. They utilise a downward pointing camera as the sensing device for target detection and onboard GPS for localisation. The environment is divided into a grid and each cell is assigned a probability. This probabilistic map represents a likelihood of the target lying within each cell and forms what is called an \emph{occupancy grid}.
+Their setup uses quad rotors searching for a single target in a two dimensional environment. They utilise a downward facing camera as the sensing device for target detection and onboard GPS for localisation. The environment is divided into a grid and each cell is assigned a probability. This probabilistic map represents a likelihood of the target lying within each cell and forms what is called an \emph{occupancy grid}.
 
 Updating the occupancy grid is done using a recursive Bayesian technique. The assumption of a stationary target means that all the cells are updated for every observation. The occupancy grids are calculated locally on each \ac{uav} and are only communicated to others when in communication range. This is referred to as a decoupled approach. 
 
@@ -252,10 +278,33 @@ Deciding on a next cell to visit is done by applying a steepest gradient method 
 
 In a separate paper, also by theses authors, they build on their model by including the ability to have multiple observations for one cell and account for changing altitudes of \acp{uav} \cite{Waharte2010}. Another paper addresses the actual target detection algorithm \cite{Symington2010}.
 
-For target detection, the once again use a Bayesian estimator and evaluate the probability of target detection at changing altitudes using video data. They found that the sampling rate should be chosen according to the application. For search and rescue it should be chosen so as to minimise false negatives.
+For target detection, they once again use a Bayesian estimator and evaluate the probability of target detection at changing altitudes using video data. They found that the sampling rate should be chosen according to the application. For search and rescue it should be chosen so as to minimise false negatives.
 
 Ultimately they conclude that changing altitudes can speed up the search process. They went on to test this strategy online with three different approaches, specifically for \acl{sar} applications. The approaches were designed to deal with information sharing limitations, collision avoidance and uncertainties in the sensor data. The approach that gave the fastest target detection was the Partially Observable Markov Decision Process. \cite{WaharteFINAL2010} 
-%DroneSAR
-%Rotary Wing vs Fixed-Wing UAVs}
 
+\subsection{Online Approach with One UAV and Human Detection Algorithm}
+\label{sec:LR SAR-Sampling}
+% Sampling-Based Methods
+Sampling-based methods are good for dynamic applications. Path planning algorithms such as \ac{prm} and \ac{rrt} are well suited to online, or partially online applications. These two methods were incorporated into a single path planner as part of a navigation framework by the authors of \cite{Wzorek2006}. They also implemented dynamic replanning to account for unforeseen changes in the system. 
+
+This can be seen as an essentially online planning algorithm because it is reactive within the environment, which is not assumed to be known in full a priori. This can be regarded as a point-to-point path planner. The navigation is is extended to \ac{cpp} in a later paper intended to be used for \ac{sar} \cite{Rudol2008}. They used their sampling-based navigation to execute back and forth motions over an area with an unmanned helicopter. The back and forth manoeuvres can be seen as a series of point-to-point navigations. 
+
+In this paper, the main focus was however, human body detection. They collect video using a \ac{uav} with both visual and thermal cameras on-board. The footage is analysed online using an algorithm for human detection. The lower resolution thermal imagery is used to find locations of potential humans, and then higher resolution visual data is then analysed to confirm. 
+
+According to their results, the algorithm detects humans at a rate of 25Hz. It occasionally produces false positives, but this is generally preferred over failed detections. A failure to detect a target in \acl{sar} would be catastrophic. 
+
+%\subsection{SAR with a Moving Target}
+\subsection{Multiple UAV Approach with Quality of Service Requirements}
+\label{sec:LR SAR QoS}
+The focus of the work by these authors is communication. A lot of emphasis was placed on getting information back to the ground station timeously. They developed a \ac{mopp} algorithm that can be tuned to favour connectivity, coverage or both in varying degrees. \cite{Hayat2020}
+
+Coverage is important for target detection, and this is the initial goal of their algorithm. However, once a target is located, good connectivity is important to get relevant information back to the ground station as fast as possible.
+
+Connectivity, according to the authors, is broken down into two tasks. The first task involves transmitting the location of a target back to the ground station once located. The second task is continuous monitoring of the target via a good \ac{qos} link. This sends real-time updates on the target to the ground crew.
+
+A \acf{ga} is used to optimize the overall mission time, which includes searching the area for the target, sending the target location back to the ground crew, and establishing a good link to the ground station for continuous updates on the target. The paths found by this algorithm can be updated dynamically as new information about the target is received.
+
+This method can be viewed as decentralized technique, because the assumption is that the \acp{uav} are not always within communication range of one another. The connectivity phase of their algorithm is used to relay information between \acp{uav} back to the ground station, which generally requires planning paths to reconfigure them for optimal connectivity. If, once the target it located, the \ac{uav} that found the target is within range of the ground station, the connectivity phase is not required.
+
+It is interesting to see the value of incorporating connectivity as a mission goal. Their algorithms were shown to have faster mission completion times than similar algorithms that use connectivity as a constraint instead of a goal. Their results also show that favouring connectivity gives better results for a small group of \acp{uav} and favouring coverage gives better results for a larger group.
 
