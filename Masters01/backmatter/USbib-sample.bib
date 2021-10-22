@@ -305,6 +305,15 @@
 	year = {2018}
 }
 
+@online{DroneSARVideo,
+	author = {DroneSAR},
+	title = {{DroneSAR NEW Features}},
+	year = {2019},
+	url = {https://fb.watch/8O5OMVjb45/},
+	urldate = {2021-10-22}
+
+}
+
 @article{DARP2017,
 	abstract = {This paper deals with the path planning problem of a team of mobile robots, in order to cover an area of interest, with prior-defined obstacles. For the single robot case, also known as single robot coverage path planning (CPP), an (n) optimal methodology has already been proposed and evaluated in the literature, where n is the grid size. The majority of existing algorithms for the multi robot case (mCPP), utilize the aforementioned algorithm. Due to the complexity, however, of the mCPP, the best the existing mCPP algorithms can perform is at most 16 times the optimal solution, in terms of time needed for the robot team to accomplish the coverage task, while the time required for calculating the solution is polynomial. In the present paper, we propose a new algorithm which converges to the optimal solution, at least in cases where one exists. The proposed technique transforms the original integer programming problem (mCPP) into several single-robot problems (CPP), the solutions of which constitute the optimal mCPP solution, alleviating the original mCPP explosive combinatorial complexity. Although it is not possible to analytically derive bounds regarding the complexity of the proposed algorithm, extensive numerical analysis indicates that the complexity is bounded by polynomial curves for practical sized inputs. In the heart of the proposed approach lies the DARP algorithm, which divides the terrain into a number of equal areas each corresponding to a specific robot, so as to guarantee complete coverage, non-backtracking solution, minimum coverage path, while at the same time does not need any preparatory stage (video demonstration and standalone application are available on-line http://tinyurl.com/DARP-app).},
 	author = {Kapoutsis, Athanasios Ch and Chatzichristofis, Savvas A. and Kosmatopoulos, Elias B.},
@@ -322,6 +331,34 @@
 	url = {http://dx.doi.org/10.1007/s10846-016-0461-x},
 	volume = {86},
 	year = {2017}
+}
+
+@article{Gao2018,
+	abstract = {The present paper attempts to find the optimal coverage path for multiple robots in a given area including obstacles. For single robot coverage path planning (CPP) problem, an improved ant colony optimization (ACO) algorithm is proposed to construct the best spanning tree and then obtain the optimal path, which contributes to minimizing the energy/time consumption. For the multirobot case, first the DARP (Divide Areas based on Robots Initial Positions) algorithm is utilized to divide the area into separate equal subareas, so much so that it transforms the mCPP problem into several CPP problems, degrading the computation complexity. During the second phase, spanning tree in each subarea is constructed by the aforementioned algorithm. In the last phase, the specific end nodes are exchanged among subareas to achieve ideal-shaped spanning trees, which can also decrease the number of turns in coverage path. And the complete algorithms are proven to be approximately polynomial algorithms. Finally, the simulation confirms the complete algorithms' advantages: complete coverage, nonbacktracks, minimum length, zero preparation time, and the least number of turns.},
+	author = {Gao, Chunqing and Kou, Yingxin and Li, Zhanwu and Xu, An and Li, You and Chang, Yizhe},
+	doi = {10.1155/2018/3436429},
+	file = {:C\:/Users/Valhalla/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Gao et al. - 2018 - Optimal Multirobot Coverage Path Planning Ideal-Shaped Spanning Tree.pdf:pdf},
+	issn = {15635147},
+	journal = {Mathematical Problems in Engineering},
+	mendeley-groups = {Motion Planning/Coverage Path Planning,Motion Planning/Coverage Path Planning/STC and MSTC,Motion Planning/Coverage Path Planning/Multi - DARP and MFC/MSTC},
+	title = {{Optimal Multirobot Coverage Path Planning: Ideal-Shaped Spanning Tree}},
+	volume = {2018},
+	year = {2018}
+}
+
+@article{Baras2019,
+	abstract = {Unmanned Vehicles are being used in several application domains, such as mapping, agriculture, and surveillance. In these application domains, the problem of finding a path that covers the entire Area of Interest (AoI) in a predefined environment is known as Coverage Path Planning (CPP). Even though many works have been focused on solving the CPP problem in 2D environments, the CPP problem in 3D environments has not attracted considerable attention. In this paper, we propose an algorithm capable of solving the CPP problem both in 2D and 3D environments. The algorithm can utilize multiple robots tailoring the coverage path for each robot based on its specifications, i.e., speed and type. We have performed an experimental evaluation of the algorithm in artificially synthetic environments and report the results.},
+	author = {Baras, Nikolaos and Dasygenis, Minas and Ploskas, Nikolaos},
+	doi = {10.1109/MOCAST.2019.8741700},
+	file = {:C\:/Users/Valhalla/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Baras, Dasygenis, Ploskas - 2019 - Multi-Robot Coverage Path Planning in 3-Dimensional Environments.pdf:pdf},
+	isbn = {9781728111841},
+	journal = {2019 8th International Conference on Modern Circuits and Systems Technologies, MOCAST 2019},
+	keywords = {2D coverage,3D coverage,autonomous robot,coverage path planning,path planning},
+	mendeley-groups = {Motion Planning/Coverage Path Planning,Motion Planning/Coverage Path Planning/Multi - DARP and MFC/MSTC},
+	pages = {0--3},
+	publisher = {IEEE},
+	title = {{Multi-Robot Coverage Path Planning in 3-Dimensional Environments}},
+	year = {2019}
 }
 
 @article{Kamrani2014,
