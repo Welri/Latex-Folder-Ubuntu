@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  24 OCT 2021 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  24 OCT 2021 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1975,7 +1975,7 @@ Overfull \hbox (17.85251pt too wide) in paragraph at lines 146--147
 [27] [28] [29]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 265.
+               Default added (so using `tbp') on input line 266.
 
 [30]) [31]
 \openout2 = `contents/Chap-4.aux'.
@@ -1992,15 +1992,15 @@ und PDF version <1.7>, but at most version <1.5> allowed
 <figs/DARP_Diagram3.pdf, id=769, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
-Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 27.
+Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 25.
 (pdftex.def)             Requested size: 409.75594pt x 676.06271pt.
 
-Overfull \hbox (11.75594pt too wide) in paragraph at lines 27--28
+Overfull \hbox (11.75594pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 64.1627pt on input line 30.
+LaTeX Warning: Float too large for page by 64.1627pt on input line 28.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2089,10 +2089,10 @@ Package rerunfilecheck Info: File `USthesis_Masters.out' has not changed.
 (rerunfilecheck)             Checksum: 79C90BCC5C0E890914A42B7060852F20;2604.
  ) 
 Here is how much of TeX's memory you used:
- 39501 strings out of 479303
- 949801 string characters out of 5871220
- 1398493 words of memory out of 5000000
- 55782 multiletter control sequences out of 15000+600000
+ 39499 strings out of 479303
+ 949759 string characters out of 5871220
+ 1398495 words of memory out of 5000000
+ 55780 multiletter control sequences out of 15000+600000
  436909 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,15n,116p,1162b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2123,7 +2123,7 @@ rm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 ve/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1440.pfb><c:/texlive/2020/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (59 pages, 3149081 bytes).
+Output written on USthesis_Masters.pdf (59 pages, 3149064 bytes).
 PDF statistics:
  1035 PDF objects out of 1200 (max. 8388607)
  905 compressed objects within 10 object streams
