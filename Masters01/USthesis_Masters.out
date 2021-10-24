@@ -29,17 +29,16 @@
 \BOOKMARK [1][-]{section.3.3}{Implementation with Different Cameras}{chapter.3}% 29
 \BOOKMARK [0][-]{chapter.4}{Divide Areas Algorithm}{}% 30
 \BOOKMARK [1][-]{section.4.1}{Background Theory}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{Distance Measure Comparisons}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.3}{Implementation with Different Scenarios}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Subregion Coverage Technique}{}% 34
-\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 35
-\BOOKMARK [0][-]{chapter.6}{Dynamic Constraints of a UAV}{}% 36
-\BOOKMARK [1][-]{section.6.1}{Background}{chapter.6}% 37
-\BOOKMARK [0][-]{chapter.7}{Refuelling Protocol}{}% 38
-\BOOKMARK [1][-]{section.7.1}{Background}{chapter.7}% 39
-\BOOKMARK [0][-]{chapter.8}{Results}{}% 40
-\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 41
-\BOOKMARK [0][-]{section*.24}{Appendices}{}% 42
-\BOOKMARK [0][-]{appendix.A}{Discrete Element Method Theory}{}% 43
-\BOOKMARK [1][-]{section.A.1}{Ball elements}{appendix.A}% 44
-\BOOKMARK [0][-]{appendix*.26}{List of References}{}% 45
+\BOOKMARK [1][-]{section.4.2}{Implementation}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Subregion Coverage Technique}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 34
+\BOOKMARK [0][-]{chapter.6}{Dynamic Constraints of a UAV}{}% 35
+\BOOKMARK [1][-]{section.6.1}{Background}{chapter.6}% 36
+\BOOKMARK [0][-]{chapter.7}{Refuelling Protocol}{}% 37
+\BOOKMARK [1][-]{section.7.1}{Background}{chapter.7}% 38
+\BOOKMARK [0][-]{chapter.8}{Results}{}% 39
+\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 40
+\BOOKMARK [0][-]{section*.24}{Appendices}{}% 41
+\BOOKMARK [0][-]{appendix.A}{Discrete Element Method Theory}{}% 42
+\BOOKMARK [1][-]{section.A.1}{Ball elements}{appendix.A}% 43
+\BOOKMARK [0][-]{appendix*.26}{List of References}{}% 44

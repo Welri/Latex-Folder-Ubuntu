@@ -54,18 +54,20 @@
 \contentsline {chapter}{\chapternumberline {4}Divide Areas Algorithm}{32}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Background Theory}{32}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Algorithm Description}{33}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Distance Measure Comparisons}{33}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Implementation with Different Scenarios}{33}{section.4.3}%
-\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Background}{35}{section.5.1}%
-\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{36}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Background}{36}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{37}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Background}{37}{section.7.1}%
-\contentsline {chapter}{\chapternumberline {8}Results}{38}{chapter.8}%
-\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{39}{chapter.9}%
-\contentsline {chapter}{Appendices}{40}{section*.24}%
-\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{41}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Ball elements}{41}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{41}{subsection.A.1.1}%
-\contentsline {chapter}{List of References}{42}{appendix*.26}%
+\contentsline {section}{\numberline {4.2}Implementation}{33}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Algorithm Suitability and Limitations}{34}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Distance Measure Comparisons}{35}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Implementation with Different Environments}{35}{subsection.4.2.3}%
+\contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Background}{37}{section.5.1}%
+\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Background}{38}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{39}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Background}{39}{section.7.1}%
+\contentsline {chapter}{\chapternumberline {8}Results}{40}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{41}{chapter.9}%
+\contentsline {chapter}{Appendices}{42}{section*.24}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{43}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Ball elements}{43}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{43}{subsection.A.1.1}%
+\contentsline {chapter}{List of References}{44}{appendix*.26}%
