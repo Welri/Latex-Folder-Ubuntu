@@ -8,9 +8,9 @@
 \contentsline {chapter}{Acknowledgements}{iv}{chapter*.7}%
 \contentsline {chapter}{Contents}{v}{section*.8}%
 \contentsline {chapter}{List of Figures}{vii}{section*.9}%
-\contentsline {chapter}{List of Tables}{viii}{section*.10}%
-\contentsline {chapter}{Nomenclature}{ix}{chapter*.11}%
-\contentsline {chapter}{Acronyms}{x}{chapter*.12}%
+\contentsline {chapter}{List of Tables}{ix}{section*.10}%
+\contentsline {chapter}{Nomenclature}{x}{chapter*.11}%
+\contentsline {chapter}{Acronyms}{xi}{chapter*.12}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Research Aim}{3}{section.1.2}%
@@ -60,14 +60,16 @@
 \contentsline {subsection}{\numberline {4.2.3}Implementation with Different Environments}{35}{subsection.4.2.3}%
 \contentsline {chapter}{\chapternumberline {5}Subregion Coverage Technique}{37}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Background}{37}{section.5.1}%
-\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Background}{38}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{39}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Background}{39}{section.7.1}%
-\contentsline {chapter}{\chapternumberline {8}Results}{40}{chapter.8}%
-\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{41}{chapter.9}%
-\contentsline {chapter}{Appendices}{42}{section*.24}%
-\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{43}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Ball elements}{43}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{43}{subsection.A.1.1}%
-\contentsline {chapter}{List of References}{44}{appendix*.26}%
+\contentsline {section}{\numberline {5.2}Spanning Tree Generation}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Spanning Tree Circumnavigation}{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Spanning Tree Weights}{40}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{42}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Background}{44}{section.7.1}%
+\contentsline {chapter}{\chapternumberline {8}Results}{45}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {9}Conclusions and Future Work}{46}{chapter.9}%
+\contentsline {chapter}{Appendices}{47}{section*.31}%
+\contentsline {appendix}{\chapternumberline {A}Discrete Element Method Theory}{48}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Ball elements}{48}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Ball mass and inertia parameters}{48}{subsection.A.1.1}%
+\contentsline {chapter}{List of References}{49}{appendix*.33}%

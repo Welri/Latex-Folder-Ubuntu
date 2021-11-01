@@ -21,9 +21,16 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Flow diagram representing the logic for DARP.\relax }}{36}{figure.caption.23}%
 \addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Figure showing how the reference frame representing motions would move with a right turn.\relax }}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Figure showing a spanning tree generated for a four-by-four environment grid\relax }}{39}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Figure showing arrows generated for first phase of spanning tree circumnavigation.\relax }}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Figure showing the four different motions of an arrow in a particular reference frame.\relax }}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Figures showing way-points generated from arrows along with the resulting circumnavigation path around the spanning tree.\relax }}{41}{figure.caption.28}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Figure showing required FOV to ensure no corner cutting on a square discretisation\relax }}{42}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagram showing the dimensions necessary to calculate FOV on a square discretisation.\relax }}{43}{figure.caption.30}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{43}{figure.caption.25}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ball Element Parameters\relax }}{48}{figure.caption.32}%
