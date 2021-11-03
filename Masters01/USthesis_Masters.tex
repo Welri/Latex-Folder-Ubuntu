@@ -1,10 +1,10 @@
 \documentclass[12pt,oneside,openany,a4paper,%..... Layout
-               afrikaans, english,%.............. Global language selection
-               ]{memoir}
+           afrikaans, english,%.............. Global language selection
+           ]{memoir}
 
- \usepackage[masters-t,%.......................... Master thesis
-             goldenblock,%........................ A5 type block (or a5block or wide)
-            ]{usthesis}%.......................... US thesis style with memoir
+\usepackage[masters-t,%.......................... Master thesis
+         goldenblock,%........................ A5 type block (or a5block or wide)
+        ]{usthesis}%.......................... US thesis style with memoir
 
 %
 % PLEASE read the USthesis documentation for the class options
@@ -22,40 +22,40 @@
 \usepackage[hidelinks]{hyperref}
 
 %==== Language setup ================================================
- \usepackage[latin1]{inputenc}%................... Recognizes ê, ë, etc
- \usepackage{babel}%.............................. Language setup
+\usepackage[latin1]{inputenc}%................... Recognizes ê, ë, etc
+\usepackage{babel}%.............................. Language setup
 
 %==== Math setup ====================================================
- \usepackage{amsmath}%............................ Advanced math (before fonts)
- %\usepackage{amssymb}%............................ AMS Symbol fonts
+\usepackage{amsmath}%............................ Advanced math (before fonts)
+%\usepackage{amssymb}%............................ AMS Symbol fonts
 
 %==== Font setup (default is Computer Modern) =======================
- \usepackage[T1]{fontenc}%........................ Type 1 fonts
- %\usepackage{fourier}
- \usepackage{textcomp}%........................... Additional text character
- \usepackage{bm}%................................. Bold math symbols (after fonts)
+\usepackage[T1]{fontenc}%........................ Type 1 fonts
+%\usepackage{fourier}
+\usepackage{textcomp}%........................... Additional text character
+\usepackage{bm}%................................. Bold math symbols (after fonts)
 
 %==== Ref's, Bib's and Nomencl ======================================
- \usepackage{usnomencl}%.......................... List of symbols (in usthesis pack)
- \usepackage[square, numbers]{natbib}%.............................. Bibliography    (in usthesis pack)
+\usepackage{usnomencl}%.......................... List of symbols (in usthesis pack)
+\usepackage[square, numbers]{natbib}%.............................. Bibliography    (in usthesis pack)
 
-    \bibliographystyle{IEEEtranN}
-    \renewcommand\bibfont{\small}
-    \def\BIBand{and}
+\bibliographystyle{IEEEtranN}
+\renewcommand\bibfont{\small}
+\def\BIBand{and}
 
-    %% For usmeg-a, the bib is a list of references. If you
-    %% are using usmeg-n comment out the following lines
-    \addto{\captionsafrikaans}{\renewcommand{\bibname}{Lys van Verwysings}}
-    \addto{\captionsenglish}{\renewcommand{\bibname}{List of References}}
+%% For usmeg-a, the bib is a list of references. If you
+%% are using usmeg-n comment out the following lines
+\addto{\captionsafrikaans}{\renewcommand{\bibname}{Lys van Verwysings}}
+\addto{\captionsenglish}{\renewcommand{\bibname}{List of References}}
 
 %==== Graphics and Color ============================================
 \usepackage{graphicx}%........................... Graphicx loaded in usthesis
 \usepackage{color}%.............................. Color setup
 \usepackage{eso-pic}%............................ Shipout commands for watermark
-    \newcommand*{\WaterMark}[2][0.15\paperwidth]{%
-        \AddToShipoutPicture*{\AtTextCenter{%
-                \parbox[c]{0pt}{\makebox[0pt][c]{%
-                    \includegraphics[width=#1]{#2}}}}}}
+\newcommand*{\WaterMark}[2][0.15\paperwidth]{%
+    \AddToShipoutPicture*{\AtTextCenter{%
+            \parbox[c]{0pt}{\makebox[0pt][c]{%
+                \includegraphics[width=#1]{#2}}}}}}
 
 
 
@@ -69,32 +69,32 @@
 
 %==== TITLE PAGE ====================================================
 \title{\bfseries
-       \AorE{%-- Afrikaans ------------------------------------------
-             TODO: Insert Afrikaans Title Here\\[1ex]
-             \normalfont\small\itshape
-             (``Grid-Based Coverage Path Planning with Multiple UAVs for Search and Rescue Applications'')
-            }{%-- English -------------------------------------------
-             Grid-Based Coverage Path Planning with Multiple UAVs for Search and Rescue Applications
-            }}
+   \AorE{%-- Afrikaans ------------------------------------------
+         TODO: Insert Afrikaans Title Here\\[1ex]
+         \normalfont\small\itshape
+         (``Grid-Based Coverage Path Planning with Multiple UAVs for Search and Rescue Applications'')
+        }{%-- English -------------------------------------------
+         Grid-Based Coverage Path Planning with Multiple UAVs for Search and Rescue Applications
+        }}
 
 \author{W.\ Botes}{Welri Botes}
 
 \degree{\AorE{MIng (EE)}{MEng (EE)}}
-       {\AorE{Magister in Ingenieurswese (Elektries en Elektronies)}
-             {Master of Engineering (Electrical and Electronic)}}
+   {\AorE{Magister in Ingenieurswese (Elektries en Elektronies)}
+         {Master of Engineering (Electrical and Electronic)}}
 
 \address{\AorE{%-- Afrikaans ----------------------------------------
-        Departement Elektries en Elektroniese Ingenieurswese,\\
-        Universiteit van Stellenbosch,\\
-        Privaatsak X1, Matieland 7602, Suid Afrika.%
-             }{%-- English ------------------------------------------
-        Department of Electrical and Electronic Engineering,\\
-        University of Stellenbosch,\\
-        Private Bag X1, Matieland 7602, South Africa.
-             }}
+    Departement Elektries en Elektroniese Ingenieurswese,\\
+    Universiteit van Stellenbosch,\\
+    Privaatsak X1, Matieland 7602, Suid Afrika.%
+         }{%-- English ------------------------------------------
+    Department of Electrical and Electronic Engineering,\\
+    University of Stellenbosch,\\
+    Private Bag X1, Matieland 7602, South Africa.
+         }}
 
 \faculty{\AorE{Fakulteit Ingenieurswese}%
-              {Faculty of Engineering}}
+          {Faculty of Engineering}}
 
 \supervisor{Dr\ JAA\ Engelbrecht}
 
@@ -114,54 +114,55 @@
 \maxsecnumdepth{subsubsection}
 \maxtocdepth{section}
 
- \include{frontmatter/Acronyms}
+\include{frontmatter/Acronyms-Declarations}
 
 \begin{document}
 
 %==== Front matter ==================================================
- \frontmatter
- \WaterMark{UScrest-WM}
- \TitlePage
+\frontmatter
+\WaterMark{UScrest-WM}
+\TitlePage
 
- \DeclarationDate{2021/08/30}
- \DeclarationPage
+\DeclarationDate{2021/08/30}
+\DeclarationPage
 
- \include{frontmatter/Chap-Front}
+\include{frontmatter/Chap-Front}
 
- \tableofcontents
- \clearpage
+\tableofcontents
+\clearpage
 
- \setcounter{lofdepth}{2}
- \listoffigures
- \clearpage
+\setcounter{lofdepth}{2}
+\listoffigures
+\clearpage
 
- \listoftables
- \clearpage
+\listoftables
+\clearpage
 
- \include{frontmatter/Nomencl}
+\include{frontmatter/Nomencl}
+\include{frontmatter/Acronyms}
 
- \chapter{Acronyms}
- \printacronyms[heading=Acronyms,template=description,sort=true]
- 
- %\include{frontmatter/Acronyms}
- 
+%\chapter{Acronyms}
+%\printacronyms[heading=Acronyms,template=description,sort=true]
+
 %==== Main document =================================================
 \mainmatter
 
-   \setsecnumdepth{subsubsection}
+\setsecnumdepth{subsubsection}
 %   \numberwithin{equation}{section}
 %   \numberwithin{figure}{chapter}
 %   \numberwithin{table}{chapter}
 
-\include{contents/Chap-1}
-\include{contents/Chap-2}
+\include{contents/Introduction}
+\include{contents/Literature-Review}
+\include{contents/Conceptualisation-and-Modelling}
+\include{contents/System-Overview}
 \include{contents/Chap-3}
-\include{contents/Chap-4}
-\include{contents/Chap-5}
-\include{contents/Chap-6}
-\include{contents/Chap-7}
-\include{contents/Chap-8}
-\include{contents/Chap-9}
+\include{contents/Divide-Areas-Algorithm}
+\include{contents/Subregion-Coverage}
+\include{contents/Dynamic-Constraints}
+\include{contents/Refuelling-Protocol}
+\include{contents/Results}
+\include{contents/Conclusions}
 
 %==== Appendices ====================================================
 \appendix

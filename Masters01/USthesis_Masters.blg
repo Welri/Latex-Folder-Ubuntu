@@ -4,15 +4,18 @@ The top-level auxiliary file: USthesis_Masters.aux
 The style file: IEEEtranN.bst
 A level-1 auxiliary file: frontmatter/Chap-Front.aux
 A level-1 auxiliary file: frontmatter/Nomencl.aux
-A level-1 auxiliary file: contents/Chap-1.aux
-A level-1 auxiliary file: contents/Chap-2.aux
+A level-1 auxiliary file: frontmatter/Acronyms.aux
+A level-1 auxiliary file: contents/Introduction.aux
+A level-1 auxiliary file: contents/Literature-Review.aux
+A level-1 auxiliary file: contents/Conceptualisation-and-Modelling.aux
+A level-1 auxiliary file: contents/System-Overview.aux
 A level-1 auxiliary file: contents/Chap-3.aux
-A level-1 auxiliary file: contents/Chap-4.aux
-A level-1 auxiliary file: contents/Chap-5.aux
-A level-1 auxiliary file: contents/Chap-6.aux
-A level-1 auxiliary file: contents/Chap-7.aux
-A level-1 auxiliary file: contents/Chap-8.aux
-A level-1 auxiliary file: contents/Chap-9.aux
+A level-1 auxiliary file: contents/Divide-Areas-Algorithm.aux
+A level-1 auxiliary file: contents/Subregion-Coverage.aux
+A level-1 auxiliary file: contents/Dynamic-Constraints.aux
+A level-1 auxiliary file: contents/Refuelling-Protocol.aux
+A level-1 auxiliary file: contents/Results.aux
+A level-1 auxiliary file: contents/Conclusions.aux
 A level-1 auxiliary file: contents/App-1.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -43,7 +46,7 @@ Warning--empty journal in Jurgens1998
 Done.
 You've used 54 entries,
             4855 wiz_defined-function locations,
-            1289 strings with 19006 characters,
+            1292 strings with 19179 characters,
 and the built_in function-call counts, 42565 in all, are:
 = -- 3835
 > -- 1399

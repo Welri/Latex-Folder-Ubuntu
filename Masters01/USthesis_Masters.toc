@@ -63,6 +63,7 @@
 \contentsline {section}{\numberline {5.2}Spanning Tree Generation}{37}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Spanning Tree Circumnavigation}{37}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Spanning Tree Weights}{40}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Spanning Tree Coverage with DARP}{40}{section.5.5}%
 \contentsline {chapter}{\chapternumberline {6}Dynamic Constraints of a UAV}{42}{chapter.6}%
 \contentsline {chapter}{\chapternumberline {7}Refuelling Protocol}{44}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Background}{44}{section.7.1}%
