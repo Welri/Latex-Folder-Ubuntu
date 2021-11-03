@@ -23,25 +23,33 @@
 \BOOKMARK [1][-]{section.2.5}{Non-Distributed Offline MCPP}{chapter.2}% 23
 \BOOKMARK [1][-]{section.2.6}{Online MCPP}{chapter.2}% 24
 \BOOKMARK [1][-]{section.2.7}{UAVs and Search and Rescue}{chapter.2}% 25
-\BOOKMARK [0][-]{chapter.3}{Environment Representation}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Background}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{Discretisation Methodology}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.3}{Implementation with Different Cameras}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Divide Areas Algorithm}{}% 30
-\BOOKMARK [1][-]{section.4.1}{Background Theory}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{Implementation}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{Subregion Coverage Technique}{}% 33
-\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Spanning Tree Generation}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.3}{Spanning Tree Circumnavigation}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.4}{Spanning Tree Weights}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.5}{Spanning Tree Coverage with DARP}{chapter.5}% 38
-\BOOKMARK [0][-]{chapter.6}{Dynamic Constraints of a UAV}{}% 39
-\BOOKMARK [0][-]{chapter.7}{Refuelling Protocol}{}% 40
-\BOOKMARK [1][-]{section.7.1}{Background}{chapter.7}% 41
-\BOOKMARK [0][-]{chapter.8}{Results}{}% 42
-\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 43
-\BOOKMARK [0][-]{section*.31}{Appendices}{}% 44
-\BOOKMARK [0][-]{appendix.A}{Discrete Element Method Theory}{}% 45
-\BOOKMARK [1][-]{section.A.1}{Ball elements}{appendix.A}% 46
-\BOOKMARK [0][-]{appendix*.33}{List of References}{}% 47
+\BOOKMARK [0][-]{chapter.3}{Conceptualization and Modelling}{}% 26
+\BOOKMARK [1][-]{section.3.1}{The SAR Problem}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Search Area}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.3}{Environment Model}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.4}{UAV Model}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.5}{Collision Modelling}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.6}{Target Model and Detection}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{System Overview}{}% 33
+\BOOKMARK [0][-]{chapter.5}{Environment Representation}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Background}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.2}{Discretisation Methodology}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.3}{Implementation with Different Cameras}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{Divide Areas Algorithm}{}% 38
+\BOOKMARK [1][-]{section.6.1}{Background Theory}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{Implementation}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{Subregion Coverage Technique}{}% 41
+\BOOKMARK [1][-]{section.7.1}{Background}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{Spanning Tree Generation}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.3}{Spanning Tree Circumnavigation}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.4}{Spanning Tree Weights}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.5}{Spanning Tree Coverage with DARP}{chapter.7}% 46
+\BOOKMARK [0][-]{chapter.8}{Dynamic Constraints of a UAV}{}% 47
+\BOOKMARK [0][-]{chapter.9}{Refuelling Protocol}{}% 48
+\BOOKMARK [1][-]{section.9.1}{Background}{chapter.9}% 49
+\BOOKMARK [0][-]{chapter.10}{Results}{}% 50
+\BOOKMARK [0][-]{chapter.11}{Conclusions and Future Work}{}% 51
+\BOOKMARK [0][-]{section*.32}{Appendices}{}% 52
+\BOOKMARK [0][-]{appendix.A}{Discrete Element Method Theory}{}% 53
+\BOOKMARK [1][-]{section.A.1}{Ball elements}{appendix.A}% 54
+\BOOKMARK [0][-]{appendix*.34}{List of References}{}% 55
