@@ -295,6 +295,7 @@ Section \ref{sec:LR SAR QoS} describes another online algorithm. Here, \acs{ga} 
 \section{UAVs and Search and Rescue}
 This section covers several applications where \acp{uav} were used in \ac{sar} scenarios. These examples are not limited to the coverage scenario, and are also not limited to applications with multiple \acp{uav}. Both online and offline approaches are also mentioned. The headings in this section are designed to show the unique attributes of each implementation, which are emphasised by the respective authors in their work and add to the value of their work.
 \subsection{Complete Implementation by DroneSAR}
+\label{sec:LR SAR-DroneSAR}
 DroneSAR is an Irish company that developed a system to assist \acl{sar} with a DJI quad-copters. The created a user-friendly application, where one can mark out an area to be searched and it will plan its own coverage path of the area. Their algorithm uses simple back and forth manoeuvres or manual user input of waypoints to plot a course. On-board video footage (visual or thermal) is sent to the ground station in real time. This allows the team on the ground to react quickly when a target is found.  \cite{DroneSAR01}
 
 Their goal was to find a target in a \acl{sar} situation faster, and reduce risk to \ac{sar} teams on the ground. Based on tests with \acl{sar} teams, they found that the time taken to find a victim in one square kilometre, with five people searching, is roughly two hours. Their system can find the target in under 20 minutes. \cite{DroneSAR01}

@@ -9,7 +9,7 @@ A level-1 auxiliary file: contents/Introduction.aux
 A level-1 auxiliary file: contents/Literature-Review.aux
 A level-1 auxiliary file: contents/Conceptualisation-and-Modelling.aux
 A level-1 auxiliary file: contents/System-Overview.aux
-A level-1 auxiliary file: contents/Chap-3.aux
+A level-1 auxiliary file: contents/Environment.aux
 A level-1 auxiliary file: contents/Divide-Areas-Algorithm.aux
 A level-1 auxiliary file: contents/Subregion-Coverage.aux
 A level-1 auxiliary file: contents/Dynamic-Constraints.aux
@@ -44,45 +44,45 @@ Warning--empty journal in Hayat2020
 Warning--empty journal in Jurgens1998
 
 Done.
-You've used 54 entries,
+You've used 55 entries,
             4855 wiz_defined-function locations,
-            1292 strings with 19179 characters,
-and the built_in function-call counts, 42565 in all, are:
-= -- 3835
-> -- 1399
-< -- 254
-+ -- 666
-- -- 324
-* -- 2487
-:= -- 6738
-add.period$ -- 108
-call.type$ -- 54
-change.case$ -- 106
-chr.to.int$ -- 567
-cite$ -- 59
-duplicate$ -- 2878
-empty$ -- 2930
-format.name$ -- 458
-if$ -- 9432
+            1299 strings with 19367 characters,
+and the built_in function-call counts, 43054 in all, are:
+= -- 3882
+> -- 1406
+< -- 255
++ -- 670
+- -- 326
+* -- 2507
+:= -- 6827
+add.period$ -- 110
+call.type$ -- 55
+change.case$ -- 108
+chr.to.int$ -- 568
+cite$ -- 60
+duplicate$ -- 2914
+empty$ -- 2971
+format.name$ -- 461
+if$ -- 9536
 int.to.chr$ -- 1
-int.to.str$ -- 55
-missing$ -- 444
-newline$ -- 204
-num.names$ -- 159
-pop$ -- 1185
+int.to.str$ -- 56
+missing$ -- 451
+newline$ -- 209
+num.names$ -- 162
+pop$ -- 1211
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 55
 quote$ -- 2
-skip$ -- 3091
+skip$ -- 3127
 stack$ -- 0
-substring$ -- 1348
-swap$ -- 1984
+substring$ -- 1351
+swap$ -- 2001
 text.length$ -- 60
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 838
+type$ -- 853
 warning$ -- 4
-while$ -- 195
+while$ -- 197
 width$ -- 0
-write$ -- 639
+write$ -- 651
 (There were 2 error messages)

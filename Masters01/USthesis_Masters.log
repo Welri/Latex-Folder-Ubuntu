@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  3 NOV 2021 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  4 NOV 2021 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1716,7 +1716,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (./frontmatter/Acronyms.aux) (./contents/Introduction.aux)
 (./contents/Literature-Review.aux)
 (./contents/Conceptualisation-and-Modelling.aux)
-(./contents/System-Overview.aux) (./contents/Chap-3.aux)
+(./contents/System-Overview.aux) (./contents/Environment.aux)
 (./contents/Divide-Areas-Algorithm.aux) (./contents/Subregion-Coverage.aux)
 (./contents/Dynamic-Constraints.aux) (./contents/Refuelling-Protocol.aux)
 (./contents/Results.aux) (./contents/Conclusions.aux) (./contents/App-1.aux)
@@ -1813,7 +1813,7 @@ LaTeX Info: Redefining \nameref on input line 119.
 \@outlinefile=\write6
 \openout6 = `USthesis_Masters.out'.
 
-<UScrest-WM.jpg, id=228, 49.8663pt x 69.3792pt>
+<UScrest-WM.jpg, id=232, 49.8663pt x 69.3792pt>
 File: UScrest-WM.jpg Graphic file (type jpg)
 <use UScrest-WM.jpg>
 Package pdftex.def Info: UScrest-WM.jpg  used on input line 124.
@@ -1891,7 +1891,7 @@ Overfull \hbox (2.71872pt too wide) in paragraph at lines 2--2
 
 
 ]
-<figs/content_DroneSAR_screenshot_3.png, id=457, 803.0pt x 602.25pt>
+<figs/content_DroneSAR_screenshot_3.png, id=465, 803.0pt x 602.25pt>
 File: figs/content_DroneSAR_screenshot_3.png Graphic file (type png)
 <use figs/content_DroneSAR_screenshot_3.png>
 Package pdftex.def Info: figs/content_DroneSAR_screenshot_3.png  used on input 
@@ -1909,7 +1909,7 @@ line 30.
 
 pdfTeX warning: pdflatex.exe (file ./figs/Motion.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<figs/Motion.pdf, id=510, 963.6pt x 542.025pt>
+<figs/Motion.pdf, id=518, 963.6pt x 542.025pt>
 File: figs/Motion.pdf Graphic file (type pdf)
 <use figs/Motion.pdf>
 Package pdftex.def Info: figs/Motion.pdf  used on input line 33.
@@ -1921,7 +1921,7 @@ Overfull \hbox (5.38336pt too wide) in paragraph at lines 45--46
  []
 
 [7 <./figs/Motion.pdf>] [8] [9] [10] [11]
-<figs/Hexagonal_Partitioning_Graphic.png, id=619, 416.30531pt x 377.91188pt>
+<figs/Hexagonal_Partitioning_Graphic.png, id=627, 416.30531pt x 377.91188pt>
 File: figs/Hexagonal_Partitioning_Graphic.png Graphic file (type png)
 <use figs/Hexagonal_Partitioning_Graphic.png>
 Package pdftex.def Info: figs/Hexagonal_Partitioning_Graphic.png  used on input
@@ -1937,31 +1937,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
  []
 
 [12] [13 <./figs/Hexagonal_Partitioning_Graphic.png>]
-<figs/GM_VPC_Euclid.png, id=641, 380.92313pt x 301.125pt>
+<figs/GM_VPC_Euclid.png, id=649, 380.92313pt x 301.125pt>
 File: figs/GM_VPC_Euclid.png Graphic file (type png)
 <use figs/GM_VPC_Euclid.png>
 Package pdftex.def Info: figs/GM_VPC_Euclid.png  used on input line 168.
 (pdftex.def)             Requested size: 152.36655pt x 120.44786pt.
-<figs/GM_VPC.png, id=642, 377.15906pt x 301.125pt>
+<figs/GM_VPC.png, id=650, 377.15906pt x 301.125pt>
 File: figs/GM_VPC.png Graphic file (type png)
 <use figs/GM_VPC.png>
 Package pdftex.def Info: figs/GM_VPC.png  used on input line 175.
 (pdftex.def)             Requested size: 150.86095pt x 120.44786pt.
  [14 <./figs/GM_VPC_Euclid.png> <./figs/GM_VPC.png>]
-<figs/Negotiation_Protocol.png, id=656, 485.56406pt x 503.63156pt>
+<figs/Negotiation_Protocol.png, id=664, 485.56406pt x 503.63156pt>
 File: figs/Negotiation_Protocol.png Graphic file (type png)
 <use figs/Negotiation_Protocol.png>
 Package pdftex.def Info: figs/Negotiation_Protocol.png  used on input line 197.
 
 (pdftex.def)             Requested size: 169.94997pt x 176.27368pt.
  [15 <./figs/Negotiation_Protocol.png>]
-<figs/MSTC-Graphic.png, id=668, 479.54156pt x 474.27188pt>
+<figs/MSTC-Graphic.png, id=676, 479.54156pt x 474.27188pt>
 File: figs/MSTC-Graphic.png Graphic file (type png)
 <use figs/MSTC-Graphic.png>
 Package pdftex.def Info: figs/MSTC-Graphic.png  used on input line 212.
 (pdftex.def)             Requested size: 191.81322pt x 189.70538pt.
  [16 <./figs/MSTC-Graphic.png>]
-<figs/DARP.png, id=679, 661.72218pt x 494.59781pt>
+<figs/DARP.png, id=687, 661.72218pt x 494.59781pt>
 File: figs/DARP.png Graphic file (type png)
 <use figs/DARP.png>
 Package pdftex.def Info: figs/DARP.png  used on input line 230.
@@ -1970,20 +1970,31 @@ Package pdftex.def Info: figs/DARP.png  used on input line 230.
 [25]
 \openout2 = `contents/Conceptualisation-and-Modelling.aux'.
 
- (./contents/Conceptualisation-and-Modelling.tex) [26
+ (./contents/Conceptualisation-and-Modelling.tex
+Overfull \hbox (34.94646pt too wide) in paragraph at lines 117--118
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26
 
 
 
 
-]
+] [27] [28]
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 168.
+
+[29]) [30]
 \openout2 = `contents/System-Overview.aux'.
 
-
-(./contents/System-Overview.tex
+ (./contents/System-Overview.tex
 
 pdfTeX warning: pdflatex.exe (file ./figs/SOD.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<figs/SOD.pdf, id=782, 597.55246pt x 845.07724pt>
+<figs/SOD.pdf, id=810, 597.55246pt x 845.07724pt>
 File: figs/SOD.pdf Graphic file (type pdf)
 <use figs/SOD.pdf>
 Package pdftex.def Info: figs/SOD.pdf  used on input line 13.
@@ -1991,15 +2002,15 @@ Package pdftex.def Info: figs/SOD.pdf  used on input line 13.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [27
+) [31
 
 
 
 
-] [28 <./figs/SOD.pdf>]
-\openout2 = `contents/Chap-3.aux'.
+] [32 <./figs/SOD.pdf>]
+\openout2 = `contents/Environment.aux'.
 
- (./contents/Chap-3.tex [29
+ (./contents/Environment.tex [33
 
 
 
@@ -2015,15 +2026,15 @@ Overfull \hbox (17.85251pt too wide) in paragraph at lines 146--147
  [][] 
  []
 
-[30] [31] [32]
+[34] [35] [36]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 266.
 
-[33]) [34]
+[37]) [38]
 \openout2 = `contents/Divide-Areas-Algorithm.aux'.
 
- (./contents/Divide-Areas-Algorithm.tex [35
+ (./contents/Divide-Areas-Algorithm.tex [39
 
 
 
@@ -2032,7 +2043,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 pdfTeX warning: pdflatex.exe (file ./figs/DARP_Diagram3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figs/DARP_Diagram3.pdf, id=870, 597.55246pt x 845.07724pt>
+<figs/DARP_Diagram3.pdf, id=899, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
 Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 25.
@@ -2048,7 +2059,7 @@ LaTeX Warning: Float too large for page by 64.1627pt on input line 28.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36] [37]) [38] [39 <./figs/DARP_Diagram3.pdf>]
+[40] [41]) [42] [43 <./figs/DARP_Diagram3.pdf>]
 \openout2 = `contents/Subregion-Coverage.aux'.
 
 
@@ -2056,7 +2067,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40
+[44
 
 
 
@@ -2068,11 +2079,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41]
+[45]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42]
+[46]
 Overfull \hbox (13.65195pt too wide) in paragraph at lines 747--748
  [][] 
  []
@@ -2090,26 +2101,26 @@ Overfull \hbox (13.65195pt too wide) in paragraph at lines 896--897
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [43] [44]
+) [47] [48]
 \openout2 = `contents/Dynamic-Constraints.aux'.
 
  (./contents/Dynamic-Constraints.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45
+[49
 
 
 
 
 ]
 
-LaTeX Warning: Reference `' on page 46 undefined on input line 185.
+LaTeX Warning: Reference `' on page 50 undefined on input line 185.
 
-) [46]
+) [50]
 \openout2 = `contents/Refuelling-Protocol.aux'.
 
- (./contents/Refuelling-Protocol.tex) [47
+ (./contents/Refuelling-Protocol.tex) [51
 
 
 
@@ -2118,7 +2129,7 @@ LaTeX Warning: Reference `' on page 46 undefined on input line 185.
 \openout2 = `contents/Results.aux'.
 
  (./contents/Results.tex)
-[48
+[52
 
 
 
@@ -2126,12 +2137,12 @@ LaTeX Warning: Reference `' on page 46 undefined on input line 185.
 ]
 \openout2 = `contents/Conclusions.aux'.
 
- (./contents/Conclusions.tex) [49
+ (./contents/Conclusions.tex) [53
 
 
 
 
-] [50
+] [54
 
 
 
@@ -2139,20 +2150,20 @@ LaTeX Warning: Reference `' on page 46 undefined on input line 185.
 \openout2 = `contents/App-1.aux'.
 
  (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=975, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=1003, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (pdftex.def)             Requested size: 237.88815pt x 172.64456pt.
-) [51
+) [55
 
 
- <./figs/DEM-Def-Ball.pdf>] (./USthesis_Masters.bbl [52
+ <./figs/DEM-Def-Ball.pdf>] (./USthesis_Masters.bbl [56
 
 
 
 
-] [53] [54] [55]) [56]
+] [57] [58] [59]) [60]
 \tf@toc=\write7
 \openout7 = `USthesis_Masters.toc'.
 
@@ -2167,7 +2178,7 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 (./frontmatter/Nomencl.aux) (./frontmatter/Acronyms.aux)
 (./contents/Introduction.aux) (./contents/Literature-Review.aux)
 (./contents/Conceptualisation-and-Modelling.aux)
-(./contents/System-Overview.aux) (./contents/Chap-3.aux)
+(./contents/System-Overview.aux) (./contents/Environment.aux)
 (./contents/Divide-Areas-Algorithm.aux) (./contents/Subregion-Coverage.aux)
 (./contents/Dynamic-Constraints.aux) (./contents/Refuelling-Protocol.aux)
 (./contents/Results.aux) (./contents/Conclusions.aux) (./contents/App-1.aux)
@@ -2176,16 +2187,16 @@ Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `USthesis_Masters.out' has not changed.
-(rerunfilecheck)             Checksum: C0BAB18E9FC13CE3DF94EA3318A7E083;3341.
+(rerunfilecheck)             Checksum: 66E9F48DA7EF3BD295CF6B5A9BBF0007;3386.
  ) 
 Here is how much of TeX's memory you used:
- 39657 strings out of 479303
- 953878 string characters out of 5871220
- 1465230 words of memory out of 5000000
- 55875 multiletter control sequences out of 15000+600000
- 436918 words of font info for 109 fonts, out of 8000000 for 9000
+ 39693 strings out of 479303
+ 954615 string characters out of 5871220
+ 1471859 words of memory out of 5000000
+ 55904 multiletter control sequences out of 15000+600000
+ 436922 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,15n,116p,1226b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,15n,116p,1338b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dis
@@ -2213,10 +2224,10 @@ rm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 ve/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1440.pfb><c:/texlive/2020/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (68 pages, 3448989 bytes).
+Output written on USthesis_Masters.pdf (72 pages, 3464244 bytes).
 PDF statistics:
- 1188 PDF objects out of 1200 (max. 8388607)
- 1044 compressed objects within 11 object streams
- 249 named destinations out of 1000 (max. 500000)
- 531 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1220 PDF objects out of 1440 (max. 8388607)
+ 1072 compressed objects within 11 object streams
+ 256 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 
