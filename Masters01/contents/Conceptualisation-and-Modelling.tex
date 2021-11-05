@@ -3,7 +3,7 @@
 
 
 \section{The SAR Problem}
-Aerial support in a \ac{sar} operation can be very useful. Historically, manned aircraft like helicopters have been used to do so. However, these manned aircraft have limited flying times and they flight paths are not always optimal for detecting a target in a \ac{sar} situation.
+Aerial support in a \ac{sar} operation can be very useful. Historically, manned aircraft like helicopters have been used to do so. However, these manned aircraft have limited flying times and their flight paths are not always optimal for detecting a target in a \ac{sar} situation.
 
 \acp{uav} bring an exciting opportunity to have vehicles supporting an operation with autonomous flight paths. Search paths can be optimized to reduce time to find a target. Moreover, no-one is required to fly the vehicle, not only reducing the danger to a potential pilot, but also allowing the manpower to be focused on target finding. A combination of manned an unmanned vehicles may also be beneficial, where the unmanned vehicles are used to locate a target and the manned vehicles are used to retrieve a target.
 
@@ -11,9 +11,14 @@ DroneSAR, which is mentioned in Section \ref{sec:LR SAR-DroneSAR}, proved that t
 
 It is assumed that using multiple \acp{uav} to assist a \ac{sar} operation would improve the time to find a target even more. If they all search in tandem, larger areas can be searched in shorter amounts of time. With the starting point of a multiple \ac{uav} approach to assist a rescue operation in finding a target within an environment, one can formulate the basis for a \ac{sar} problem.
 
-Figure \ref{fig:CM01} one can see all the basic components illustrated and labelled. The first noticeable component is the search region boundary. This represents the area that is demarcated by a rescue team for searching. Within this region is the target, or victim, that needs to be located. This is marked by an "X" in the diagram. 
-%TODO: cite something to back yourself up
-In most rescue scenarios, the search team can make an educated guess as to wear the target may be, they cannot know the exact location.
+In Figure \ref{fig:CM01} one can see all the basic components of a rescue operation illustrated and labelled. The first noticeable component is the search region boundary. This represents the area that is demarcated by a rescue team for searching. Within this region is the target, or victim, that needs to be located. This is marked by an "X" on the diagram. 
+%TODO: cite something to back up the demarcated area thing
+In most rescue scenarios, the search team can make an educated guess as to wear the target may be, they cannot know the exact location, so the \acp{uav} are not aware of this location prior to flight. They are trying to pinpoint this location. The \acp{uav} are also shown on the diagram as they are leaving the ground station. It is standard in a search operation to have some base of operations. 
+
+It is intuitive to also have a base of operations for the \acp{uav} seen as this would be where they take-off and land, as well as where they refuel if need be. This base station would also be from where the ground team receives any data collected by the \acp{uav} to assist in the \ac{sar} operation.
+%TODO: cite something to back up the base of operations thing
+
+Static obstacles within the environment are also shown. These are representative of any region wherein the \acp{uav} must not fly. These could be physical obstructions, like power lines or cliffs, or no-fly zones like populated areas or restricted air-space. The \acp{uav} must fly throughout the unobstructed air space until the target is found.
 \begin{figure}[h!]
 	\centering
 	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        

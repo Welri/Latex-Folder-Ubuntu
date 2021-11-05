@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  4 NOV 2021 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.4)  5 NOV 2021 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1970,22 +1970,19 @@ Package pdftex.def Info: figs/DARP.png  used on input line 230.
 [25]
 \openout2 = `contents/Conceptualisation-and-Modelling.aux'.
 
- (./contents/Conceptualisation-and-Modelling.tex
-Overfull \hbox (34.94646pt too wide) in paragraph at lines 117--118
+ (./contents/Conceptualisation-and-Modelling.tex [26
+
+
+
+
+]
+Overfull \hbox (34.94646pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
+[27] [28]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26
-
-
-
-
-] [27] [28]
-
-LaTeX Warning: Reference `' on page 29 undefined on input line 168.
+LaTeX Warning: Reference `' on page 29 undefined on input line 176.
 
 [29]) [30]
 \openout2 = `contents/System-Overview.aux'.
@@ -1994,7 +1991,7 @@ LaTeX Warning: Reference `' on page 29 undefined on input line 168.
 
 pdfTeX warning: pdflatex.exe (file ./figs/SOD.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<figs/SOD.pdf, id=810, 597.55246pt x 845.07724pt>
+<figs/SOD.pdf, id=811, 597.55246pt x 845.07724pt>
 File: figs/SOD.pdf Graphic file (type pdf)
 <use figs/SOD.pdf>
 Package pdftex.def Info: figs/SOD.pdf  used on input line 13.
@@ -2043,7 +2040,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 pdfTeX warning: pdflatex.exe (file ./figs/DARP_Diagram3.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figs/DARP_Diagram3.pdf, id=899, 597.55246pt x 845.07724pt>
+<figs/DARP_Diagram3.pdf, id=900, 597.55246pt x 845.07724pt>
 File: figs/DARP_Diagram3.pdf Graphic file (type pdf)
 <use figs/DARP_Diagram3.pdf>
 Package pdftex.def Info: figs/DARP_Diagram3.pdf  used on input line 25.
@@ -2150,7 +2147,7 @@ LaTeX Warning: Reference `' on page 50 undefined on input line 185.
 \openout2 = `contents/App-1.aux'.
 
  (./contents/App-1.tex
-<figs/DEM-Def-Ball.pdf, id=1003, 237.88875pt x 172.645pt>
+<figs/DEM-Def-Ball.pdf, id=1004, 237.88875pt x 172.645pt>
 File: figs/DEM-Def-Ball.pdf Graphic file (type pdf)
 <use figs/DEM-Def-Ball.pdf>
 Package pdftex.def Info: figs/DEM-Def-Ball.pdf  used on input line 9.
@@ -2191,12 +2188,12 @@ Package rerunfilecheck Info: File `USthesis_Masters.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  39693 strings out of 479303
- 954615 string characters out of 5871220
- 1471859 words of memory out of 5000000
+ 954620 string characters out of 5871220
+ 1472834 words of memory out of 5000000
  55904 multiletter control sequences out of 15000+600000
  436922 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,15n,116p,1338b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,15n,116p,1346b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dis
@@ -2224,10 +2221,10 @@ rm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb
 ve/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1440.pfb><c:/texlive/2020/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb>
-Output written on USthesis_Masters.pdf (72 pages, 3464244 bytes).
+Output written on USthesis_Masters.pdf (72 pages, 3465700 bytes).
 PDF statistics:
- 1220 PDF objects out of 1440 (max. 8388607)
- 1072 compressed objects within 11 object streams
+ 1221 PDF objects out of 1440 (max. 8388607)
+ 1073 compressed objects within 11 object streams
  256 named destinations out of 1000 (max. 500000)
  539 words of extra memory for PDF output out of 10000 (max. 10000000)
 
